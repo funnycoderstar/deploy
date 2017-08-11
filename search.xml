@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[2017-08-11-小记]]></title>
+      <url>/2017/08/11/2017-08-11-%E5%B0%8F%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p><img src="http://img.blog.csdn.net/20170810182823396?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3Vuc2hpbmU5NDAzMjY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="title"></p>
+<a id="more"></a>
+]]></content>
+      
+        <categories>
+            
+            <category> 随笔 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2017-07-03-for in vs for of]]></title>
+      <url>/2017/07/03/2017-07-03-for-in-vs-for-of/</url>
+      <content type="html"><![CDATA[<h3 id="for-in-和-for-of-的区别"><a href="#for-in-和-for-of-的区别" class="headerlink" title="for in 和 for of 的区别"></a>for in 和 for of 的区别</h3><ul>
+<li><p>for in 更适合遍历对象，不要使用for in 遍历数组</p>
+</li>
+<li><p>for in 遍历的是数组的索引(即键名)，而for of 遍历的是数组元素值</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Object</span>.prototype.methods = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;;</div><div class="line"><span class="keyword">var</span> myObject = &#123;</div><div class="line">    a: <span class="number">1</span>,</div><div class="line">    b: <span class="number">2</span>,</div><div class="line">    c: <span class="number">3</span>,</div><div class="line">&#125;;</div><div class="line">使用<span class="keyword">for</span> <span class="keyword">in</span> 遍历对象的键名</div><div class="line"> <span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> myObject) &#123;</div><div class="line">   <span class="built_in">console</span>.log(key);</div><div class="line"> &#125;</div><div class="line"> a</div><div class="line"> b</div><div class="line"> c</div><div class="line"> methods</div><div class="line"><span class="keyword">for</span> <span class="keyword">in</span> 可以遍历到myObject的原型方法methods，如果不想遍历原型方法和属性的话.可以用hasOwnPropery方法可以判断某属性是否是该对象的实例属性</div><div class="line"> <span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> myObject) &#123;</div><div class="line">     <span class="keyword">if</span>(myObject.hasOwnProperty(key))&#123;</div><div class="line">       <span class="built_in">console</span>.log(key);</div><div class="line">     &#125;</div><div class="line"> &#125;</div><div class="line"> a</div><div class="line"> b</div><div class="line"> c</div><div class="line"></div><div class="line"> <span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(myObject));  [ <span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span> ]</div><div class="line"><span class="built_in">Object</span>.keys(myObject).forEach(<span class="function"><span class="keyword">function</span>(<span class="params">key, index</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(key, myObject[key]);</div><div class="line">&#125;)</div><div class="line"> a <span class="number">1</span></div><div class="line"> b <span class="number">2</span></div><div class="line"> c <span class="number">3</span></div><div class="line"> 同样可以通过ES5的<span class="built_in">Object</span>.keys(myObject)获取对象的实例属性组成的数组，不包括原型方法和属性。</div></pre></td></tr></table></figure>
+<ul>
+<li>for of 用来遍历数组的值</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> javascript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2017-06-23-vue中scroll的用法]]></title>
+      <url>/2017/06/23/2017-06-23-vue-scroll/</url>
+      <content type="html"><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">data () &#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    scrolled: <span class="literal">false</span></div><div class="line">  &#125;;</div><div class="line">&#125;,</div><div class="line">methods: &#123;</div><div class="line">  handleScroll () &#123;</div><div class="line">    <span class="keyword">this</span>.scrolled = <span class="built_in">window</span>.scrollY &gt; <span class="number">0</span>;</div><div class="line">  &#125;</div><div class="line">&#125;,</div><div class="line">created () &#123;</div><div class="line">  <span class="built_in">window</span>.addEventListener(<span class="string">'scroll'</span>, <span class="keyword">this</span>.handleScroll);</div><div class="line">&#125;,</div><div class="line">destroyed () &#123;</div><div class="line">  <span class="built_in">window</span>.removeEventListener(<span class="string">'scroll'</span>, <span class="keyword">this</span>.handleScroll);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vue </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2017-06-01-函数式编程之尾调用]]></title>
+      <url>/2017/06/01/2017-06-01-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%B0%BE%E8%B0%83%E7%94%A8/</url>
+      <content type="html"><![CDATA[<h2 id="尾调用，就是在函数的最后一步调用另一个函数"><a href="#尾调用，就是在函数的最后一步调用另一个函数" class="headerlink" title="尾调用，就是在函数的最后一步调用另一个函数"></a>尾调用，就是在函数的最后一步调用另一个函数</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">x</span>) </span>&#123;</div><div class="line">     <span class="keyword">return</span> g(x);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>尾调用不一定出现在函数尾部，只要是最后一步操作就行</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">x</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (x &gt; <span class="number">0</span>) &#123;</div><div class="line">    <span class="keyword">return</span> m(x)</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> n(x);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>函数m和n都属于尾调用，他们都是函数的最后一步操作</p>
+<h2 id="尾调用优化"><a href="#尾调用优化" class="headerlink" title="尾调用优化"></a>尾调用优化</h2><p>函数调用会在内存形成一个’调用记录‘，保存调用位置和内部变量等信息，如果在A函数中调用B函数，在A函数的调用记录上还会形成一个B的调用记录，等到B函数运行结束后，把结果返回到A，B的调用记录才会消失。如果函数B内部还调用C函数，那就是还有一个C的调用记录栈，以此类推，所有的调用记录，就会形成一个’调用栈‘。</p>
+<p>尾调用在于它特殊的调用位置。由于是函数最后一步操作，所以不需要保留外层函数的调用记录，因为调用位置和内部变量都不会再用到了。</p>
+<p>’尾调用优化‘，只调用内层函数的调用记录。如果所有函数都是尾调用，那么完全可以做到每次执行时，调用记录只有一项，这将大大节省内存。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> javascript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2017-05-24-react-redux]]></title>
+      <url>/2017/05/24/2017-05-24-react-redux/</url>
+      <content type="html"><![CDATA[<h2 id="redux"><a href="#redux" class="headerlink" title="redux"></a>redux</h2><p>redux的三个概念: action reducer store</p>
+<ul>
+<li>action: 一个包含type的object, 通常把一个返回action对象的函数称为action函数, 直接简称为action</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">action</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">        type: <span class="string">'Action1'</span>,</div><div class="line">        data,</div><div class="line">    &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>reducer: 一个根据action type来更新数据的函数</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">reducer</span>(<span class="params">state = &#123; data: <span class="number">1</span> &#125;, action</span>) </span>&#123;</div><div class="line">    <span class="keyword">switch</span> (action.type) &#123;</div><div class="line">        <span class="keyword">case</span> <span class="string">'action1'</span>: &#123;</div><div class="line">            <span class="keyword">const</span> newState = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(state));</div><div class="line">            <span class="keyword">return</span> newState;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">case</span> <span class="string">'action2'</span>: &#123;</div><div class="line">             <span class="keyword">const</span> newState = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(state));</div><div class="line">             <span class="keyword">return</span> newState;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">default</span>: &#123;</div><div class="line">            <span class="keyword">return</span> state;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>store: 使用createStore从reducer函数创建的数据对象, 包含getState和dispatch方法</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123; createStore &#125; <span class="keyword">from</span> <span class="string">'redux'</span>;</div><div class="line"></div><div class="line"><span class="keyword">let</span> store = createStore(reducer);</div><div class="line"><span class="built_in">console</span>.log(store.getState())</div><div class="line"></div><div class="line">store.dispatch(action(<span class="number">0</span>))</div><div class="line"><span class="built_in">console</span>.log(store.getState())</div></pre></td></tr></table></figure>
+<p><em>注意! 更新数据需要dispatch对应的action</em></p>
+<h2 id="react-redux"><a href="#react-redux" class="headerlink" title="react-redux"></a>react-redux</h2><p>用于将redux于react结合</p>
+<ul>
+<li>Provider: 顶层组件, 注入store对象</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123; Provider &#125; <span class="keyword">from</span> <span class="string">'react-redux'</span>;</div><div class="line"></div><div class="line">ReactDom.render(</div><div class="line">    &lt;Provider store=&#123;store&#125;&gt;</div><div class="line">        &lt;App /&gt;</div><div class="line">    &lt;<span class="regexp">/Provider&gt;,</span></div><div class="line"><span class="regexp">    document.getElementById('app'),</span></div><div class="line"><span class="regexp">);</span></div></pre></td></tr></table></figure>
+<ul>
+<li>connect: 工具函数, 参数一为函数, 该函数接收state, 返回一个对象, 对象包含一系列数据. 参数二为函数, 该函数接收dispatch, 返回一个对象, 对象包含一系列方法<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123; connect &#125; <span class="keyword">from</span> <span class="string">'react-redux'</span>;  </div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">    componentDidMount() &#123;</div><div class="line">        <span class="keyword">this</span>.props.dispatch(&#123;</div><div class="line">            type: <span class="string">'action1'</span>,</div><div class="line">            data: <span class="number">1</span>,</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    render() &#123;</div><div class="line">        <span class="comment">// this.props.func1();</span></div><div class="line">        <span class="comment">// this.props.func2();</span></div><div class="line">        <span class="keyword">return</span> (</div><div class="line">            &lt;div&gt;</div><div class="line">            &lt;<span class="regexp">/div &gt;</span></div><div class="line"><span class="regexp">        );</span></div><div class="line"><span class="regexp">    &#125;</span></div><div class="line"><span class="regexp">&#125;</span></div><div class="line"><span class="regexp"></span></div><div class="line"><span class="regexp">export default connect(</span></div><div class="line"><span class="regexp">    state =&gt; (&#123;</span></div><div class="line"><span class="regexp">        data: state.data,</span></div><div class="line"><span class="regexp">        obj: state.obj,</span></div><div class="line"><span class="regexp">    &#125;),</span></div><div class="line"><span class="regexp">    dispatch =&gt; (&#123; dispatch &#125;),</span></div><div class="line"><span class="regexp">)(App);</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="immutable-js"><a href="#immutable-js" class="headerlink" title="immutable.js"></a>immutable.js</h2><p>特殊的object(MAP)/array(LIST)</p>
+<ul>
+<li>更新数据: set setIn update updateIn</li>
+<li>读取数据: get getIn</li>
+<li>可以直接比较(深层比较)</li>
+<li>创建(fromJS), 还原(toJS)</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">上述的reducer可以用下面的代码优化</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">reducer</span>(<span class="params">state = immutable.fromJS(&#123; data: <span class="number">1</span>, obj: &#123; aa: <span class="number">1</span> &#125; &#125;</span>), <span class="title">action</span>) </span>&#123;</div><div class="line">    <span class="keyword">switch</span> (action.type) &#123;</div><div class="line">        <span class="keyword">case</span> <span class="string">'action1'</span>: &#123;</div><div class="line">            <span class="keyword">return</span> state.set(<span class="string">'data'</span>, action.data * <span class="number">10</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">case</span> <span class="string">'action2'</span>: &#123;</div><div class="line">            <span class="keyword">return</span> state.setIn([<span class="string">'obj'</span>, <span class="string">'aa'</span>], action.data);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">default</span>: &#123;</div><div class="line">            <span class="keyword">return</span> state;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ul>
+<li>无需深复制, 更新数据自动返回一个新对象</li>
+<li>适合与react shouldComponentUpdate结合来优化性能</li>
+</ul>
+<h2 id="pure-render-decorator"><a href="#pure-render-decorator" class="headerlink" title="pure-render-decorator"></a>pure-render-decorator</h2><p>自动创建shouldComponentUpdate的工具, 需要配置babel decorator特性才能使用</p>
+]]></content>
+      
+        <categories>
+            
+            <category> react </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> redux </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2017-5-20-vue全家桶+crawler+koa2 实现阴阳师小助手]]></title>
+      <url>/2017/05/20/2017-5-20-vue%E5%85%A8%E5%AE%B6%E6%A1%B6-crawler-koa2-%E5%AE%9E%E7%8E%B0%E9%98%B4%E9%98%B3%E5%B8%88%E5%B0%8F%E5%8A%A9%E6%89%8B/</url>
+      <content type="html"><![CDATA[<p>最近一直在玩阴阳师，看了好多小助手，觉得太复杂了，还得登录什么的，想着自己写一个简单的小助手，只要输入要搜索的式神，我想知道的关于这个式神的数据就能显示出来。<br>只是第一版，前端用vue全家桶实现的，很适合刚开始接触vue的，后端用node实现的，如果有更好的建议或者想一起合作写个更好用点的，欢迎联系 <a href="https://github.com/funnycoderstar/yys-fe" target="_blank" rel="external">作者</a>。<br><a id="more"></a></p>
+<h1 id="yys-fe-阴阳师小助手前端"><a href="#yys-fe-阴阳师小助手前端" class="headerlink" title="yys-fe(阴阳师小助手前端)"></a>yys-fe(阴阳师小助手前端)</h1><blockquote>
+<p>A Vue.js project</p>
+</blockquote>
+<h3 id="github"><a href="#github" class="headerlink" title="github"></a><a href="https://github.com/funnycoderstar/yys-fe" target="_blank" rel="external">github</a></h3><h3 id="项目链接"><a href="#项目链接" class="headerlink" title="项目链接"></a><a href="http://yys.wangyaxing.top/#/" target="_blank" rel="external">项目链接</a></h3><p><img src="http://upload-images.jianshu.io/upload_images/3297464-bcc37825a913c8ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h3 id="阴阳师小助手后端实现"><a href="#阴阳师小助手后端实现" class="headerlink" title="阴阳师小助手后端实现"></a><a href="https://github.com/funnycoderstar/yys-be" target="_blank" rel="external">阴阳师小助手后端实现</a></h3><ul>
+<li>nodejs + crawler + koa2 + mongoose</li>
+</ul>
+<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="http://upload-images.jianshu.io/upload_images/3297464-7c42da95d346c282.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="search.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3297464-3e76f027626a4124.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="searchResult.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3297464-c776e7602061a23a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="heroList.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3297464-c266c0669e263d00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="heroTab.png"></p>
+<h2 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h2><pre><code>- 构建工具：webpack；
+- 语言：Es6；
+- 代码规范：eslint
+- 应用：vue，
+     vuex（数据管理架构），
+     vue-router（路由），
+     mint-ui（ul组件），
+     vue-axios（vue做的ajax请求）
+</code></pre><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">|-- [build]                          //构建服务和webpack配置</div><div class="line">|-- [config]                        //项目不同环境的配置</div><div class="line">|-- [dist]                            //文件服务器根目录  </div><div class="line">|-- [node_modules]          //项目依赖</div><div class="line">|-- [src]                             //源码</div><div class="line">|   |-- [assets]                    //资源文件</div><div class="line">|   |-- [components]           //项目模块文件夹</div><div class="line">|   |-- [store]                      //存储数据</div><div class="line">|   |       |-- index.js            //vuex store 定义</div><div class="line">|   |-- App.vue                   //主页面   </div><div class="line">|   |-- main.js                     //webpack预编译入口</div><div class="line">|   |-- [router]                     //全局路由定义</div><div class="line">|-- .babelrc                       //babel配置</div><div class="line">|-- .eslintrc.js                    //eslint rule 定义</div><div class="line">|-- index.html                    //项目入口文件</div><div class="line">|-- package.json               //项目配置文件</div><div class="line">|-- README.md               //关于启动项目的命令和含义</div></pre></td></tr></table></figure>
+<h2 id="已经完成的模块"><a href="#已经完成的模块" class="headerlink" title="已经完成的模块"></a>已经完成的模块</h2><ul>
+<li style="list-style: none"><input type="checkbox" checked> 式神搜索页面(支持模糊搜索)</li>
+<li style="list-style: none"><input type="checkbox" checked> 式神搜索结果页面</li>
+<li style="list-style: none"><input type="checkbox" checked> 式神列表页面</li>
+<li style="list-style: none"><input type="checkbox" checked> 式神详细信息页面</li>
+<li>[X] 推荐御魂</li>
+<li>[X] 推荐搭配</li>
+<li>[X] 式神点评</li>
+</ul>
+<h2 id="待完成与优化"><a href="#待完成与优化" class="headerlink" title="待完成与优化"></a>待完成与优化</h2><ul>
+<li style="list-style: none"><input type="checkbox"> 搜索功能添加历史搜索和热门搜索</li>
+<li style="list-style: none"><input type="checkbox"> 式神攻略</li>
+<li style="list-style: none"><input type="checkbox"> 式神视频</li>
+<li style="list-style: none"><input type="checkbox"> 页面样式的优化</li>
+</ul>
+<h2 id="Build-Setup"><a href="#Build-Setup" class="headerlink" title="Build Setup"></a>Build Setup</h2><p>``` bash</p>
+<h1 id="install-dependencies"><a href="#install-dependencies" class="headerlink" title="install dependencies"></a>install dependencies</h1><p>npm install</p>
+<h1 id="serve-with-hot-reload-at-localhost-8080"><a href="#serve-with-hot-reload-at-localhost-8080" class="headerlink" title="serve with hot reload at localhost:8080"></a>serve with hot reload at localhost:8080</h1><p>npm run dev</p>
+<h1 id="build-for-production-with-minification"><a href="#build-for-production-with-minification" class="headerlink" title="build for production with minification"></a>build for production with minification</h1><p>npm run build</p>
+<p>关于用vue时遇到的坑，记录在我的<a href="https://github.com/funnycoderstar/blog/issues?utf8=%E2%9C%93&amp;q=vue" target="_blank" rel="external">博客</a>,希望可以对大家有用<br>目前小编在学react，所以用<a href="https://github.com/funnycoderstar/yys_v2" target="_blank" rel="external">react也写了一版</a>,所以刚开始接触react的童鞋也可以看一下，想着第二版的ui设计的好看一点儿，功能再多一点儿，期待更多的建议。</p>
+<h2 id="About"><a href="#About" class="headerlink" title="About"></a>About</h2><p><a href="http://wangyaxing.deercv.com/" target="_blank" rel="external">aboutme</a><br><a href="https://github.com/funnycoderstar" target="_blank" rel="external">github</a><br><a href="https://github.com/funnycoderstar/blog" target="_blank" rel="external">blog</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vue </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2017-05-03-排序算法]]></title>
+      <url>/2017/05/03/2017-05-03-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+      <content type="html"><![CDATA[<h3 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h3><ul>
+<li><p>冒泡算法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">bubbleSort</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; arr.length - <span class="number">1</span> - i; j++) &#123;</div><div class="line">            <span class="keyword">if</span> (arr[j] &gt; arr[j+<span class="number">1</span>]) &#123;        <span class="comment">//相邻元素两两对比</span></div><div class="line">                <span class="keyword">var</span> temp = arr[j+<span class="number">1</span>];        <span class="comment">//元素交换</span></div><div class="line">                arr[j+<span class="number">1</span>] = arr[j];</div><div class="line">                arr[j] = temp;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> arr;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(bubbleSort([<span class="number">1</span>,<span class="number">23</span>,<span class="number">4</span>,<span class="number">3</span>]));</div></pre></td></tr></table></figure>
+</li>
+<li><p>快速排序</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">quickSort</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span>(arr.length &lt;= <span class="number">1</span>) &#123;</div><div class="line">        <span class="keyword">return</span> arr;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">let</span> leftArr = [];</div><div class="line">    <span class="keyword">let</span> rightArr = [];</div><div class="line">    <span class="keyword">let</span> q = arr[<span class="number">0</span>];</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">1</span>; i&lt;arr.length;i++) &#123;</div><div class="line">        <span class="keyword">if</span>(arr[i] &gt; q) &#123;</div><div class="line">            rightArr.push(arr[i]);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            leftArr.push(arr[i]);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> [].concat(quickSort(leftArr),[q],quickSort(rightArr));</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(quickSort([<span class="number">1</span>,<span class="number">23</span>,<span class="number">4</span>,<span class="number">3</span>]));</div></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 算法 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2017-04-09-关于斐波那契数列]]></title>
+      <url>/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</url>
+      <content type="html"><![CDATA[<p>用js实现斐波那契数列<br>首先介绍一下，斐波那契数列(Fibonacci sequence)又称黄金分割数列，斐波那契数列（Fibonacci sequence），又称黄金分割数列、因数学家列昂纳多·斐波那契（Leonardoda Fibonacci）以兔子繁殖为例子而引入，故又称为“兔子数列”，指的是这样一个数列：1、1、2、3、5、8、13、21、34、……在数学上，斐波纳契数列以如下被以递归的方法定义：F(0)=1，F(1)=1, F(n)=F(n-1)+F(n-2)（n&gt;=2，n∈N*）在现代物理、准晶体结构、化学等领域，斐波纳契数列都有直接的应用，<br><a id="more"></a></p>
+<ul>
+<li><p>斐波那契数列指的是这样一个数列 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233，377，610，987，1597，2584，4181，6765，10946，17711，28657，46368……..</p>
+</li>
+<li><p>这个数列从第3项开始，每一项都等于前两项之和。</p>
+<h2 id="实现方法一"><a href="#实现方法一" class="headerlink" title="实现方法一"></a>实现方法一</h2></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fib</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span>(n === <span class="number">0</span>) &#123;</div><div class="line">         <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125; <span class="keyword">else</span>  <span class="keyword">if</span>(n ===<span class="number">1</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> fib(n<span class="number">-1</span>)+fib(n<span class="number">-2</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">以上的发法是能想到的最直观的实现，现在我们测试一下他的运行结果。</div><div class="line">fib(<span class="number">1</span>);</div><div class="line">fib(<span class="number">10</span>)</div><div class="line">fib(<span class="number">50</span>);</div><div class="line">运行发现n=<span class="number">1</span>时，会快速输出<span class="number">1</span>，n=<span class="number">10</span>,时，运行速度稍慢，但是当n=<span class="number">10</span>时，运行就非常慢，原因是什么呢，因为n=<span class="number">50</span>时，要进行差不多<span class="number">50</span>次的函数调用，每次调用，都会重新走<span class="keyword">if</span>的那三个判断条件，而且每次都是从最开始开始计算，当n越大时，性能越差，所以有没有更好的方法来实现它呢？</div></pre></td></tr></table></figure>
+<h2 id="实现方法二"><a href="#实现方法二" class="headerlink" title="实现方法二"></a>实现方法二</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fib</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span>(n === <span class="number">0</span>) &#123;</div><div class="line">         <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125; <span class="keyword">else</span>  <span class="keyword">if</span>(n ===<span class="number">1</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">let</span> a = <span class="number">0</span>, b = <span class="number">1</span>;</div><div class="line">        <span class="keyword">let</span> current = <span class="literal">null</span>;</div><div class="line">       <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">2</span>; i &lt;= n; i++) &#123;</div><div class="line">           current = b + a;</div><div class="line">           a = b;</div><div class="line">           b = current;</div><div class="line">       &#125;</div><div class="line">       <span class="keyword">return</span> current;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">方法二与方法一不同之处在于，最后一个判断加入了一个<span class="keyword">for</span>循环，current = b + a;当前享等于前两项的和，a = b;把前一项的值赋给a(第前两项)，b = current;把当前值赋给前b(第前一项)，这样当n&gt;<span class="number">1</span>时，只需要在第三个判断走一个循环可以，而不需要一直调用函数，这样做比方法一性能上优化了很多，但是还有没有更好的方法呢?</div></pre></td></tr></table></figure>
+<h2 id="实现方法三"><a href="#实现方法三" class="headerlink" title="实现方法三"></a>实现方法三</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> cache = &#123;</div><div class="line">    <span class="number">0</span>: <span class="number">0</span>,</div><div class="line">    <span class="number">1</span>: <span class="number">1</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fib</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">typeof</span> cache[n] === <span class="string">'number'</span></div><div class="line">           ? cache[n]</div><div class="line">           : cache[n] = fib(n - <span class="number">1</span>) + fib(n - <span class="number">2</span>);</div><div class="line">&#125;</div><div class="line">该方法的实现利用了缓存，这样每次计算的时候，都会把计算出的值存放到cache这个缓存中，等下次传入较大的n时，如果缓存中有需要的值，则直接用缓存中的值，这种方法大大提高了函数的性能。</div><div class="line">还存在一个问题,fib(<span class="number">10000</span>) = <span class="literal">Infinity</span>;这有是为什么呢，</div><div class="line">我们可以从js中数值的取值范围考虑，如何知道js中数值的范围呢，</div><div class="line"> <span class="built_in">console</span>.log(<span class="built_in">Number</span>.MAX_VALUE, <span class="built_in">Number</span>.MIN_VALUE); <span class="comment">//取得最大和最小的数</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Number</span>.MAX_SAFE_INTEGER, <span class="built_in">Number</span>.MIN_SAFE_INTEGER);取得最大和最小的整数</div><div class="line"><span class="number">1.7976931348623157e+308</span> <span class="number">5e-324</span></div><div class="line"><span class="number">9007199254740991</span> <span class="number">-9007199254740991</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(fib(<span class="number">400</span>));</div><div class="line"><span class="built_in">console</span>.log(fib(<span class="number">500</span>));</div><div class="line"><span class="number">1.760236806450138e+83</span></div><div class="line"><span class="number">1.394232245616977e+104</span></div><div class="line">n 在大于<span class="number">500</span>的时候差不多已超出范围</div></pre></td></tr></table></figure>
+<p>如果有更好的方法，欢迎指正</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 算法 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+</search>

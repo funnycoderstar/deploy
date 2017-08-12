@@ -3,10 +3,9 @@
   
     
     <entry>
-      <title><![CDATA[2017-08-11-小记]]></title>
-      <url>/2017/08/11/2017-08-11-%E5%B0%8F%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<p><img src="http://img.blog.csdn.net/20170810182823396?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3Vuc2hpbmU5NDAzMjY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="title"></p>
-<a id="more"></a>
+      <title><![CDATA[小记]]></title>
+      <url>/2017/08/12/2017-08-11-%E5%B0%8F%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1581250268,3885048217&amp;fm=173&amp;s=0947AB42C3E4BCEC264DC41301008093&amp;w=640&amp;h=401&amp;img.JPEG" alt="title"><br>看到了好多大佬,而且很幸运的中奖了,一个金三角的耳机~<br><a id="more"></a></p>
 ]]></content>
       
         <categories>
@@ -25,7 +24,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[2017-07-03-for in vs for of]]></title>
+      <title><![CDATA[for in vs for of]]></title>
       <url>/2017/07/03/2017-07-03-for-in-vs-for-of/</url>
       <content type="html"><![CDATA[<h3 id="for-in-和-for-of-的区别"><a href="#for-in-和-for-of-的区别" class="headerlink" title="for in 和 for of 的区别"></a>for in 和 for of 的区别</h3><ul>
 <li><p>for in 更适合遍历对象，不要使用for in 遍历数组</p>
@@ -55,7 +54,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[2017-06-23-vue中scroll的用法]]></title>
+      <title><![CDATA[vue中scroll的用法]]></title>
       <url>/2017/06/23/2017-06-23-vue-scroll/</url>
       <content type="html"><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">data () &#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    scrolled: <span class="literal">false</span></div><div class="line">  &#125;;</div><div class="line">&#125;,</div><div class="line">methods: &#123;</div><div class="line">  handleScroll () &#123;</div><div class="line">    <span class="keyword">this</span>.scrolled = <span class="built_in">window</span>.scrollY &gt; <span class="number">0</span>;</div><div class="line">  &#125;</div><div class="line">&#125;,</div><div class="line">created () &#123;</div><div class="line">  <span class="built_in">window</span>.addEventListener(<span class="string">'scroll'</span>, <span class="keyword">this</span>.handleScroll);</div><div class="line">&#125;,</div><div class="line">destroyed () &#123;</div><div class="line">  <span class="built_in">window</span>.removeEventListener(<span class="string">'scroll'</span>, <span class="keyword">this</span>.handleScroll);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 ]]></content>
@@ -76,7 +75,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[2017-06-01-函数式编程之尾调用]]></title>
+      <title><![CDATA[函数式编程之尾调用]]></title>
       <url>/2017/06/01/2017-06-01-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%B0%BE%E8%B0%83%E7%94%A8/</url>
       <content type="html"><![CDATA[<h2 id="尾调用，就是在函数的最后一步调用另一个函数"><a href="#尾调用，就是在函数的最后一步调用另一个函数" class="headerlink" title="尾调用，就是在函数的最后一步调用另一个函数"></a>尾调用，就是在函数的最后一步调用另一个函数</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">x</span>) </span>&#123;</div><div class="line">     <span class="keyword">return</span> g(x);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>尾调用不一定出现在函数尾部，只要是最后一步操作就行</p>
@@ -103,7 +102,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[2017-05-24-react-redux]]></title>
+      <title><![CDATA[react-redux]]></title>
       <url>/2017/05/24/2017-05-24-react-redux/</url>
       <content type="html"><![CDATA[<h2 id="redux"><a href="#redux" class="headerlink" title="redux"></a>redux</h2><p>redux的三个概念: action reducer store</p>
 <ul>
@@ -159,7 +158,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[2017-5-20-vue全家桶+crawler+koa2 实现阴阳师小助手]]></title>
+      <title><![CDATA[vue全家桶+crawler+koa2 实现阴阳师小助手]]></title>
       <url>/2017/05/20/2017-5-20-vue%E5%85%A8%E5%AE%B6%E6%A1%B6-crawler-koa2-%E5%AE%9E%E7%8E%B0%E9%98%B4%E9%98%B3%E5%B8%88%E5%B0%8F%E5%8A%A9%E6%89%8B/</url>
       <content type="html"><![CDATA[<p>最近一直在玩阴阳师，看了好多小助手，觉得太复杂了，还得登录什么的，想着自己写一个简单的小助手，只要输入要搜索的式神，我想知道的关于这个式神的数据就能显示出来。<br>只是第一版，前端用vue全家桶实现的，很适合刚开始接触vue的，后端用node实现的，如果有更好的建议或者想一起合作写个更好用点的，欢迎联系 <a href="https://github.com/funnycoderstar/yys-fe" target="_blank" rel="external">作者</a>。<br><a id="more"></a></p>
 <h1 id="yys-fe-阴阳师小助手前端"><a href="#yys-fe-阴阳师小助手前端" class="headerlink" title="yys-fe(阴阳师小助手前端)"></a>yys-fe(阴阳师小助手前端)</h1><blockquote>
@@ -221,7 +220,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[2017-05-03-排序算法]]></title>
+      <title><![CDATA[排序算法]]></title>
       <url>/2017/05/03/2017-05-03-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
       <content type="html"><![CDATA[<h3 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h3><ul>
 <li><p>冒泡算法</p>
@@ -249,7 +248,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[2017-04-09-关于斐波那契数列]]></title>
+      <title><![CDATA[关于斐波那契数列]]></title>
       <url>/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</url>
       <content type="html"><![CDATA[<p>用js实现斐波那契数列<br>首先介绍一下，斐波那契数列(Fibonacci sequence)又称黄金分割数列，斐波那契数列（Fibonacci sequence），又称黄金分割数列、因数学家列昂纳多·斐波那契（Leonardoda Fibonacci）以兔子繁殖为例子而引入，故又称为“兔子数列”，指的是这样一个数列：1、1、2、3、5、8、13、21、34、……在数学上，斐波纳契数列以如下被以递归的方法定义：F(0)=1，F(1)=1, F(n)=F(n-1)+F(n-2)（n&gt;=2，n∈N*）在现代物理、准晶体结构、化学等领域，斐波纳契数列都有直接的应用，<br><a id="more"></a></p>
 <ul>

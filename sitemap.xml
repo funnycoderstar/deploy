@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wangyaxing.top/about/index.html</loc>
+    
+    <lastmod>2017-08-13T15:36:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangyaxing.top/2017/08/12/2017-08-11-%E5%B0%8F%E8%AE%B0/</loc>
     
     <lastmod>2017-08-12T13:42:21.000Z</lastmod>
@@ -9,14 +16,7 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.top/about/index.html</loc>
-    
-    <lastmod>2017-08-12T13:34:45.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
+    <loc>http://wangyaxing.top/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</loc>
     
     <lastmod>2017-08-12T12:45:31.000Z</lastmod>
     
@@ -58,7 +58,7 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.top/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</loc>
+    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
     
     <lastmod>2017-08-12T12:45:31.000Z</lastmod>
     

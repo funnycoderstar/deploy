@@ -101,18 +101,17 @@
 
 
 
-<meta name="description" content="javascript函数式编程之尾调用">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="函数式编程之尾调用">
 <meta property="og:url" content="http://wangyaxing.top/2017/06/01/2017-06-01-函数式编程之尾调用/index.html">
 <meta property="og:site_name" content="funnycoderstar">
-<meta property="og:description" content="javascript函数式编程之尾调用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-12T12:45:31.000Z">
+<meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2017/bg2017022201.jpg">
+<meta property="og:updated_time" content="2017-08-22T08:20:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="函数式编程之尾调用">
-<meta name="twitter:description" content="javascript函数式编程之尾调用">
+<meta name="twitter:image" content="http://www.ruanyifeng.com/blogimg/asset/2017/bg2017022201.jpg">
 
 
 
@@ -468,10 +467,6 @@
           
 
           
-              <div class="post-description">
-                  javascript,函数式编程之尾调用
-              </div>
-          
 
         </div>
       </header>
@@ -486,7 +481,8 @@
       
 
       
-        <h2 id="尾调用，就是在函数的最后一步调用另一个函数"><a href="#尾调用，就是在函数的最后一步调用另一个函数" class="headerlink" title="尾调用，就是在函数的最后一步调用另一个函数"></a>尾调用，就是在函数的最后一步调用另一个函数</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">x</span>) </span>&#123;</div><div class="line">     <span class="keyword">return</span> g(x);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <p><img src="http://www.ruanyifeng.com/blogimg/asset/2017/bg2017022201.jpg" alt="title"><br><a id="more"></a></p>
+<h2 id="尾调用，就是在函数的最后一步调用另一个函数"><a href="#尾调用，就是在函数的最后一步调用另一个函数" class="headerlink" title="尾调用，就是在函数的最后一步调用另一个函数"></a>尾调用，就是在函数的最后一步调用另一个函数</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">x</span>) </span>&#123;</div><div class="line">     <span class="keyword">return</span> g(x);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>尾调用不一定出现在函数尾部，只要是最后一步操作就行</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">x</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (x &gt; <span class="number">0</span>) &#123;</div><div class="line">    <span class="keyword">return</span> m(x)</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> n(x);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>函数m和n都属于尾调用，他们都是函数的最后一步操作</p>

@@ -101,16 +101,19 @@
 
 
 
+<meta name="description" content="组件通信是很重要的一部分,父组件怎么传数据给子组件,子组件怎么传递数据给父组件?">
 <meta name="keywords" content="vue">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue组件通信">
 <meta property="og:url" content="http://wangyaxing.top/2017/08/29/vue组件通信/index.html">
 <meta property="og:site_name" content="funnycoderstar">
+<meta property="og:description" content="组件通信是很重要的一部分,父组件怎么传数据给子组件,子组件怎么传递数据给父组件?">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1541368-d9be1b3b39abc037?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-08-29T11:07:16.000Z">
+<meta property="og:updated_time" content="2017-09-01T05:58:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue组件通信">
+<meta name="twitter:description" content="组件通信是很重要的一部分,父组件怎么传数据给子组件,子组件怎么传递数据给父组件?">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1541368-d9be1b3b39abc037?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -444,7 +447,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  654字
+                  691字
                 </span>
               
 
@@ -481,7 +484,7 @@
       
 
       
-        <p><img src="http://upload-images.jianshu.io/upload_images/1541368-d9be1b3b39abc037?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title"><br><a id="more"></a></p>
+        <p><img src="http://upload-images.jianshu.io/upload_images/1541368-d9be1b3b39abc037?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title"><br>组件通信是很重要的一部分,父组件怎么传数据给子组件,子组件怎么传递数据给父组件?<br><a id="more"></a></p>
 <h4 id="3-子组件怎么给父组件通信"><a href="#3-子组件怎么给父组件通信" class="headerlink" title="3,子组件怎么给父组件通信"></a>3,子组件怎么给父组件通信</h4><blockquote>
 <p>1,父组件给子组件传递数据<br>vue中使用props向子组件传递数据<br>1): 子组件在props中创建一个属性,用于接收父组件传过来的值<br>2): 父组件中注册子组件<br>3): 在子组件标签中添加子组件props中创建的属性<br>4): 把需要传给子组件的值赋给该属性<br>2,子组件向父组件传递数据<br>子组件主要通过事件传递数据给父组件<br>1), 子组件中需要以某种方式,例如点击事件的方法来触发一个自定义事件<br>2),将需要传的值作为$emit的第二个参数,该值将作为实参数传给相应自定义事件的方法<br>3),在父组件中注册子组件并在子组件标签上绑定自定义事件的监听<br>3,子组件向子组件传递数据<br>vue找那个没有直接子组件对子组件传参的方法,建议将需要传递数据的在组件,都合并为一个组件,<br>如果一定需要子组件对子组件传参,可以先传到父组件,再传到子组件,为了方便开发,vue推出了一个状态管理工具vuex,可以啃方便的实现组件之间的参数传递</p>
 </blockquote>
@@ -609,7 +612,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -620,7 +623,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

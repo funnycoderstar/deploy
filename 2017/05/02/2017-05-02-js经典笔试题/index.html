@@ -110,7 +110,7 @@
 <meta property="og:description" content="面试之前都会从网上找很多面试题来看,尤其是看到经典面试题,及必会的面试题,都是好好的看上几遍(其实更多的时候都是在背),可是总感觉面试之前看题作用并不大,因为你不理解的问题,还是会不理解,面试管随便一问,就不行了.其实面试几次后就会发现,经常问的问题也就那几个,比如,闭包,原型链,this,等.刚开始的时候真的是理解不了,然后就看书,强烈推荐以及&amp;lt;你不知道的javascript系列&amp;gt;,">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2098593-15e01329776ddf2a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-09-05T15:41:06.000Z">
+<meta property="og:updated_time" content="2017-09-06T06:53:13.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端拿高薪必看面试题">
 <meta name="twitter:description" content="面试之前都会从网上找很多面试题来看,尤其是看到经典面试题,及必会的面试题,都是好好的看上几遍(其实更多的时候都是在背),可是总感觉面试之前看题作用并不大,因为你不理解的问题,还是会不理解,面试管随便一问,就不行了.其实面试几次后就会发现,经常问的问题也就那几个,比如,闭包,原型链,this,等.刚开始的时候真的是理解不了,然后就看书,强烈推荐以及&amp;lt;你不知道的javascript系列&amp;gt;,">
@@ -415,7 +415,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  2,912字
+                  2,980字
                 </span>
               
 
@@ -452,7 +452,11 @@
       
 
       
-        <p><img src="http://upload-images.jianshu.io/upload_images/2098593-15e01329776ddf2a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title"><br>面试之前都会从网上找很多面试题来看,尤其是看到经典面试题,及必会的面试题,都是好好的看上几遍(其实更多的时候都是在背),可是总感觉面试之前看题作用并不大,因为你不理解的问题,还是会不理解,面试管随便一问,就不行了.其实面试几次后就会发现,经常问的问题也就那几个,比如,闭包,原型链,this,等.刚开始的时候真的是理解不了,然后就看书,强烈推荐<javascript高级程序设计(第三版)>以及&lt;你不知道的javascript系列&gt;,在实际项目中遇到坑的时候,就反复看,看的时候很难受,但是当真正理解了之后,就会恍然大悟,所以功夫还是下在平时,临时抱佛脚真的没啥用~<br><a id="more"></a></javascript高级程序设计(第三版)></p>
+        <p><img src="http://upload-images.jianshu.io/upload_images/2098593-15e01329776ddf2a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title"><br>面试之前都会从网上找很多面试题来看,尤其是看到经典面试题,及必会的面试题,都是好好的看上几遍(其实更多的时候都是在背),可是总感觉面试之前看题作用并不大,因为你不理解的问题,还是会不理解,面试管随便一问,就不行了.其实面试几次后就会发现,经常问的问题也就那几个,比如,闭包,原型链,this,等.刚开始的时候真的是理解不了,然后就看书,强烈推荐<javascript高级程序设计(第三版)>以及&lt;你不知道的javascript系列&gt;,在实际项目中遇到坑的时候,就反复看,看的时候很难受,但是当真正理解了之后,就会恍然大悟,所以功夫还是下在平时,临时抱佛脚真的没啥用~</javascript高级程序设计(第三版)></p>
+<blockquote>
+<p>以下是我总结的面试题中常问到的,很多都是<code>我亲身经历的面试</code>中遇到的一些问题,刚开始遇到的时候也不是太清楚,面试完之后就深入的学习了一下相关的知识😜</p>
+</blockquote>
+<a id="more"></a>
 <h3 id="1-考察this"><a href="#1-考察this" class="headerlink" title="1,考察this"></a>1,考察this</h3> <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> length = <span class="number">10</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.length);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">  length: <span class="number">5</span>,</div><div class="line">  method: <span class="function"><span class="keyword">function</span>(<span class="params">fn</span>) </span>&#123;</div><div class="line">    fn();</div><div class="line">    <span class="built_in">arguments</span>[<span class="number">0</span>]();</div><div class="line">  &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">obj.method(fn, <span class="number">1</span>);</div></pre></td></tr></table></figure>
 <ul>
 <li>10 ，2</li>
@@ -683,7 +687,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -694,7 +698,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -705,7 +709,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

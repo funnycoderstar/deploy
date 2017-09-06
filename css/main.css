@@ -1814,7 +1814,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3d36ff;
+  background: #fcffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3052,4 +3052,26 @@ body {
 }
 .site-brand-wrapper {
   background-color: #ffd39b;
+}
+#selfPhoto .fancybox img {
+  background: #fff;
+  display: inline-block !important;
+  float: left;
+  margin: 15px;
+  padding: 5px;
+  -webkit-box-shadow: none;
+  width: 260px;
+  border-radius: 5px;
+}
+#selfPhoto .clear:before {
+  display: block;
+  clear: both;
+  content: '';
+}
+.comments {
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcc;
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 100px;
 }

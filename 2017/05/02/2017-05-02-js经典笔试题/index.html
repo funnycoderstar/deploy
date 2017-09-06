@@ -110,7 +110,7 @@
 <meta property="og:description" content="面试之前都会从网上找很多面试题来看,尤其是看到经典面试题,及必会的面试题,都是好好的看上几遍(其实更多的时候都是在背),可是总感觉面试之前看题作用并不大,因为你不理解的问题,还是会不理解,面试管随便一问,就不行了.其实面试几次后就会发现,经常问的问题也就那几个,比如,闭包,原型链,this,等.刚开始的时候真的是理解不了,然后就看书,强烈推荐以及&amp;lt;你不知道的javascript系列&amp;gt;,">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2098593-15e01329776ddf2a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-08-29T11:19:53.000Z">
+<meta property="og:updated_time" content="2017-09-05T15:41:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端拿高薪必看面试题">
 <meta name="twitter:description" content="面试之前都会从网上找很多面试题来看,尤其是看到经典面试题,及必会的面试题,都是好好的看上几遍(其实更多的时候都是在背),可是总感觉面试之前看题作用并不大,因为你不理解的问题,还是会不理解,面试管随便一问,就不行了.其实面试几次后就会发现,经常问的问题也就那几个,比如,闭包,原型链,this,等.刚开始的时候真的是理解不了,然后就看书,强烈推荐以及&amp;lt;你不知道的javascript系列&amp;gt;,">
@@ -261,16 +261,6 @@
               <i class="menu-item-icon fa fa-fw fa-image"></i> <br />
             
             相册
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-essay">
-          <a href="/essay/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />
-            
-            随笔
           </a>
         </li>
       
@@ -425,7 +415,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  2,576字
+                  2,912字
                 </span>
               
 
@@ -441,7 +431,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  11分钟
+                  12分钟
                 </span>
               
             </div>
@@ -551,10 +541,24 @@
 <li>第一次挥手：主动关闭方发送一个FIN，用来关闭主动方到被动关闭方的数据传送，也就是主动关闭方告诉被动关闭方：我已经不 会再给你发数据了(当然，在fin包之前发送出去的数据，如果没有收到对应的ack确认报文，主动关闭方依然会重发这些数据)，但是，此时主动关闭方还可 以接受数据。</li>
 <li>第二次挥手：被动关闭方收到FIN包后，发送一个ACK给对方，确认序号为收到序号+1（与SYN相同，一个FIN占用一个序号）。</li>
 <li>第三次挥手：被动关闭方发送一个FIN，用来关闭被动关闭方到主动关闭方的数据传送，也就是告诉主动关闭方，我的数据也发送完了，不会再给你发数据了。</li>
-<li>第四次挥手：主动关闭方收到FIN后，发送一个ACK给被动关闭方，确认序号为收到序号+1，至此，完成四次挥手。</li>
+<li>第四次挥手：主动关闭方收到FIN后，发送一个ACK给被动关闭方，确认序号为收到序号+1，至此，完成四次挥手。<h3 id="17-new操作符到底干了什么-深入了解"><a href="#17-new操作符到底干了什么-深入了解" class="headerlink" title="17, new操作符到底干了什么?深入了解"></a>17, new操作符到底干了什么?<a href="http://www.cnblogs.com/onepixel/p/5043523.html" target="_blank" rel="external">深入了解</a></h3></li>
+<li>1,创建一个空对象,而且this变量引用该对象,同时还继承了该函数的原型.</li>
+<li>2,属性和方法被加入到this引用的对象中,</li>
+<li>3,新创建的对象由this所引用,而且最后隐式的返回this<h3 id="18-null和undefined的区别"><a href="#18-null和undefined的区别" class="headerlink" title="18, null和undefined的区别?"></a>18, null和undefined的区别?</h3></li>
+</ul>
+<p>undefined</p>
+<ul>
+<li>(1)变量被声明了,但是没有赋值,就等于undefined</li>
+<li>(2)调用函数时,应该提供的参数没有提供,该参数等于undefined</li>
+<li>(3)对象没有赋值的属性,该属性的值为undefined</li>
+<li>(4)函数没有返回值时,默认返回undefined<br>null</li>
+<li>(1)作为函数的参数,表示该函数的参数不是对象</li>
+<li>(2)作为对象原型链的终点</li>
 </ul>
 </blockquote>
-<h4 id="17-参考"><a href="#17-参考" class="headerlink" title="17,参考"></a>17,参考</h4><p><a href="http://www.cnblogs.com/zichi/p/4359786.html" target="_blank" rel="external">这10道javaScript笔试题你都会么</a><br><a href="https://segmentfault.com/a/1190000007602848" target="_blank" rel="external">正则</a><br><a href="http://www.cnblogs.com/xxcanghai/p/5205998.html" target="_blank" rel="external">2016年十家公司面试小记</a><br><a href="http://www.alloyteam.com/2012/11/javascript-throttle/" target="_blank" rel="external">浅谈javascript的函数节流</a><br><a href="https://github.com/jayli/jayli.github.com/issues/19" target="_blank" rel="external">面试题1</a><br><a href="https://github.com/hawx1993/Front-end-Interview-questions" target="_blank" rel="external">面试题2</a><br><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Chinese" target="_blank" rel="external">面试题3</a><br><a href="https://github.com/jawil/blog/issues/22" target="_blank" rel="external">html与css</a><br><a href="https://segmentfault.com/a/1190000010631325?_ea=2359607" target="_blank" rel="external">道阻且长啊TAT(前端面试总结),17年春招面试总结</a></p>
+<h3 id="19-js的基本数据类型"><a href="#19-js的基本数据类型" class="headerlink" title="19, js的基本数据类型"></a>19, js的基本数据类型</h3><p>Number,String,Boolean,Null, Undefined,Object,Symbol</p>
+<h3 id="20-DOM怎样添加-移除-复制-和创建节点"><a href="#20-DOM怎样添加-移除-复制-和创建节点" class="headerlink" title="20,DOM怎样添加,移除,复制,和创建节点"></a>20,DOM怎样添加,移除,复制,和创建节点</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 创建新节点</span></div><div class="line">createDocumentFragment(); <span class="comment">// 创建一个DOM片段</span></div><div class="line">createElement(); <span class="comment">// 创建一个具体的元素</span></div><div class="line">createTextNode(); <span class="comment">// 创建一个文本节点</span></div><div class="line"><span class="comment">//添加,移除,替换</span></div><div class="line">appendChild()</div><div class="line">removeChild()</div><div class="line">replaceChild()</div><div class="line">insertBefore() <span class="comment">// 在已有的子节点前插入一个新的子节点</span></div><div class="line"><span class="comment">// 查找</span></div><div class="line">getElementByTagName() <span class="comment">// 通过标签名称</span></div><div class="line">getElementByName() <span class="comment">// 通过元素的Name属性的值(IE容错能力较强，会得到一个数组，其中包括id等于name值的)</span></div><div class="line">getElementById() <span class="comment">// 通过元素ID,唯一性</span></div></pre></td></tr></table></figure>
+<h4 id="参考总结"><a href="#参考总结" class="headerlink" title="参考总结"></a>参考总结</h4><p><a href="http://www.cnblogs.com/zichi/p/4359786.html" target="_blank" rel="external">这10道javaScript笔试题你都会么</a><br><a href="https://segmentfault.com/a/1190000007602848" target="_blank" rel="external">正则</a><br><a href="http://www.cnblogs.com/xxcanghai/p/5205998.html" target="_blank" rel="external">2016年十家公司面试小记</a><br><a href="http://www.alloyteam.com/2012/11/javascript-throttle/" target="_blank" rel="external">浅谈javascript的函数节流</a><br><a href="https://github.com/jayli/jayli.github.com/issues/19" target="_blank" rel="external">面试题1</a><br><a href="https://github.com/hawx1993/Front-end-Interview-questions" target="_blank" rel="external">面试题2</a><br><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Chinese" target="_blank" rel="external">面试题3</a><br><a href="https://github.com/jawil/blog/issues/22" target="_blank" rel="external">html与css</a><br><a href="https://segmentfault.com/a/1190000010631325?_ea=2359607" target="_blank" rel="external">道阻且长啊TAT(前端面试总结),17年春招面试总结</a></p>
 <h2 id="About"><a href="#About" class="headerlink" title="About"></a>About</h2><p><a href="http://wangyaxing.deercv.com/" target="_blank" rel="external">aboutme</a><br><a href="https://github.com/funnycoderstar" target="_blank" rel="external">github</a><br><a href="http://wangyaxing.top/">blog</a></p>
 
       
@@ -760,7 +764,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-考察this"><span class="nav-number">1.</span> <span class="nav-text">1,考察this</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-var和函数的提前声明"><span class="nav-number">2.</span> <span class="nav-text">2,var和函数的提前声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3，局部变量和全局变量"><span class="nav-number">3.</span> <span class="nav-text">3，局部变量和全局变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4，变量隐式声明"><span class="nav-number">4.</span> <span class="nav-text">4，变量隐式声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5，给基本类型数据添加属性，不报错，但取值时是undefined"><span class="nav-number">5.</span> <span class="nav-text">5，给基本类型数据添加属性，不报错，但取值时是undefined</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6，函数声明优先于变量声明"><span class="nav-number">5.1.</span> <span class="nav-text">6，函数声明优先于变量声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-判断一个字符串中出现次数最多的字符，并统计次数"><span class="nav-number">5.2.</span> <span class="nav-text">7,判断一个字符串中出现次数最多的字符，并统计次数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8，-经典闭包"><span class="nav-number">5.3.</span> <span class="nav-text">8， 经典闭包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9，请编写一个JavaScript函数-parseQueryString，它的用途是把URL参数解析为一个对象，如：-var-url-“http-witmax-cn-index-php-key0-0-amp-key1-1-amp-key2-2″"><span class="nav-number">5.4.</span> <span class="nav-text">9，请编写一个JavaScript函数 parseQueryString，它的用途是把URL参数解析为一个对象，如： var url = “http://witmax.cn/index.php?key0=0&key1=1&key2=2″</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-this"><span class="nav-number">5.5.</span> <span class="nav-text">10,this</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11，数组方法"><span class="nav-number">5.6.</span> <span class="nav-text">11，数组方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-求一个字符串的字节长度"><span class="nav-number">5.7.</span> <span class="nav-text">12,求一个字符串的字节长度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-jsonp原理及过程"><span class="nav-number">5.8.</span> <span class="nav-text">13 jsonp原理及过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-link和-import区别"><span class="nav-number">5.9.</span> <span class="nav-text">14, link和@import区别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-一个页面从输入url到页面加载显示完成-这个过程都发生了什么"><span class="nav-number">6.</span> <span class="nav-text">15,一个页面从输入url到页面加载显示完成,这个过程都发生了什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-TCP传输的三次握手四次挥手策略"><span class="nav-number">7.</span> <span class="nav-text">16,TCP传输的三次握手四次挥手策略</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#17-参考"><span class="nav-number">7.1.</span> <span class="nav-text">17,参考</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#About"><span class="nav-number"></span> <span class="nav-text">About</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-考察this"><span class="nav-number">1.</span> <span class="nav-text">1,考察this</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-var和函数的提前声明"><span class="nav-number">2.</span> <span class="nav-text">2,var和函数的提前声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3，局部变量和全局变量"><span class="nav-number">3.</span> <span class="nav-text">3，局部变量和全局变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4，变量隐式声明"><span class="nav-number">4.</span> <span class="nav-text">4，变量隐式声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5，给基本类型数据添加属性，不报错，但取值时是undefined"><span class="nav-number">5.</span> <span class="nav-text">5，给基本类型数据添加属性，不报错，但取值时是undefined</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6，函数声明优先于变量声明"><span class="nav-number">5.1.</span> <span class="nav-text">6，函数声明优先于变量声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-判断一个字符串中出现次数最多的字符，并统计次数"><span class="nav-number">5.2.</span> <span class="nav-text">7,判断一个字符串中出现次数最多的字符，并统计次数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8，-经典闭包"><span class="nav-number">5.3.</span> <span class="nav-text">8， 经典闭包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9，请编写一个JavaScript函数-parseQueryString，它的用途是把URL参数解析为一个对象，如：-var-url-“http-witmax-cn-index-php-key0-0-amp-key1-1-amp-key2-2″"><span class="nav-number">5.4.</span> <span class="nav-text">9，请编写一个JavaScript函数 parseQueryString，它的用途是把URL参数解析为一个对象，如： var url = “http://witmax.cn/index.php?key0=0&key1=1&key2=2″</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-this"><span class="nav-number">5.5.</span> <span class="nav-text">10,this</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11，数组方法"><span class="nav-number">5.6.</span> <span class="nav-text">11，数组方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-求一个字符串的字节长度"><span class="nav-number">5.7.</span> <span class="nav-text">12,求一个字符串的字节长度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-jsonp原理及过程"><span class="nav-number">5.8.</span> <span class="nav-text">13 jsonp原理及过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-link和-import区别"><span class="nav-number">5.9.</span> <span class="nav-text">14, link和@import区别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-一个页面从输入url到页面加载显示完成-这个过程都发生了什么"><span class="nav-number">6.</span> <span class="nav-text">15,一个页面从输入url到页面加载显示完成,这个过程都发生了什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-TCP传输的三次握手四次挥手策略"><span class="nav-number">7.</span> <span class="nav-text">16,TCP传输的三次握手四次挥手策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-new操作符到底干了什么-深入了解"><span class="nav-number">8.</span> <span class="nav-text">17, new操作符到底干了什么?深入了解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-null和undefined的区别"><span class="nav-number">9.</span> <span class="nav-text">18, null和undefined的区别?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19-js的基本数据类型"><span class="nav-number">10.</span> <span class="nav-text">19, js的基本数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20-DOM怎样添加-移除-复制-和创建节点"><span class="nav-number">11.</span> <span class="nav-text">20,DOM怎样添加,移除,复制,和创建节点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参考总结"><span class="nav-number">11.1.</span> <span class="nav-text">参考总结</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#About"><span class="nav-number"></span> <span class="nav-text">About</span></a></div>
             
 
           </div>

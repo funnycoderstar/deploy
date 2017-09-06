@@ -4,8 +4,26 @@
 
     
   <url>
+    <loc>http://wangyaxing.top/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2017-09-05T15:41:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端拿高薪必看面试题</title>
+        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://wangyaxing.top/2017/09/01/wxapp/</loc>
-    <lastmod>2017-09-01T07:33:39.000Z</lastmod>
+    <lastmod>2017-09-05T06:26:53.000Z</lastmod>
     <data>
         <display>
         <title>总结微信小程序开发中遇到的坑</title>
@@ -15,6 +33,26 @@
          
          
            
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/08/29/vue%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</loc>
+    <lastmod>2017-09-02T14:42:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>vue组件通信</title>
+        <pubTime>2017-08-29T10:48:41.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
         </display>
     </data>
     </url>
@@ -121,26 +159,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/08/29/vue%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</loc>
-    <lastmod>2017-09-01T05:58:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>vue组件通信</title>
-        <pubTime>2017-08-29T10:48:41.000Z</pubTime>
-        
-        <tag>vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.top/2017/08/29/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-09-01T05:57:19.000Z</lastmod>
     <data>
@@ -155,23 +173,6 @@
              
               <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2017-08-29T11:19:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>前端拿高薪必看面试题</title>
-        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
         </display>
     </data>
     </url>
@@ -336,7 +337,6 @@
     </data>
     </url>
 
-    
     
     
     

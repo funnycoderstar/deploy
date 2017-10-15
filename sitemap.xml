@@ -2,28 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://wangyaxing.top/2017/09/27/css%E5%AE%9E%E7%8E%B0toolTip/</loc>
+    <loc>http://wangyaxing.top/2017/10/14/mongoDB/</loc>
     
-    <lastmod>2017-09-27T04:53:31.000Z</lastmod>
+    <lastmod>2017-10-15T13:39:29.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/2017/10/12/2017-10-12-git/</loc>
+    
+    <lastmod>2017-10-15T13:35:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/2017/09/08/%E8%A2%AB%E9%AA%97%E8%AE%B0%E2%80%98/</loc>
+    
+    <lastmod>2017-10-15T13:35:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/2017/10/09/2017-10-09-%E5%9B%BD%E5%BA%86%E8%8A%82/</loc>
+    
+    <lastmod>2017-10-15T13:34:30.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/photo/index.html</loc>
+    
+    <lastmod>2017-10-15T13:33:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/2017/10/15/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1history-vs-hash/</loc>
+    
+    <lastmod>2017-10-15T09:49:00.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://wangyaxing.top/2017/09/17/Mac%E4%B8%8B%E8%BF%90%E8%A1%8CRocket-chat/</loc>
     
-    <lastmod>2017-09-20T04:32:46.000Z</lastmod>
+    <lastmod>2017-10-15T09:40:29.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
+    <loc>http://wangyaxing.top/2017/08/12/2017-08-11-%E5%B0%8F%E8%AE%B0/</loc>
     
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    <lastmod>2017-10-15T07:04:52.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wangyaxing.top/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
+    <loc>http://wangyaxing.top/2017/09/27/css%E5%AE%9E%E7%8E%B0toolTip/</loc>
+    
+    <lastmod>2017-09-27T05:01:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/2017/05/20/2017-5-20-vue%E5%85%A8%E5%AE%B6%E6%A1%B6-crawler-koa2-%E5%AE%9E%E7%8E%B0%E9%98%B4%E9%98%B3%E5%B8%88%E5%B0%8F%E5%8A%A9%E6%89%8B/</loc>
     
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     
@@ -37,35 +79,14 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.top/2017/06/23/2017-06-23-vue-scroll/</loc>
-    
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.top/2017/07/03/2017-07-03-for-in-vs-for-of/</loc>
-    
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.top/2017/08/12/2017-08-11-%E5%B0%8F%E8%AE%B0/</loc>
-    
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.top/2017/05/20/2017-5-20-vue%E5%85%A8%E5%AE%B6%E6%A1%B6-crawler-koa2-%E5%AE%9E%E7%8E%B0%E9%98%B4%E9%98%B3%E5%B8%88%E5%B0%8F%E5%8A%A9%E6%89%8B/</loc>
-    
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wangyaxing.top/2017/09/06/css%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%B8%85%E9%99%A4/</loc>
+    
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
     
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     
@@ -79,14 +100,14 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.top/2017/08/27/js%E7%9A%84%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/</loc>
+    <loc>http://wangyaxing.top/2017/08/27/js%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</loc>
     
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wangyaxing.top/2017/08/27/js%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</loc>
+    <loc>http://wangyaxing.top/2017/06/23/2017-06-23-vue-scroll/</loc>
     
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     
@@ -100,21 +121,7 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.top/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</loc>
-    
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.top/2017/08/23/vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8F%98%E5%8C%96/</loc>
-    
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.top/2017/08/29/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/</loc>
+    <loc>http://wangyaxing.top/2017/07/03/2017-07-03-for-in-vs-for-of/</loc>
     
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     
@@ -128,7 +135,28 @@
   </url>
   
   <url>
+    <loc>http://wangyaxing.top/2017/08/23/vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8F%98%E5%8C%96/</loc>
+    
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangyaxing.top/2017/09/06/vue%E7%BB%84%E4%BB%B6%E4%B9%8Bkeep-alive/</loc>
+    
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/2017/08/29/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</loc>
     
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     
@@ -149,28 +177,14 @@
   </url>
   
   <url>
+    <loc>http://wangyaxing.top/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
+    
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangyaxing.top/2017/08/20/%E6%8F%AD%E5%BC%80vue%E7%A5%9E%E7%A7%98%E9%9D%A2%E7%BA%B1/</loc>
-    
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.top/2017/09/08/%E8%A2%AB%E9%AA%97%E8%AE%B0%E2%80%98/</loc>
-    
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.top/categories/index.html</loc>
-    
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.top/essay/index.html</loc>
     
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     
@@ -184,7 +198,14 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.top/photo/index.html</loc>
+    <loc>http://wangyaxing.top/essay/index.html</loc>
+    
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/categories/index.html</loc>
     
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     
@@ -192,6 +213,13 @@
   
   <url>
     <loc>http://wangyaxing.top/tags/index.html</loc>
+    
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.top/2017/08/27/js%E7%9A%84%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/</loc>
     
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     

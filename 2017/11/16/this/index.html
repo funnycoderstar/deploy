@@ -108,7 +108,7 @@
 <meta property="og:site_name" content="funnycoderstar">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://s2.51cto.com/wyfs02/M00/88/9A/wKioL1f83IXiORmNAAC9J-tzq-k871.jpg-wh_651x-s_1446494838.jpg">
-<meta property="og:updated_time" content="2017-11-16T14:12:26.000Z">
+<meta property="og:updated_time" content="2017-11-17T14:28:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="两句话理解js中的this">
 <meta name="twitter:image" content="http://s2.51cto.com/wyfs02/M00/88/9A/wKioL1f83IXiORmNAAC9J-tzq-k871.jpg-wh_651x-s_1446494838.jpg">
@@ -433,7 +433,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  419字
+                  869字
                 </span>
               
 
@@ -449,7 +449,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  2分钟
+                  4分钟
                 </span>
               
             </div>
@@ -492,6 +492,16 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">// &#123;&#125;</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">test(); <span class="comment">//global</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
+<h2 id="来两道题检查你是否掌握了"><a href="#来两道题检查你是否掌握了" class="headerlink" title="来两道题检查你是否掌握了"></a>来两道题检查你是否掌握了</h2><h4 id="example1"><a href="#example1" class="headerlink" title="example1"></a>example1</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> length = <span class="number">10</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</div><div class="line"> <span class="built_in">console</span>.log(<span class="keyword">this</span>.length);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span>  obj = &#123;</div><div class="line">    length: <span class="number">5</span>,</div><div class="line">    method: <span class="function"><span class="keyword">function</span>(<span class="params">fn</span>) </span>&#123;</div><div class="line">    fn();</div><div class="line">    <span class="built_in">arguments</span>[<span class="number">0</span>]();</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">obj.method(fn, <span class="number">1</span>);</div></pre></td></tr></table></figure>
+<p>输出 10, 2</p>
+<p>刚开始看到这道题我也是蒙蒙的,现在也终于理解了,<br>method这个函数传入了两个参数,一个参数为fn(),fn()为普通函数,this指向函数的调用者,此时指向全局(也可以看这个函数前面没有<code>点</code>),所以运行结果为10,arguments是函数的所有参数,是一个类数组的对象,arguments<a href="">0</a>,可以看成是arguments.0(),调用这个函数的是arguments,此时this就是指<code>arguments</code>,this.length就是angument.length,就是传入的参数的总个数2</p>
+<p>注: 上面例子在node环境中的运行结果为 undefined 2, <code>const length = 10</code>改成<code>global.length = 10;</code>是因为node环境下定义在全局的变量不会绑定到global,浏览器也会自动绑定到全局环境window</p>
+<p>改成下面这样结果又是什么呢?<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> length = <span class="number">10</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.length);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> obj = &#123;</div><div class="line">    length: <span class="number">5</span>,</div><div class="line">    method: <span class="function"><span class="keyword">function</span>(<span class="params">fn</span>) </span>&#123;</div><div class="line">        fn();</div><div class="line">        <span class="keyword">const</span> fun = <span class="built_in">arguments</span>[<span class="number">0</span>];</div><div class="line">        fun()；</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">obj.method(fn, <span class="number">1</span>);</div></pre></td></tr></table></figure></p>
+<p>10, 10</p>
+<h4 id="example-2"><a href="#example-2" class="headerlink" title="example 2"></a>example 2</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.val = <span class="number">1</span>;</div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    val: <span class="number">2</span>,</div><div class="line">    dbl: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">this</span>.val *= <span class="number">2</span>;</div><div class="line">        val *= <span class="number">2</span>;</div><div class="line">        <span class="built_in">console</span>.log(val);</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.val);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">obj.dbl(); <span class="comment">// 2 4</span></div><div class="line"><span class="keyword">var</span> func = obj.dbl;</div><div class="line">func(); <span class="comment">// 8 8</span></div></pre></td></tr></table></figure>
+<p>这个就是有点绕了,不过一步步来分析就很容易理解了:</p>
+<p><code>obj.dbl()</code>;执行这行代码时，this指的是<code>obj</code>，所以<code>this.val === obj.val*=2</code>,最后结果为<code>4</code>,<code>val*=2 === window.val *= 2</code>，最后结果是<code>2</code></p>
+<p><code>func()</code>，执行这行代码时，<code>func()</code>没有任何前缀，<code>this</code>指的是<code>window.func()</code>;所以此时this值得是<code>window</code>，<code>this.val === window.val *= 2</code>,此时<code>window.val</code> 为<code>4</code>，<code>val*=2 === window.val *2</code>,最后结果为<code>8</code>，最后<code>console.log(this.val)</code>,与<code>console.log(val)</code>,指的都是<code>window.val</code>，最后结果都是<code>8</code></p>
 
       
     </div>
@@ -622,7 +632,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -633,7 +643,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -647,12 +657,12 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/funnycoderstar" target="_blank" title="GitHub">
+                <a href="https://github.com/funnycoderstar" target="_blank" title="gitHub">
                   
                     <i class="fa fa-fw fa-github"></i>
                   
                     
-                      GitHub
+                      gitHub
                     
                 </a>
               </span>
@@ -660,10 +670,32 @@
               <span class="links-of-author-item">
                 <a href="http://www.jianshu.com/u/92fec6da2d1a" target="_blank" title="简书">
                   
-                    <i class="fa fa-fw fa-globe"></i>
+                    <i class="fa fa-fw fa-compass"></i>
                   
                     
                       简书
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://juejin.im/user/58c6a15544d9040068046025" target="_blank" title="掘金">
+                  
+                    <i class="fa fa-fw fa-pencil"></i>
+                  
+                    
+                      掘金
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://hacknical.com/resume/S1VKezRp-?locale=zh" target="_blank" title="简历">
+                  
+                    <i class="fa fa-fw fa-user-md"></i>
+                  
+                    
+                      简历
                     
                 </a>
               </span>
@@ -692,7 +724,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#this的指向"><span class="nav-number">1.</span> <span class="nav-text">this的指向</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#补充知识点"><span class="nav-number">1.1.</span> <span class="nav-text">补充知识点</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#this的指向"><span class="nav-number">1.</span> <span class="nav-text">this的指向</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#补充知识点"><span class="nav-number">1.1.</span> <span class="nav-text">补充知识点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#来两道题检查你是否掌握了"><span class="nav-number">1.2.</span> <span class="nav-text">来两道题检查你是否掌握了</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#example1"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">example1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#example-2"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">example 2</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>

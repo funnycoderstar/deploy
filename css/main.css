@@ -1814,7 +1814,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #71ffc9;
+  background: #678203;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3076,6 +3076,9 @@ body {
   -webkit-box-shadow: none;
   width: 260px;
   border-radius: 5px;
+}
+.posts-expand .post-body img {
+  border: 0 !important;
 }
 #selfPhoto .clear:before {
   display: block;

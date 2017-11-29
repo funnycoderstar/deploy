@@ -110,8 +110,8 @@
 <meta property="og:description" content="引言: 本篇文章主要总结了一些javascript中特别基础的内容,主要涉及到DOM0级和DOM2级事件,事件流, 事件委托, 判断变量的类型每次被问到,总是能想起一点,但是也总记不全,所以遇到这种情况的时候,就简单的记录一下.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://oo4xdz5i0.bkt.clouddn.com/zhuangzhu.png">
-<meta property="og:image" content="https://www.w3.org/TR/DOM-Level-3-Events/images/eventflow.svg">
-<meta property="og:updated_time" content="2017-11-29T00:53:19.000Z">
+<meta property="og:image" content="http://oo4xdz5i0.bkt.clouddn.com/event.jpg">
+<meta property="og:updated_time" content="2017-11-29T01:13:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript中基础但是很容易忽略的点(一)">
 <meta name="twitter:description" content="引言: 本篇文章主要总结了一些javascript中特别基础的内容,主要涉及到DOM0级和DOM2级事件,事件流, 事件委托, 判断变量的类型每次被问到,总是能想起一点,但是也总记不全,所以遇到这种情况的时候,就简单的记录一下.">
@@ -437,7 +437,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,595字
+                  1,502字
                 </span>
               
 
@@ -491,11 +491,12 @@
 <blockquote>
 <p>addEventListener()可以为元素添加多个处理程序函数,触发时按照添加顺序依次调用;removeEventLister()不能移除匿名添加的函数</p>
 </blockquote>
-<h3 id="DOM0级事件和DOM2级事件的区别-1"><a href="#DOM0级事件和DOM2级事件的区别-1" class="headerlink" title="DOM0级事件和DOM2级事件的区别"></a>DOM0级事件和DOM2级事件的区别</h3><p>DOM0级只能覆盖，不会连续触发！<br>像上面把onclick写在标签内，都是dom0级事件，fn和fn1依次执行; 第二种获取元素，绑定onclick事件也是dom0级，第二个会覆盖第一个onclick，也会覆盖行内的onclick，只会弹出222。<br>以上的绑定都属于dom2级事件绑定，前面两种都是jq的绑定方式，后面都是原生js的绑定方式，不会覆盖，会依次执行jq的绑定方法和原生的绑定方法，这就是于dom0级的去别处；</p>
+<h3 id="DOM0级事件和DOM2级事件的区别-1"><a href="#DOM0级事件和DOM2级事件的区别-1" class="headerlink" title="DOM0级事件和DOM2级事件的区别"></a>DOM0级事件和DOM2级事件的区别</h3><p>在一个标签上绑定多个事件处理程序,DOM0级只能覆盖,不会连续触发,但是DOM2级事件就不会出现这样的情况,它不会被覆盖,而且会连续触发</p>
 <h2 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h2><ul>
 <li>事件冒泡: 事件开始时是从最具体的元素接受,然后逐级向上传播: 比如点击了div, div-&gt;body-&gt;html-&gt;Document</li>
-<li>事件捕获: 和事件冒泡相反,从最外面的元素向下传播: 比如同样点击了div: Document-&gt;html-&gt;body-&gt;div<br>“DOM2级事件”，规定的事件流包括三个阶段：事件捕获阶段、处于目标阶段和事件冒泡阶段。首先是事件捕获阶段；然后是实际的目标接收到事件。最后一个阶段是冒泡阶段，可以在这个阶段对事件作出相应。<br><img src="https://www.w3.org/TR/DOM-Level-3-Events/images/eventflow.svg" alt="事件流"><br>所有的浏览器都支持冒泡,我们通常使用事件冒泡,很少使用事件捕获</li>
+<li>事件捕获: 和事件冒泡相反,从最外面的元素向下传播: 比如同样点击了div: Document-&gt;html-&gt;body-&gt;div</li>
 </ul>
+<p>事件流包括三个阶段：事件捕获阶段、处于目标阶段和事件冒泡阶段。首先是事件捕获阶段；然后是实际的目标接收到事件。最后一个阶段是冒泡阶段，可以在这个阶段对事件作出相应。<br><img src="http://oo4xdz5i0.bkt.clouddn.com/event.jpg" alt="事件流"><br>所有的浏览器都支持冒泡,我们通常使用事件冒泡,很少使用事件捕获</p>
 <h2 id="事件委托-事件代理-及使用场景"><a href="#事件委托-事件代理-及使用场景" class="headerlink" title="事件委托(事件代理)及使用场景"></a>事件委托(事件代理)及使用场景</h2><h3 id="事件委托原理"><a href="#事件委托原理" class="headerlink" title="事件委托原理:"></a>事件委托原理:</h3><p>事件冒泡</p>
 <h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景:"></a>使用场景:</h3><p>DOM需要事件处理程序,一般都是直接给她这种事件处理程序;但是有很多个DOM需要添加相同的事件处理程序呢,比如,每个li都有相同的click事件,如果按照之前的做法,用for循环,给每个元素添加事件,可想而知,会出现什么样的问题;</p>
 <p>javascript中,添加到页面上的事件程序直接影响到页面整体运行性能,因为需要不断的与DOM节点进行及哦啊胡,访问DOM次数越多,引起<a href="http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html" target="_blank" rel="external">浏览器重绘与重排</a>的次数也就越多,就会延长整个页面的交互准备时间,这就是为什么性能优化的重要思想之一就是减少DOM操作的原因;<br>每个函数都是一个对象,是对象就会占用内存,对象越多,内存占用率就越大,自然性能就越差;</p>

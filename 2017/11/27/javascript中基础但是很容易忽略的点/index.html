@@ -85,7 +85,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="王亚星,wangyaxing,前端,前端工程师,博客,react,vue,微信小程序" />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -101,16 +101,21 @@
 
 
 
-<meta name="description" content="前端小码农">
-<meta property="og:type" content="website">
-<meta property="og:title" content="funnycoderstar">
-<meta property="og:url" content="http://wangyaxing.top/categories/算法/index.html">
+<meta name="description" content="引言: 本篇文章主要总结了一些javascript中特别基础的内容,主要涉及到DOM0级和DOM2级事件,事件流, 事件委托, 判断变量的类型每次被问到,总是能想起一点,但是也总记不全,所以遇到这种情况的时候,就简单的记录一下.">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript中基础但是很容易忽略的点(一)">
+<meta property="og:url" content="http://wangyaxing.top/2017/11/27/javascript中基础但是很容易忽略的点/index.html">
 <meta property="og:site_name" content="funnycoderstar">
-<meta property="og:description" content="前端小码农">
+<meta property="og:description" content="引言: 本篇文章主要总结了一些javascript中特别基础的内容,主要涉及到DOM0级和DOM2级事件,事件流, 事件委托, 判断变量的类型每次被问到,总是能想起一点,但是也总记不全,所以遇到这种情况的时候,就简单的记录一下.">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://oo4xdz5i0.bkt.clouddn.com/zhuangzhu.png">
+<meta property="og:image" content="https://www.w3.org/TR/DOM-Level-3-Events/images/eventflow.svg">
+<meta property="og:updated_time" content="2017-11-29T00:53:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="funnycoderstar">
-<meta name="twitter:description" content="前端小码农">
+<meta name="twitter:title" content="javascript中基础但是很容易忽略的点(一)">
+<meta name="twitter:description" content="引言: 本篇文章主要总结了一些javascript中特别基础的内容,主要涉及到DOM0级和DOM2级事件,事件流, 事件委托, 判断变量的类型每次被问到,总是能想起一点,但是也总记不全,所以遇到这种情况的时候,就简单的记录一下.">
+<meta name="twitter:image" content="http://oo4xdz5i0.bkt.clouddn.com/zhuangzhu.png">
 
 
 
@@ -139,13 +144,13 @@
 
 
 
-  <link rel="canonical" href="http://wangyaxing.top/categories/算法/"/>
+  <link rel="canonical" href="http://wangyaxing.top/2017/11/27/javascript中基础但是很容易忽略的点/"/>
 
 
 
 
 
-  <title>分类: 算法 | funnycoderstar</title>
+  <title>javascript中基础但是很容易忽略的点(一) | funnycoderstar</title>
   
 
 
@@ -164,7 +169,7 @@
     
   
   
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
   <a href="https://github.com/funnycoderstar" class="wangyaxingGit"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -312,83 +317,278 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>算法<small>分类</small>
-        </h1>
-      </div>
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wangyaxing.top/2017/11/27/javascript中基础但是很容易忽略的点/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="funnycoderstar">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar1.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="funnycoderstar">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">javascript中基础但是很容易忽略的点(一)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-27T16:11:44+08:00">
+                2017-11-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/11/27/javascript中基础但是很容易忽略的点/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/11/27/javascript中基础但是很容易忽略的点/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2017/11/27/javascript中基础但是很容易忽略的点/" class="leancloud_visitors" data-flag-title="javascript中基础但是很容易忽略的点(一)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  1,595字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  6分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/03/2017-05-03-排序算法/" itemprop="url">
-              
-                <span itemprop="name">排序算法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-03T13:53:30+08:00"
-              content="2017-05-03" >
-          05-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/09/2017-04-09-关于斐波那契数列/" itemprop="url">
-              
-                <span itemprop="name">关于斐波那契数列</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-09T13:46:12+08:00"
-              content="2017-04-09" >
-          04-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <p><img src="http://oo4xdz5i0.bkt.clouddn.com/zhuangzhu.png" alt="title"><br>引言: 本篇文章主要总结了一些javascript中特别基础的内容,主要涉及到<code>DOM0级和DOM2级事件</code>,<code>事件流</code>, <code>事件委托</code>, <code>判断变量的类型</code>每次被问到,总是能想起一点,但是也总记不全,所以遇到这种情况的时候,就简单的记录一下.<br><a id="more"></a></p>
+<h2 id="DOM0级事件和DOM2级事件的区别"><a href="#DOM0级事件和DOM2级事件的区别" class="headerlink" title="DOM0级事件和DOM2级事件的区别"></a>DOM0级事件和DOM2级事件的区别</h2><h3 id="DOM0事件"><a href="#DOM0事件" class="headerlink" title="DOM0事件"></a>DOM0事件</h3><ul>
+<li>在标签内写onclick事件</li>
+<li>在js中写onclick=function(){}函数</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input id=<span class="string">"myButton"</span> type=<span class="string">"button"</span> value=<span class="string">"Press Me"</span> onclick=<span class="string">"console.log('thanks');"</span> &gt;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">"myButton"</span>).onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'thanks'</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>删除事件的方法是<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">btn.onclick = <span class="literal">null</span>;</div></pre></td></tr></table></figure></p>
+<h3 id="DOM2级事件"><a href="#DOM2级事件" class="headerlink" title="DOM2级事件"></a>DOM2级事件</h3><p>监听方法: 两个方法用来添加和移除事件处理程序: addEventListener()和removeEventLister()<br>他们都有三个参数:</p>
+<ul>
+<li>事件名(如click);</li>
+<li>事件处理程序函数</li>
+<li>true表示在捕获阶段调用,false在冒泡阶段调用</li>
+</ul>
+<blockquote>
+<p>addEventListener()可以为元素添加多个处理程序函数,触发时按照添加顺序依次调用;removeEventLister()不能移除匿名添加的函数</p>
+</blockquote>
+<h3 id="DOM0级事件和DOM2级事件的区别-1"><a href="#DOM0级事件和DOM2级事件的区别-1" class="headerlink" title="DOM0级事件和DOM2级事件的区别"></a>DOM0级事件和DOM2级事件的区别</h3><p>DOM0级只能覆盖，不会连续触发！<br>像上面把onclick写在标签内，都是dom0级事件，fn和fn1依次执行; 第二种获取元素，绑定onclick事件也是dom0级，第二个会覆盖第一个onclick，也会覆盖行内的onclick，只会弹出222。<br>以上的绑定都属于dom2级事件绑定，前面两种都是jq的绑定方式，后面都是原生js的绑定方式，不会覆盖，会依次执行jq的绑定方法和原生的绑定方法，这就是于dom0级的去别处；</p>
+<h2 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h2><ul>
+<li>事件冒泡: 事件开始时是从最具体的元素接受,然后逐级向上传播: 比如点击了div, div-&gt;body-&gt;html-&gt;Document</li>
+<li>事件捕获: 和事件冒泡相反,从最外面的元素向下传播: 比如同样点击了div: Document-&gt;html-&gt;body-&gt;div<br>“DOM2级事件”，规定的事件流包括三个阶段：事件捕获阶段、处于目标阶段和事件冒泡阶段。首先是事件捕获阶段；然后是实际的目标接收到事件。最后一个阶段是冒泡阶段，可以在这个阶段对事件作出相应。<br><img src="https://www.w3.org/TR/DOM-Level-3-Events/images/eventflow.svg" alt="事件流"><br>所有的浏览器都支持冒泡,我们通常使用事件冒泡,很少使用事件捕获</li>
+</ul>
+<h2 id="事件委托-事件代理-及使用场景"><a href="#事件委托-事件代理-及使用场景" class="headerlink" title="事件委托(事件代理)及使用场景"></a>事件委托(事件代理)及使用场景</h2><h3 id="事件委托原理"><a href="#事件委托原理" class="headerlink" title="事件委托原理:"></a>事件委托原理:</h3><p>事件冒泡</p>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景:"></a>使用场景:</h3><p>DOM需要事件处理程序,一般都是直接给她这种事件处理程序;但是有很多个DOM需要添加相同的事件处理程序呢,比如,每个li都有相同的click事件,如果按照之前的做法,用for循环,给每个元素添加事件,可想而知,会出现什么样的问题;</p>
+<p>javascript中,添加到页面上的事件程序直接影响到页面整体运行性能,因为需要不断的与DOM节点进行及哦啊胡,访问DOM次数越多,引起<a href="http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html" target="_blank" rel="external">浏览器重绘与重排</a>的次数也就越多,就会延长整个页面的交互准备时间,这就是为什么性能优化的重要思想之一就是减少DOM操作的原因;<br>每个函数都是一个对象,是对象就会占用内存,对象越多,内存占用率就越大,自然性能就越差;</p>
+<p>这下子知道为什么使用事件委托,只对它的父级这一对象进行操作会大大节省内存和优化性能了吧;</p>
+<p>事件委托的核心代码如下:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"> <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;　　</div><div class="line">    <span class="keyword">const</span> ul = <span class="built_in">document</span>.getElementById(<span class="string">"ul"</span>);</div><div class="line">    ul.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">ev</span>) </span>&#123;　　　　</div><div class="line">        <span class="keyword">const</span> ev = ev || <span class="built_in">window</span>.event;　　　　</div><div class="line">        <span class="keyword">const</span> target = ev.target || ev.srcElement;　　　　</div><div class="line">        <span class="keyword">if</span> (target.nodeName === <span class="string">'li'</span>) &#123;　　　　</div><div class="line">            <span class="built_in">console</span>.log(<span class="number">123</span>);　　　　　</div><div class="line">            <span class="built_in">console</span>.log(target.innerHTML);　</div><div class="line">        &#125;　　</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Event对象提供了一个属性target,表示事件的目标节点,即触发该事件的节点(想具体了解一些这个事件的可以执行下面代码看浏览器的console内容)<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(e);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="适合及不适合使用事件委托的事件"><a href="#适合及不适合使用事件委托的事件" class="headerlink" title="适合及不适合使用事件委托的事件"></a>适合及不适合使用事件委托的事件</h3><p>适合: click, mousedown, mouseup, keydown, keyup, keypress;<br>不适合:mouseover和mouseout虽然也有事件冒泡,但是需要经常计算他们的位置,处理起来有点麻烦;mousemove,每次都要计算它的位置,不好控制;还有一些本身没有冒泡的特性,如focus,blur等</p>
+<blockquote>
+<p>mouseenter事件类似于mouseover事件。唯一的区别是 mouseente事件不支持冒泡。</p>
+</blockquote>
+<h2 id="判断变量类型"><a href="#判断变量类型" class="headerlink" title="判断变量类型"></a>判断变量类型</h2><blockquote>
+<p>javaSctipt数据类型7种: Number, String, Boolean, Null, Undefined, Object, Symbol</p>
+</blockquote>
+<h3 id="typeof操作符"><a href="#typeof操作符" class="headerlink" title="typeof操作符"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank" rel="external">typeof操作符</a></h3><p>可能返回的值如下</p>
+<ul>
+<li>undefined</li>
+<li>boolean</li>
+<li>string</li>
+<li>number</li>
+<li>object</li>
+<li>function<br>注意: typeof 的能力有限，其对于null, Date、RegExp类型返回的都是”object”<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typeof</span> <span class="literal">null</span> <span class="comment">// 'object'</span></div><div class="line"><span class="keyword">typeof</span> &#123;&#125;; <span class="comment">// "object" </span></div><div class="line"><span class="keyword">typeof</span> []; <span class="comment">// "object" </span></div><div class="line"><span class="keyword">typeof</span> <span class="keyword">new</span> <span class="built_in">Date</span>(); <span class="comment">// "object"</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>使用场景:区分对象和原始类型,要区分一种对象类型和另一种对象类型,可以使用: instanceof运算符或对象contructor属性</p>
+<h3 id="instanceof运算符"><a href="#instanceof运算符" class="headerlink" title="instanceof运算符"></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof" target="_blank" rel="external">instanceof运算符</a></h3><p>用法: 左边的运算数是一个object,右边运算数是对象类的名字或者构造函数;返回true或false<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[] <span class="keyword">instanceof</span> <span class="built_in">Array</span>; <span class="comment">// true</span></div><div class="line">[] <span class="keyword">instanceof</span> <span class="built_in">Object</span>; <span class="comment">// true</span></div><div class="line">[] <span class="keyword">instanceof</span> <span class="built_in">RegExp</span>; <span class="comment">// false</span></div><div class="line"><span class="keyword">new</span> <span class="built_in">Date</span> <span class="keyword">instanceof</span> <span class="built_in">Date</span>; <span class="comment">// true</span></div></pre></td></tr></table></figure></p>
+<p>如果object是class或者构造函数的实例,则返回true,如果不是或者是null也返回false<br>instanceof运算符判断是否为数组类型<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isArray</span>(<span class="params">arr</span>)</span>&#123; </div><div class="line">  <span class="keyword">return</span> arr <span class="keyword">instanceof</span> <span class="built_in">Array</span>; </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="contructor属性"><a href="#contructor属性" class="headerlink" title="contructor属性"></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor" target="_blank" rel="external">contructor属性</a></h3><p>所有的对象都有一个constructor属性,指向该对象的基本对啊性构造函数类型的属性<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span>;</div><div class="line">a.constructor === <span class="built_in">Array</span> <span class="comment">// true</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> n = <span class="keyword">new</span> <span class="built_in">Number</span>(<span class="number">3</span>);</div><div class="line">n.constructor === <span class="built_in">Number</span>; <span class="comment">// true</span></div></pre></td></tr></table></figure></p>
+<p>判断为数组还可以这样<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isArray</span>(<span class="params">arr</span>)</span>&#123; </div><div class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> arr === <span class="string">"object"</span> &amp;&amp; arr.constructor === <span class="built_in">Array</span>; </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="Object-ProtoType-toString"><a href="#Object-ProtoType-toString" class="headerlink" title="Object.ProtoType.toString()"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString" target="_blank" rel="external">Object.ProtoType.toString()</a></h3><p>每个对象都有一个toString()方法,返回”[object type]”,其中type是对象的类型<br>当执行该方法时,执行以下步骤<br>1,获取对象的class属性<br>2,连接字符串 “[object “+结果1+”]” ;</p>
+<p>所以可以通过toString()来获取每个对象的类型,为了每个对象都可以通过Object.protoType.toString()来检测,需要以Funciton.prototype.call()或Function.prototype.apply()的形式来调用,传递要检查的对象作为第一个参数,称为thisArg<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="keyword">new</span> <span class="built_in">Date</span>); <span class="comment">// "[object Date]"</span></div><div class="line"><span class="built_in">Object</span>.prototype.toString.call([]); <span class="comment">// "[object Array]"</span></div><div class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="regexp">/reg/ig</span>); <span class="comment">// "[object RegExp]"</span></div></pre></td></tr></table></figure></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://www.jb51.net/article/43032.htm" target="_blank" rel="external">JavaScript中判断对象类型的几种方法总结</a><br><a href="http://www.cnblogs.com/liugang-vip/p/5616484.html" target="_blank" rel="external">js中的事件委托或是事件代理详解</a></p>
 
       
     </div>
+    
+    
+    
 
+    
+    <div>
+</div>
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/22/html代码实现一些符号/" rel="next" title="html代码实现一些符号">
+                <i class="fa fa-chevron-left"></i> html代码实现一些符号
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -396,6 +596,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
 
         </div>
         
@@ -416,8 +622,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar1.jpeg"
@@ -525,6 +740,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM0级事件和DOM2级事件的区别"><span class="nav-number">1.</span> <span class="nav-text">DOM0级事件和DOM2级事件的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM0事件"><span class="nav-number">1.1.</span> <span class="nav-text">DOM0事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM2级事件"><span class="nav-number">1.2.</span> <span class="nav-text">DOM2级事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM0级事件和DOM2级事件的区别-1"><span class="nav-number">1.3.</span> <span class="nav-text">DOM0级事件和DOM2级事件的区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件流"><span class="nav-number">2.</span> <span class="nav-text">事件流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件委托-事件代理-及使用场景"><span class="nav-number">3.</span> <span class="nav-text">事件委托(事件代理)及使用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事件委托原理"><span class="nav-number">3.1.</span> <span class="nav-text">事件委托原理:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用场景"><span class="nav-number">3.2.</span> <span class="nav-text">使用场景:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#适合及不适合使用事件委托的事件"><span class="nav-number">3.3.</span> <span class="nav-text">适合及不适合使用事件委托的事件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#判断变量类型"><span class="nav-number">4.</span> <span class="nav-text">判断变量类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#typeof操作符"><span class="nav-number">4.1.</span> <span class="nav-text">typeof操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#instanceof运算符"><span class="nav-number">4.2.</span> <span class="nav-text">instanceof运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#contructor属性"><span class="nav-number">4.3.</span> <span class="nav-text">contructor属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-ProtoType-toString"><span class="nav-number">4.4.</span> <span class="nav-text">Object.ProtoType.toString()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -658,10 +889,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 

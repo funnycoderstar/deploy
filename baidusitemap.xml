@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://wangyaxing.top/2017/12/10/react%E4%B8%AD%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2017-12-10T04:30:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>react中组件通信的几种方式</title>
+        <pubTime>2017-12-10T04:19:28.000Z</pubTime>
+        
+        <tag>react</tag>
+         
+         
+           
+             
+              <breadCrumb title="react" url="http://wangyaxing.top/categories/react/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wangyaxing.top/2017/12/04/2017-12-04-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</loc>
     <lastmod>2017-12-04T13:51:25.000Z</lastmod>
     <data>
@@ -373,19 +393,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/08/29/vue%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</loc>
+    <loc>http://wangyaxing.top/2017/05/03/2017-05-03-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     <data>
         <display>
-        <title>vue组件通信</title>
-        <pubTime>2017-08-29T10:48:41.000Z</pubTime>
+        <title>排序算法</title>
+        <pubTime>2017-05-03T05:53:30.000Z</pubTime>
         
-        <tag>vue</tag>
+        <tag>算法</tag>
          
          
            
              
-              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+              <breadCrumb title="算法" url="http://wangyaxing.top/categories/%E7%AE%97%E6%B3%95/"/>
           
         </display>
     </data>
@@ -393,152 +413,12 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/08/27/js%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</loc>
+    <loc>http://wangyaxing.top/2017/06/23/2017-06-23-vue-scroll/</loc>
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     <data>
         <display>
-        <title>js垃圾回收机制</title>
-        <pubTime>2017-08-27T02:52:00.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/09/06/flex%E5%B8%83%E5%B1%80/</loc>
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>flex布局</title>
-        <pubTime>2017-09-06T08:06:52.000Z</pubTime>
-        
-        <tag>css</tag>
-         
-         
-           
-             
-              <breadCrumb title="css" url="http://wangyaxing.top/categories/css/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/08/27/js%E7%9A%84%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/</loc>
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>js的函数节流</title>
-        <pubTime>2017-08-27T02:52:25.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/06/01/2017-06-01-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%B0%BE%E8%B0%83%E7%94%A8/</loc>
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>函数式编程之尾调用</title>
-        <pubTime>2017-06-01T05:32:38.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/08/23/vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8F%98%E5%8C%96/</loc>
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>嘿,使用vue,你注意到了这些了么?</title>
-        <pubTime>2017-08-23T02:46:53.000Z</pubTime>
-        
-        <tag>vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/09/01/wxapp/</loc>
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>总结微信小程序开发中遇到的坑</title>
-        <pubTime>2017-09-01T05:36:13.000Z</pubTime>
-        
-        <tag>微信小程序</tag>
-         
-         
-           
-             
-              <breadCrumb title="微信小程序" url="http://wangyaxing.top/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/09/06/vue%E7%BB%84%E4%BB%B6%E4%B9%8Bkeep-alive/</loc>
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>用vue,你知道 keep-alive 么</title>
-        <pubTime>2017-09-06T09:26:46.000Z</pubTime>
-        
-        <tag>vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/08/29/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>vue生命周期详解</title>
-        <pubTime>2017-08-29T10:48:59.000Z</pubTime>
+        <title>vue中scroll的用法</title>
+        <pubTime>2017-06-23T05:36:13.000Z</pubTime>
         
         <tag>vue</tag>
          
@@ -573,6 +453,126 @@
 
     
   <url>
+    <loc>http://wangyaxing.top/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</loc>
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>关于斐波那契数列</title>
+        <pubTime>2017-04-09T05:46:12.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法" url="http://wangyaxing.top/categories/%E7%AE%97%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>react-redux</title>
+        <pubTime>2017-05-24T05:34:42.000Z</pubTime>
+        
+        <tag>redux</tag>
+         
+         
+           
+             
+              <breadCrumb title="react" url="http://wangyaxing.top/categories/react/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/08/29/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>vue生命周期详解</title>
+        <pubTime>2017-08-29T10:48:59.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/08/23/vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8F%98%E5%8C%96/</loc>
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>嘿,使用vue,你注意到了这些了么?</title>
+        <pubTime>2017-08-23T02:46:53.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/09/06/vue%E7%BB%84%E4%BB%B6%E4%B9%8Bkeep-alive/</loc>
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>用vue,你知道 keep-alive 么</title>
+        <pubTime>2017-09-06T09:26:46.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/08/29/vue%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</loc>
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>vue组件通信</title>
+        <pubTime>2017-08-29T10:48:41.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wangyaxing.top/2017/08/26/%E4%B8%8D%E6%83%B3%E5%83%8F%E7%94%9F%E6%B4%BB%E4%BD%8E%E5%A4%B4/</loc>
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     <data>
@@ -586,6 +586,46 @@
            
              
               <breadCrumb title="life" url="http://wangyaxing.top/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/09/01/wxapp/</loc>
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>总结微信小程序开发中遇到的坑</title>
+        <pubTime>2017-09-01T05:36:13.000Z</pubTime>
+        
+        <tag>微信小程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="微信小程序" url="http://wangyaxing.top/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/09/06/flex%E5%B8%83%E5%B1%80/</loc>
+    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>flex布局</title>
+        <pubTime>2017-09-06T08:06:52.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="http://wangyaxing.top/categories/css/"/>
           
         </display>
     </data>
@@ -653,19 +693,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
+    <loc>http://wangyaxing.top/2017/06/01/2017-06-01-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%B0%BE%E8%B0%83%E7%94%A8/</loc>
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     <data>
         <display>
-        <title>react-redux</title>
-        <pubTime>2017-05-24T05:34:42.000Z</pubTime>
+        <title>函数式编程之尾调用</title>
+        <pubTime>2017-06-01T05:32:38.000Z</pubTime>
         
-        <tag>redux</tag>
+        <tag>javascript</tag>
          
          
            
              
-              <breadCrumb title="react" url="http://wangyaxing.top/categories/react/"/>
+              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
           
         </display>
     </data>
@@ -673,19 +713,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/06/23/2017-06-23-vue-scroll/</loc>
+    <loc>http://wangyaxing.top/2017/08/27/js%E7%9A%84%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/</loc>
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     <data>
         <display>
-        <title>vue中scroll的用法</title>
-        <pubTime>2017-06-23T05:36:13.000Z</pubTime>
+        <title>js的函数节流</title>
+        <pubTime>2017-08-27T02:52:25.000Z</pubTime>
         
-        <tag>vue</tag>
+        <tag>javascript</tag>
          
          
            
              
-              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
           
         </display>
     </data>
@@ -696,39 +736,19 @@
     
     
   <url>
-    <loc>http://wangyaxing.top/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</loc>
+    <loc>http://wangyaxing.top/2017/08/27/js%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</loc>
     <lastmod>2017-09-20T04:18:49.000Z</lastmod>
     <data>
         <display>
-        <title>关于斐波那契数列</title>
-        <pubTime>2017-04-09T05:46:12.000Z</pubTime>
+        <title>js垃圾回收机制</title>
+        <pubTime>2017-08-27T02:52:00.000Z</pubTime>
         
-        <tag>算法</tag>
+        <tag>javascript</tag>
          
          
            
              
-              <breadCrumb title="算法" url="http://wangyaxing.top/categories/%E7%AE%97%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/05/03/2017-05-03-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2017-09-20T04:18:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>排序算法</title>
-        <pubTime>2017-05-03T05:53:30.000Z</pubTime>
-        
-        <tag>算法</tag>
-         
-         
-           
-             
-              <breadCrumb title="算法" url="http://wangyaxing.top/categories/%E7%AE%97%E6%B3%95/"/>
+              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
           
         </display>
     </data>

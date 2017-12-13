@@ -477,7 +477,7 @@
 <li>跨级组件通信</li>
 <li>没有嵌套关系组件之间的通信</li>
 </ul>
-<h2 id="1-父组件向子组件通信"><a href="#1-父组件向子组件通信" class="headerlink" title="1. 父组件向子组件通信"></a>1. 父组件向子组件通信</h2><p>React数据流动是单向的,父组件向子组件通信也是最常见的;父组件通过props向子组件传递需要的信息<br>Child.jsx<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> PropTypes <span class="keyword">from</span> <span class="string">'prop-types'</span>;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">Child</span>(<span class="params">&#123; name &#125;</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> &lt;h1&gt;Hello, &#123;name&#125;&lt;/h1&gt;;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Child.propTypes = &#123;</div><div class="line">    name: PropTypes.string.isRequired,</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<h2 id="1-父组件向子组件通信"><a href="#1-父组件向子组件通信" class="headerlink" title="1. 父组件向子组件通信"></a>1. 父组件向子组件通信</h2><p>React数据流动是单向的,父组件向子组件通信也是最常见的;父组件通过props向子组件传递需要的信息<br>Child.jsx<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> PropTypes <span class="keyword">from</span> <span class="string">'prop-types'</span>;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">Child</span>(<span class="params">&#123; name &#125;</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, &#123;name&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Child.propTypes = &#123;</div><div class="line">    name: PropTypes.string.isRequired,</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
 <p>Parent.jsx<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"></div><div class="line"><span class="keyword">import</span> Child <span class="keyword">from</span> <span class="string">'./Child'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Parent</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">    render() &#123;</div><div class="line">        <span class="keyword">return</span> (</div><div class="line">            &lt;div&gt;</div><div class="line">                &lt;Child name=<span class="string">"Sara"</span> /&gt;</div><div class="line">            &lt;<span class="regexp">/div&gt;</span></div><div class="line"><span class="regexp">        );</span></div><div class="line"><span class="regexp">    &#125;</span></div><div class="line"><span class="regexp">&#125;</span></div><div class="line"><span class="regexp"></span></div><div class="line"><span class="regexp">export default Parent;</span></div></pre></td></tr></table></figure></p>
 <h2 id="2-子组件向父组件通信"><a href="#2-子组件向父组件通信" class="headerlink" title="2. 子组件向父组件通信"></a>2. 子组件向父组件通信</h2><ul>
 <li>利用回调函数</li>
@@ -568,6 +568,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2017/12/12/react中受控与非受控组件/" rel="prev" title="react中受控与非受控组件">
+                react中受控与非受控组件 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -645,7 +649,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">37</span>
+                <span class="site-state-item-count">38</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

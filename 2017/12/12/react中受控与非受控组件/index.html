@@ -85,7 +85,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="mongoDB," />
+  <meta name="keywords" content="react," />
 
 
 
@@ -101,17 +101,17 @@
 
 
 
-<meta name="keywords" content="mongoDB">
+<meta name="keywords" content="react">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mongoDB">
-<meta property="og:url" content="http://wangyaxing.top/2017/10/14/mongoDB/index.html">
+<meta property="og:title" content="react中受控与非受控组件">
+<meta property="og:url" content="http://wangyaxing.top/2017/12/12/react中受控与非受控组件/index.html">
 <meta property="og:site_name" content="funnycoderstar">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://oo4xdz5i0.bkt.clouddn.com/mongodb.jpg">
-<meta property="og:updated_time" content="2017-10-15T13:39:29.000Z">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1200/1*kt9otqHk14BZIMNruiG0BA.png">
+<meta property="og:updated_time" content="2017-12-13T02:27:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mongoDB">
-<meta name="twitter:image" content="http://oo4xdz5i0.bkt.clouddn.com/mongodb.jpg">
+<meta name="twitter:title" content="react中受控与非受控组件">
+<meta name="twitter:image" content="https://cdn-images-1.medium.com/max/1200/1*kt9otqHk14BZIMNruiG0BA.png">
 
 
 
@@ -140,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://wangyaxing.top/2017/10/14/mongoDB/"/>
+  <link rel="canonical" href="http://wangyaxing.top/2017/12/12/react中受控与非受控组件/"/>
 
 
 
 
 
-  <title>mongoDB | funnycoderstar</title>
+  <title>react中受控与非受控组件 | funnycoderstar</title>
   
 
 
@@ -322,12 +322,12 @@
   
   
 
-  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-react" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wangyaxing.top/2017/10/14/mongoDB/">
+    <link itemprop="mainEntityOfPage" href="http://wangyaxing.top/2017/12/12/react中受控与非受控组件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="funnycoderstar">
@@ -344,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">mongoDB</h1>
+          <h1 class="post-title" itemprop="name headline">react中受控与非受控组件</h1>
         
 
         <div class="post-meta">
@@ -356,8 +356,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T15:28:46+08:00">
-                2017-10-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-12T13:22:15+08:00">
+                2017-12-12
               </time>
             
 
@@ -379,8 +379,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/mongoDB/" itemprop="url" rel="index">
-                    <span itemprop="name">mongoDB</span>
+                  <a href="/categories/react/" itemprop="url" rel="index">
+                    <span itemprop="name">react</span>
                   </a>
                 </span>
 
@@ -398,8 +398,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2017/10/14/mongoDB/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/10/14/mongoDB/" itemprop="commentsCount"></span>
+                <a href="/2017/12/12/react中受控与非受控组件/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/12/12/react中受控与非受控组件/" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -407,7 +407,7 @@
 
           
           
-             <span id="/2017/10/14/mongoDB/" class="leancloud_visitors" data-flag-title="mongoDB">
+             <span id="/2017/12/12/react中受控与非受控组件/" class="leancloud_visitors" data-flag-title="react中受控与非受控组件">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -433,7 +433,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  600字
+                  953字
                 </span>
               
 
@@ -449,7 +449,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  3分钟
+                  4分钟
                 </span>
               
             </div>
@@ -470,28 +470,35 @@
       
 
       
-        <p><img src="http://oo4xdz5i0.bkt.clouddn.com/mongodb.jpg" alt="mongoDB"><br><a id="more"></a><br>MongoDB是一个通用的<code>非关系型</code>数据库;把文档存在集合中;它们不需要相同的schema,每个文档都可以有不同的schema<br>Mongoose是一个Node模块;Mongoose的基础知识如下:</p>
+        <p><img src="https://cdn-images-1.medium.com/max/1200/1*kt9otqHk14BZIMNruiG0BA.png" alt="title"><br><a id="more"></a></p>
+<h2 id="受控组件"><a href="#受控组件" class="headerlink" title="受控组件"></a>受控组件</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;input</div><div class="line">    type=<span class="string">"text"</span></div><div class="line">    value=&#123;<span class="keyword">this</span>.state.value&#125;</div><div class="line">    onChange=&#123;(e) =&gt; &#123;</div><div class="line">        <span class="keyword">this</span>.setState(&#123;</div><div class="line">            value: e.target.value.toUpperCase(),</div><div class="line">        &#125;);</div><div class="line">    &#125;&#125;</div><div class="line">/&gt;</div></pre></td></tr></table></figure>
+<p><code>&lt;input&gt;</code>或<code>&lt;select&gt;</code>都要绑定一个change事件;每当表单的状态发生变化,都会被写入组件的state中,这种组件在React中被称为受控组件;在受控组件中,组件渲染出的状态与它的value或者checked prop向对应.react通过这种方式消除了组件的局部状态,是的应用的整个状态可控.react官方同样推荐使用受控表单组件,总结下React受控组件更新state的流程:</p>
 <ul>
-<li>打开或关闭MongoDB连接;</li>
-<li>注册schema;</li>
-<li>添加任务;</li>
-<li>搜索文档</li>
-<li>更新文档</li>
-<li>删除文档<br>首先可以用npm 命令安装Mongoose;</li>
+<li>1.可以通过初始state中设置表单的默认值;</li>
+<li>2.每当表单的值发生变化时,调用onChange事件处理器;</li>
+<li>3.事件处理器通过合成事件对象e拿到改变后的状态,并更新应用的state.</li>
+<li>4.setState触发视图的重新渲染,完成表单组件值得更新</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install mongoose</div></pre></td></tr></table></figure>
-<h2 id="1-连接的打开和关闭"><a href="#1-连接的打开和关闭" class="headerlink" title="1,连接的打开和关闭"></a>1,连接的打开和关闭</h2><p>装好Mongoose,启动MongoDB服务器,用下面的代码建立到MongoDBd的连接,在下面的例子中是一个叫tasks的数据库<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> mongoose = <span class="built_in">require</span>(<span class="string">' mongoose'</span>);</div><div class="line"><span class="keyword">const</span> db = mongoose.connect(<span class="string">' mongodb:// localhost/ tasks'</span>);</div></pre></td></tr></table></figure></p>
-<p>如果要终止MongoDB创建的连接,<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mongoose.disconnect();</div></pre></td></tr></table></figure></p>
-<h2 id="2-注册schema"><a href="#2-注册schema" class="headerlink" title="2,注册schema"></a>2,注册schema</h2><p>在用MongoDB管理数据时,需要注册schema<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> Schema = mongoose.Schema;</div><div class="line"><span class="keyword">const</span> Tasks = <span class="keyword">new</span> Schema(&#123; </div><div class="line">    project: <span class="built_in">String</span>,</div><div class="line">     description: <span class="built_in">String</span> </div><div class="line">&#125;);</div><div class="line">mongoose.model(<span class="string">' Task'</span>, Tasks);</div></pre></td></tr></table></figure></p>
-<p>Mongoose的schema很强大.除了定义数据结构,还可以设定默认值,处理输入,以及加强校验</p>
-<h2 id="3-添加任务"><a href="#3-添加任务" class="headerlink" title="3,添加任务"></a>3,添加任务</h2><p>schema注册好后,你可以访问它,让Mongoose去工作,下面的代码用模型添加了一项任务<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> Task = mongoose. model(<span class="string">' Task'</span>);</div><div class="line"><span class="keyword">const</span> task = <span class="keyword">new</span> Task();</div><div class="line">task.project = <span class="string">'Bikeshed'</span>;</div><div class="line">task.description = <span class="string">'Paint the bikeshed red.'</span>;</div><div class="line">task.save( <span class="function"><span class="keyword">function</span>(<span class="params"> err</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">' Task saved.'</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h2 id="4-搜索文档"><a href="#4-搜索文档" class="headerlink" title="4,搜索文档"></a>4,搜索文档</h2><p>Task模型的find方法可以用来查找所有文档,或者用一个JavaScript对象指明一个过滤标准来选择特定的文.下面这段代码搜索跟特定项目相关的任务,并输出每项任务的唯一ID和描述<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> Task = mongoose.model(<span class="string">' Task'</span>);</div><div class="line">Task.find(&#123;<span class="string">' project'</span>: <span class="string">'Bikeshed'</span>&#125;, <span class="function"><span class="keyword">function</span>(<span class="params"> err, tasks</span>) </span>&#123; </div><div class="line">    <span class="keyword">for</span> (<span class="keyword">const</span> i = <span class="number">0</span>; i &lt; tasks.length; i++) &#123; </div><div class="line">        <span class="built_in">console</span>.log(<span class="string">' ID:'</span> + tasks[ i]._ id);</div><div class="line">        <span class="built_in">console</span>.log( tasks[ i]. description);</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h2 id="5-更新文档"><a href="#5-更新文档" class="headerlink" title="5,更新文档"></a>5,更新文档</h2><p>尽管用模型的find方法可以定位一个文档,然后修改并保存它,但Mongoose还有一个update方法专门来做这个.<br>下面的代码用Mongoose更新了一个新的文档</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> Task = mongoose. model(<span class="string">' Task'</span>);</div><div class="line">Task.update(</div><div class="line">    &#123;<span class="attr">_id</span>: <span class="string">'4e65b793d0cf5ca508000001'</span>&#125;, 　 　<span class="comment">// 用 内部 ID 更新</span></div><div class="line">    &#123;<span class="attr">description</span>: <span class="string">'Paint the bikeshed green.'</span>&#125;,</div><div class="line">    &#123;<span class="attr">multi</span>: <span class="literal">false</span>&#125;, <span class="comment">//只 更新 一个 文档</span></div><div class="line">    <span class="function"><span class="keyword">function</span>(<span class="params"> err, rows_ updated</span>) </span>&#123; </div><div class="line">        <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">' Updated.'</span>);</div><div class="line">    &#125;</div><div class="line">);</div></pre></td></tr></table></figure>
-<h2 id="6-删除文档"><a href="#6-删除文档" class="headerlink" title="6,删除文档"></a>6,删除文档</h2><p>在Mongoose中,一旦你取到了文档,要删除它很容易.你可以用文档的内部ID(或其他任何条件,如果你用find代替finById的话)获取和删除文档,代码就像下面弄这样<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> Task = mongoose.model(<span class="string">' Task'</span>);</div><div class="line">Task.findById(<span class="string">' 4e65b3dce1592f7d08000001'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"> err, task</span>)</span>&#123;</div><div class="line">    task. remove();</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul>
-<li><a href="https://robomongo.org/download" target="_blank" rel="external">robomongo下载</a></li>
+<blockquote>
+<p>react中数据是单向流动的.从示例中,我们能看出来表单的数据来源于组件的state,并通过props传入,这也称为单向数据绑定.然后,我们又通过onChange事件处理器将新的表单数据写回到state,完成了双向数据绑定.</p>
+</blockquote>
+<h2 id="非受控组件"><a href="#非受控组件" class="headerlink" title="非受控组件"></a>非受控组件</h2><ul>
+<li>如果一个表单组件没有value props(单选按钮和复选按钮对应的是 checked props)时,就可以称为非受控组件;</li>
+<li>使用defaultValue和defaultChecked来表示组件的默认状态;</li>
+<li>通过 defaultValue和defaultChecked来设置组件的默认值,它仅会被渲染一次,在后续的渲染时并不起作用<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">UnControlled</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">    handleSubmit = <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</div><div class="line">        <span class="built_in">console</span>.log(e);</div><div class="line">        e.preventDefault();</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name.value);</div><div class="line">    &#125;</div><div class="line">    render() &#123;</div><div class="line">        <span class="keyword">return</span> (</div><div class="line">            &lt;form onSubmit=&#123;<span class="keyword">this</span>.handleSubmit&#125;&gt;</div><div class="line">                &lt;input type=<span class="string">"text"</span> ref=&#123;i =&gt; <span class="keyword">this</span>.name = i&#125; defaultValue=<span class="string">"BeiJing"</span> /&gt;</div><div class="line">                &lt;button type=<span class="string">"submit"</span>&gt;Submit&lt;<span class="regexp">/button&gt;</span></div><div class="line"><span class="regexp">            &lt;/</span>form&gt;</div><div class="line">        );</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> UnControlled;</div></pre></td></tr></table></figure>
+</li>
 </ul>
+<h2 id="对比受控组件和非受控组件"><a href="#对比受控组件和非受控组件" class="headerlink" title="对比受控组件和非受控组件"></a>对比受控组件和非受控组件</h2><p>将输入的字母转化为大写展示<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;input</div><div class="line">    type=<span class="string">"text"</span></div><div class="line">    value=&#123;<span class="keyword">this</span>.state.value&#125;</div><div class="line">    onChange=&#123;(e) =&gt; &#123;</div><div class="line">        <span class="keyword">this</span>.setState(&#123;</div><div class="line">            value: e.target.value.toUpperCase(),</div><div class="line">        &#125;);</div><div class="line">    &#125;&#125;</div><div class="line">/&gt;</div></pre></td></tr></table></figure></p>
+<p>直接展示输入的字母<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;input</div><div class="line">    type=<span class="string">"text"</span></div><div class="line">    defaultValue=&#123;<span class="keyword">this</span>.state.value&#125;</div><div class="line">    onChange=&#123;(e) =&gt; &#123;</div><div class="line">        <span class="keyword">this</span>.setState(&#123;</div><div class="line">            value: e.target.value.toUpperCase(),</div><div class="line">        &#125;);</div><div class="line">    &#125;&#125;</div><div class="line">/&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="1-性能上的问题"><a href="#1-性能上的问题" class="headerlink" title="1.性能上的问题"></a>1.性能上的问题</h3><p>在受控组件中,每次表单的值发生变化,都会调用一次onChange事件处理器,这确实会带来性能上的的损耗,虽然使用费受控组件不会出现这些问题,但仍然不提倡使用非受控组件,这个问题可以通过Flux/Redux应用架构等方式来达到统一组件状态的目的.</p>
+<h3 id="2-是否需要事件绑定"><a href="#2-是否需要事件绑定" class="headerlink" title="2.是否需要事件绑定"></a>2.是否需要事件绑定</h3><p>使用受控组件需要为每一个组件绑定一个change事件,并且定义一个事件处理器来同步表单值和组件的状态,这是一个必要条件.当然,某些情况可以使用一个事件处理器来处理多个表单域<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Controlled</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>(...args) &#123;</div><div class="line">        <span class="keyword">super</span>(...args);</div><div class="line">        <span class="keyword">this</span>.state = &#123;</div><div class="line">            name: <span class="string">'xingxing'</span>,</div><div class="line">            age: <span class="number">18</span>,</div><div class="line">        &#125;;</div><div class="line">    &#125;</div><div class="line">    handleChange = <span class="function">(<span class="params">name, e</span>) =&gt;</span> &#123;</div><div class="line">        <span class="keyword">const</span> &#123; value &#125; = e.target;</div><div class="line">        <span class="keyword">this</span>.setState(&#123;</div><div class="line">            [name]: value,</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line">    render() &#123;</div><div class="line">        <span class="keyword">const</span> &#123; name, age &#125; = <span class="keyword">this</span>.state;</div><div class="line">        <span class="keyword">return</span> (</div><div class="line">            &lt;div&gt;</div><div class="line">                &lt;input type=<span class="string">"text"</span> value=&#123;name&#125; onChange=&#123;<span class="keyword">this</span>.handleChange.bind(<span class="keyword">this</span>, <span class="string">'name'</span>)&#125; /&gt;</div><div class="line">                &lt;input type=<span class="string">"text"</span> value=&#123;age&#125; onChange=&#123;<span class="keyword">this</span>.handleChange.bind(<span class="keyword">this</span>, <span class="string">'age'</span>,)&#125; /&gt;</div><div class="line">            &lt;<span class="regexp">/div&gt;</span></div><div class="line"><span class="regexp">        );</span></div><div class="line"><span class="regexp">    &#125;</span></div><div class="line"><span class="regexp">&#125;</span></div><div class="line"><span class="regexp"></span></div><div class="line"><span class="regexp">export default Controlled;</span></div></pre></td></tr></table></figure></p>
+<h2 id="表单组件的几个重要属性"><a href="#表单组件的几个重要属性" class="headerlink" title="表单组件的几个重要属性"></a>表单组件的几个重要属性</h2><h3 id="1-状态属性"><a href="#1-状态属性" class="headerlink" title="1.状态属性"></a>1.状态属性</h3><p>React的form组件提供了几个重要的属性,用来显示组件的状态</p>
+<ul>
+<li>value: 类型为text的input组件,textarea组件以及select组件都借助value prop来展示应用的状态</li>
+<li>checked: 类型为radio或checkbox的组件借助值为boolean类型的selected prop来展示应用的状态</li>
+<li>selected: 该属性可作用于select组件下面的option上,React并不建议这种方式表示状态.而推荐在select组件上使用value的方式</li>
+</ul>
+<h3 id="2-事件属性"><a href="#2-事件属性" class="headerlink" title="2.事件属性"></a>2.事件属性</h3><p>当状态属性改变时会触发onChange事件属性.受控组件中的change事件与HTML DOM中提供的input事件更为类似;</p>
 
       
     </div>
@@ -511,7 +518,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mongoDB/" rel="tag"># mongoDB</a>
+            <a href="/tags/react/" rel="tag"># react</a>
           
         </div>
       
@@ -524,8 +531,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/12/2017-10-12-git/" rel="next" title="git">
-                <i class="fa fa-chevron-left"></i> git
+              <a href="/2017/12/10/react中组件通信的几种方式/" rel="next" title="react中组件通信的几种方式">
+                <i class="fa fa-chevron-left"></i> react中组件通信的几种方式
               </a>
             
           </div>
@@ -533,10 +540,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/15/前端路由history-vs-hash/" rel="prev" title="前端路由history vs hash">
-                前端路由history vs hash <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -718,7 +721,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-连接的打开和关闭"><span class="nav-number">1.</span> <span class="nav-text">1,连接的打开和关闭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-注册schema"><span class="nav-number">2.</span> <span class="nav-text">2,注册schema</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-添加任务"><span class="nav-number">3.</span> <span class="nav-text">3,添加任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-搜索文档"><span class="nav-number">4.</span> <span class="nav-text">4,搜索文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-更新文档"><span class="nav-number">5.</span> <span class="nav-text">5,更新文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-删除文档"><span class="nav-number">6.</span> <span class="nav-text">6,删除文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#友情链接"><span class="nav-number">7.</span> <span class="nav-text">友情链接</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#受控组件"><span class="nav-number">1.</span> <span class="nav-text">受控组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非受控组件"><span class="nav-number">2.</span> <span class="nav-text">非受控组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对比受控组件和非受控组件"><span class="nav-number">3.</span> <span class="nav-text">对比受控组件和非受控组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-性能上的问题"><span class="nav-number">3.1.</span> <span class="nav-text">1.性能上的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-是否需要事件绑定"><span class="nav-number">3.2.</span> <span class="nav-text">2.是否需要事件绑定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表单组件的几个重要属性"><span class="nav-number">4.</span> <span class="nav-text">表单组件的几个重要属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-状态属性"><span class="nav-number">4.1.</span> <span class="nav-text">1.状态属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-事件属性"><span class="nav-number">4.2.</span> <span class="nav-text">2.事件属性</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -108,7 +108,7 @@
 <meta property="og:site_name" content="funnycoderstar">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://1.bp.blogspot.com/-A51PhexpQ20/WTRZgR7ZzqI/AAAAAAAABC4/Yjuq2S4UODc7Z1t31MWOWtDyZ2N0n8whACLcB/s1600/f590050bbc2c4fe4d26e7d02dfa48666.jpg">
-<meta property="og:updated_time" content="2017-12-28T11:07:59.000Z">
+<meta property="og:updated_time" content="2017-12-29T01:56:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="eslint配置">
 <meta name="twitter:image" content="https://1.bp.blogspot.com/-A51PhexpQ20/WTRZgR7ZzqI/AAAAAAAABC4/Yjuq2S4UODc7Z1t31MWOWtDyZ2N0n8whACLcB/s1600/f590050bbc2c4fe4d26e7d02dfa48666.jpg">
@@ -486,16 +486,16 @@
 <h3 id="通过内联注释禁用规则"><a href="#通过内联注释禁用规则" class="headerlink" title="通过内联注释禁用规则"></a>通过内联注释禁用规则</h3><ul>
 <li>要在整个文件中禁用规则警告，请在文件/<em> eslint-disable </em>/顶部添加块注释：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/* eslint-disable */</span><br><span class="line"></span><br><span class="line">alert(&apos;foo&apos;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* eslint-disable */</span></span><br><span class="line"></span><br><span class="line">alert(<span class="string">'foo'</span>);</span><br></pre></td></tr></table></figure>
 <ul>
 <li>要禁用特定行上的所有规则，请使用以下格式之一的行注释：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alert(&apos;foo&apos;); // eslint-disable-line</span><br><span class="line"></span><br><span class="line">// eslint-disable-next-line</span><br><span class="line">alert(&apos;foo&apos;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="string">'foo'</span>); <span class="comment">// eslint-disable-line</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// eslint-disable-next-line</span></span><br><span class="line">alert(<span class="string">'foo'</span>);</span><br></pre></td></tr></table></figure>
 <h3 id="制定全局"><a href="#制定全局" class="headerlink" title="制定全局"></a>制定全局</h3><blockquote>
 <p>可以使用文件内部的注释或配置文件来定义全局变量。</p>
 </blockquote>
-<h4 id="1-使用文件内部注释"><a href="#1-使用文件内部注释" class="headerlink" title="1.使用文件内部注释"></a>1.使用文件内部注释</h4><p>(1).要在JavaScript文件中使用注释来指定全局变量，请使用以下格式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/* global var1, var2 */</span><br></pre></td></tr></table></figure></p>
-<p>(2).如果你想要指定这些全局变量不应该被写入（只读），那么你可以设置每个false标志：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/* global var1:false, var2:false */</span><br></pre></td></tr></table></figure></p>
+<h4 id="1-使用文件内部注释"><a href="#1-使用文件内部注释" class="headerlink" title="1.使用文件内部注释"></a>1.使用文件内部注释</h4><p>(1).要在JavaScript文件中使用注释来指定全局变量，请使用以下格式<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* global var1, var2 */</span></span><br></pre></td></tr></table></figure></p>
+<p>(2).如果你想要指定这些全局变量不应该被写入（只读），那么你可以设置每个false标志：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* global var1:false, var2:false */</span></span><br></pre></td></tr></table></figure></p>
 <h4 id="2-要在配置文件中配置全局变量，请使用globals键并指示要使用的全局变量。将每个全局变量名称设置为等于true允许覆盖变量或false禁止覆盖。例如："><a href="#2-要在配置文件中配置全局变量，请使用globals键并指示要使用的全局变量。将每个全局变量名称设置为等于true允许覆盖变量或false禁止覆盖。例如：" class="headerlink" title="2.要在配置文件中配置全局变量，请使用globals键并指示要使用的全局变量。将每个全局变量名称设置为等于true允许覆盖变量或false禁止覆盖。例如："></a>2.要在配置文件中配置全局变量，请使用globals键并指示要使用的全局变量。将每个全局变量名称设置为等于true允许覆盖变量或false禁止覆盖。例如：</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">"globals"</span>: &#123;</span><br><span class="line">        <span class="string">"var1"</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="string">"var2"</span>: <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="使用心得"><a href="#使用心得" class="headerlink" title="使用心得"></a>使用心得</h2><p>目前使用vscode,安装eslint插件,然后在配置中加入关于eslint的配置<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">"eslint.autoFixOnSave"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">"eslint.enable"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">"eslint.options"</span>: &#123;</span><br><span class="line">       <span class="string">"extensions"</span>: [<span class="string">".js"</span>, <span class="string">".vue"</span>, <span class="string">".jsx"</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"eslint.validate"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="string">"language"</span>: <span class="string">"vue"</span>,</span><br><span class="line">          <span class="string">"autoFix"</span>: <span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="string">"language"</span>: <span class="string">"javascript"</span>,</span><br><span class="line">          <span class="string">"autoFix"</span>: <span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="string">"language"</span>: <span class="string">"javascriptreact"</span>,</span><br><span class="line">          <span class="string">"autoFix"</span>: <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p><code>&quot;eslint.autoFixOnSave&quot;: true,</code>配置完这个之后,当你在保存的时候可以自动按照你在<code>.eslintrc.js</code>目录中设置的规则自动修复一些空格缩进,单双引号及语句末尾是否需要加<code>;</code>或<code>,</code>的一些错误,但是有一些错误,比如变量声明未定义等得需要你手动去修改.</p>
@@ -545,6 +545,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/29/2017-12-29-2017年小结/" rel="prev" title="2017年小结">
+                2017年小结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -623,7 +627,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-count">42</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

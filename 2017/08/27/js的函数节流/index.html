@@ -110,7 +110,7 @@
 <meta property="og:description" content="什么是函数节流?为什么要用到函数节流?函数节流可以解决哪写问题?">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1096130-fe7e33473c926bcc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-12-22T03:02:29.000Z">
+<meta property="og:updated_time" content="2017-09-06T06:53:13.480Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js的函数节流">
 <meta name="twitter:description" content="什么是函数节流?为什么要用到函数节流?函数节流可以解决哪写问题?">
@@ -436,7 +436,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  544字
+                  508字
                 </span>
               
 
@@ -475,16 +475,16 @@
       
         <p><img src="http://upload-images.jianshu.io/upload_images/1096130-fe7e33473c926bcc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title"><br>什么是函数节流?为什么要用到函数节流?函数节流可以解决哪写问题?<br><a id="more"></a></p>
 <blockquote>
-<p><a href="http://www.alloyteam.com/2012/11/javascript-throttle/" target="_blank" rel="noopener">函数节流</a></p>
+<p><a href="http://www.alloyteam.com/2012/11/javascript-throttle/" target="_blank" rel="external">函数节流</a></p>
 </blockquote>
 <h4 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景:"></a>使用场景:</h4><ul>
 <li>(1)对于常见的场景，如网页滚动时，经常会有滚动到哪时做什么样的动画效果，遂要注册onscroll事件，如何减少触发次数，到达优化性能，同时又满足效果要求不卡顿，一个是优化事件内代码，减少代码量，二就是做函数节流。</li>
 <li>(2)在前端开发中，有时会为页面绑定resize事件，或者为一个页面元素绑定拖拽事件（其核心就是绑定mousemove），这种事件有一个特点，就是用户不必特地捣乱，他在一个正常的操作中，都有可能在一个短的时间内触发非常多次事件绑定程序。而大家知道，DOM操作时很消耗性能的，这个时候，如果你为这些事件绑定一些操作DOM节点的操作的话，那就会引发大量的计算，在用户看来，页面可能就一时间没有响应，这个页面一下子变卡了变慢了。甚至在IE下，如果你绑定的resize事件进行较多DOM操作，其高频率可能直接就使得浏览器崩溃。<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4></li>
 <li>定时器，当触发一个事件时，先setTimeout让这个事件延迟一会再执行，如果在这个时间间隔内又触发了事件，那我们就clear掉原来的定时器，再setTimeout一个新的定时器延迟一会执行</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function throttle(method, context) &#123;</span><br><span class="line">    clearTimeout(method, tId);</span><br><span class="line">    method.tId = setTimeout(function()&#123;</span><br><span class="line">        method.call(context);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">window.onresize = function() &#123;</span><br><span class="line">     throttle(myFunc);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var throttle = function(fn, delay) &#123;</span><br><span class="line">    var timer = null;</span><br><span class="line">    return function() &#123;</span><br><span class="line">        var context = this, args = arguments;</span><br><span class="line">        clearTimeout(timer);</span><br><span class="line">        timer = setTimeout(function() &#123;</span><br><span class="line">            fn.apply(context, args);</span><br><span class="line">        &#125;, delay);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">window.onresize = throttle(myFunc, 100);</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">var throttleV2 = function (fn, delay, mustRunDelay) &#123;</span><br><span class="line">    var timer = null;</span><br><span class="line">    var t_start;</span><br><span class="line">    return function() &#123;</span><br><span class="line">        var context = this, args = arguments, t_curr = +new Date();</span><br><span class="line">        clearTimeout(timer);</span><br><span class="line">        if(!t_start) &#123;</span><br><span class="line">            t_start = t_curr;</span><br><span class="line">        &#125;</span><br><span class="line">        if(t_curr - t_start &gt;= mustRunDelay) &#123;</span><br><span class="line">            fn.apply(context, args);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            timer = setTimeout(function() &#123;</span><br><span class="line">                fn.apply(context, args);</span><br><span class="line">            &#125;, delay);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">window.onresize = throttleV2(myFunc, 50, 100);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">function throttle(method, context) &#123;</div><div class="line">    clearTimeout(method, tId);</div><div class="line">    method.tId = setTimeout(function()&#123;</div><div class="line">        method.call(context);</div><div class="line">    &#125;)</div><div class="line">&#125;</div><div class="line">window.onresize = function() &#123;</div><div class="line">     throttle(myFunc);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var throttle = function(fn, delay) &#123;</div><div class="line">    var timer = null;</div><div class="line">    return function() &#123;</div><div class="line">        var context = this, args = arguments;</div><div class="line">        clearTimeout(timer);</div><div class="line">        timer = setTimeout(function() &#123;</div><div class="line">            fn.apply(context, args);</div><div class="line">        &#125;, delay);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">window.onresize = throttle(myFunc, 100);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">var throttleV2 = function (fn, delay, mustRunDelay) &#123;</div><div class="line">    var timer = null;</div><div class="line">    var t_start;</div><div class="line">    return function() &#123;</div><div class="line">        var context = this, args = arguments, t_curr = +new Date();</div><div class="line">        clearTimeout(timer);</div><div class="line">        if(!t_start) &#123;</div><div class="line">            t_start = t_curr;</div><div class="line">        &#125;</div><div class="line">        if(t_curr - t_start &gt;= mustRunDelay) &#123;</div><div class="line">            fn.apply(context, args);</div><div class="line">        &#125; else &#123;</div><div class="line">            timer = setTimeout(function() &#123;</div><div class="line">                fn.apply(context, args);</div><div class="line">            &#125;, delay);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">window.onresize = throttleV2(myFunc, 50, 100);</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -608,7 +608,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">42</span>
+                <span class="site-state-item-count">43</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -737,7 +737,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="author" itemprop="copyrightHolder">funnycoderstar</span>
 </div>
 

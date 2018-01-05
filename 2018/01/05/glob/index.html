@@ -85,7 +85,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="mongoDB," />
+  <meta name="keywords" content="glob," />
 
 
 
@@ -101,17 +101,18 @@
 
 
 
-<meta name="keywords" content="mongoDB">
+<meta name="description" content="前言glob是shell使用的路径通配符,类似于正则表达式,但是与正则表达式不完全相同,在linux操作中如文件匹配等等已经使用了glob通配符;">
+<meta name="keywords" content="glob">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mongoDB">
-<meta property="og:url" content="http://wangyaxing.top/2017/10/14/mongoDB/index.html">
+<meta property="og:title" content="glob简介">
+<meta property="og:url" content="http://wangyaxing.top/2018/01/05/glob/index.html">
 <meta property="og:site_name" content="funnycoderstar">
+<meta property="og:description" content="前言glob是shell使用的路径通配符,类似于正则表达式,但是与正则表达式不完全相同,在linux操作中如文件匹配等等已经使用了glob通配符;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://oo4xdz5i0.bkt.clouddn.com/mongodb.jpg">
-<meta property="og:updated_time" content="2017-12-22T03:02:29.000Z">
+<meta property="og:updated_time" content="2018-01-05T02:24:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mongoDB">
-<meta name="twitter:image" content="http://oo4xdz5i0.bkt.clouddn.com/mongodb.jpg">
+<meta name="twitter:title" content="glob简介">
+<meta name="twitter:description" content="前言glob是shell使用的路径通配符,类似于正则表达式,但是与正则表达式不完全相同,在linux操作中如文件匹配等等已经使用了glob通配符;">
 
 
 
@@ -140,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="http://wangyaxing.top/2017/10/14/mongoDB/"/>
+  <link rel="canonical" href="http://wangyaxing.top/2018/01/05/glob/"/>
 
 
 
 
 
-  <title>mongoDB | funnycoderstar</title>
+  <title>glob简介 | funnycoderstar</title>
   
 
 
@@ -327,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wangyaxing.top/2017/10/14/mongoDB/">
+    <link itemprop="mainEntityOfPage" href="http://wangyaxing.top/2018/01/05/glob/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="funnycoderstar">
@@ -344,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">mongoDB</h1>
+          <h1 class="post-title" itemprop="name headline">glob简介</h1>
         
 
         <div class="post-meta">
@@ -356,8 +357,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T15:28:46+08:00">
-                2017-10-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-05T10:10:36+08:00">
+                2018-01-05
               </time>
             
 
@@ -379,8 +380,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/mongoDB/" itemprop="url" rel="index">
-                    <span itemprop="name">mongoDB</span>
+                  <a href="/categories/glob/" itemprop="url" rel="index">
+                    <span itemprop="name">glob</span>
                   </a>
                 </span>
 
@@ -398,8 +399,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2017/10/14/mongoDB/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/10/14/mongoDB/" itemprop="commentsCount"></span>
+                <a href="/2018/01/05/glob/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/01/05/glob/" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -407,7 +408,7 @@
 
           
           
-             <span id="/2017/10/14/mongoDB/" class="leancloud_visitors" data-flag-title="mongoDB">
+             <span id="/2018/01/05/glob/" class="leancloud_visitors" data-flag-title="glob简介">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -433,7 +434,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  631字
+                  494字
                 </span>
               
 
@@ -449,7 +450,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  3分钟
+                  2分钟
                 </span>
               
             </div>
@@ -470,28 +471,26 @@
       
 
       
-        <p><img src="http://oo4xdz5i0.bkt.clouddn.com/mongodb.jpg" alt="mongoDB"><br><a id="more"></a><br>MongoDB是一个通用的<code>非关系型</code>数据库;把文档存在集合中;它们不需要相同的schema,每个文档都可以有不同的schema<br>Mongoose是一个Node模块;Mongoose的基础知识如下:</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>glob是shell使用的路径通配符,类似于正则表达式,但是与正则表达式不完全相同,在linux操作中如文件匹配等等已经使用了glob通配符;<br><a id="more"></a></p>
+<h2 id="语法和使用"><a href="#语法和使用" class="headerlink" title="语法和使用"></a>语法和使用</h2><ul>
+<li>*:匹配一个路径部分中0或多个字符, 注意不匹配以.开始的路径,比如.a</li>
+<li>**: 匹配0个或多个子文件夹</li>
+<li>?:匹配一个字符</li>
+<li>[…]: 匹配以系列字符,如[abc]匹配字符a,b,c,在[^…]和[!…]表示匹配不在列表中的字符,如[^abc]匹配出了a,b,c以外的字符.</li>
+<li>{a,b}: 匹配a或者b, a和b也是通配符,可以由其他通配符组成</li>
+<li>!: 排除文件,如!a.js表示排除文件a.js</li>
+</ul>
+<p>glob非常强大的用途在于路径匹配，大部分的平台和开发语言都会在配置中使用glob路径匹配，其普遍性几乎使其成为一种标准。</p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><h4 id="1-基于node的gulp时遇到glob匹配文件路径"><a href="#1-基于node的gulp时遇到glob匹配文件路径" class="headerlink" title="1.基于node的gulp时遇到glob匹配文件路径"></a>1.基于node的gulp时遇到glob匹配文件路径</h4><p>获取js目录下的所有js文件.(不包括以’.’开头的文件)<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//*:匹配路径中某部分:0个或多个字符</span></span><br><span class="line">glob(<span class="string">"js/*.js"</span>,<span class="function"><span class="keyword">function</span> (<span class="params">er, files</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(files)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-gitignore中遇到glob匹配文件路径"><a href="#2-gitignore中遇到glob匹配文件路径" class="headerlink" title="2..gitignore中遇到glob匹配文件路径"></a>2.<code>.gitignore</code>中遇到glob匹配文件路径</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 此为注释 – 将被 Git 忽略</span><br><span class="line">    # 忽略所有 .a 结尾的文件</span><br><span class="line">    *.a</span><br><span class="line">    # 但 lib.a 除外</span><br><span class="line">    !lib.a</span><br><span class="line">    # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO</span><br><span class="line">    /TODO</span><br><span class="line">    # 忽略 build/ 目录下的所有文件</span><br><span class="line">    build/</span><br><span class="line">    # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</span><br><span class="line">    doc<span class="comment">/*.txt</span></span><br></pre></td></tr></table></figure>
+<p>.gitigore的格式规范</p>
 <ul>
-<li>打开或关闭MongoDB连接;</li>
-<li>注册schema;</li>
-<li>添加任务;</li>
-<li>搜索文档</li>
-<li>更新文档</li>
-<li>删除文档<br>首先可以用npm 命令安装Mongoose;</li>
+<li>所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略。</li>
+<li>可以使用标准的 glob 模式匹配</li>
+<li>匹配模式最后跟反斜杠（/）说明要忽略的是目录。</li>
+<li>要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install mongoose</span><br></pre></td></tr></table></figure>
-<h2 id="1-连接的打开和关闭"><a href="#1-连接的打开和关闭" class="headerlink" title="1,连接的打开和关闭"></a>1,连接的打开和关闭</h2><p>装好Mongoose,启动MongoDB服务器,用下面的代码建立到MongoDBd的连接,在下面的例子中是一个叫tasks的数据库<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mongoose = <span class="built_in">require</span>(<span class="string">' mongoose'</span>);</span><br><span class="line"><span class="keyword">const</span> db = mongoose.connect(<span class="string">' mongodb:// localhost/ tasks'</span>);</span><br></pre></td></tr></table></figure></p>
-<p>如果要终止MongoDB创建的连接,<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongoose.disconnect();</span><br></pre></td></tr></table></figure></p>
-<h2 id="2-注册schema"><a href="#2-注册schema" class="headerlink" title="2,注册schema"></a>2,注册schema</h2><p>在用MongoDB管理数据时,需要注册schema<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Schema = mongoose.Schema;</span><br><span class="line"><span class="keyword">const</span> Tasks = <span class="keyword">new</span> Schema(&#123; </span><br><span class="line">    project: <span class="built_in">String</span>,</span><br><span class="line">     description: <span class="built_in">String</span> </span><br><span class="line">&#125;);</span><br><span class="line">mongoose.model(<span class="string">' Task'</span>, Tasks);</span><br></pre></td></tr></table></figure></p>
-<p>Mongoose的schema很强大.除了定义数据结构,还可以设定默认值,处理输入,以及加强校验</p>
-<h2 id="3-添加任务"><a href="#3-添加任务" class="headerlink" title="3,添加任务"></a>3,添加任务</h2><p>schema注册好后,你可以访问它,让Mongoose去工作,下面的代码用模型添加了一项任务<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Task = mongoose. model(<span class="string">' Task'</span>);</span><br><span class="line"><span class="keyword">const</span> task = <span class="keyword">new</span> Task();</span><br><span class="line">task.project = <span class="string">'Bikeshed'</span>;</span><br><span class="line">task.description = <span class="string">'Paint the bikeshed red.'</span>;</span><br><span class="line">task.save( <span class="function"><span class="keyword">function</span>(<span class="params"> err</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">' Task saved.'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<h2 id="4-搜索文档"><a href="#4-搜索文档" class="headerlink" title="4,搜索文档"></a>4,搜索文档</h2><p>Task模型的find方法可以用来查找所有文档,或者用一个JavaScript对象指明一个过滤标准来选择特定的文.下面这段代码搜索跟特定项目相关的任务,并输出每项任务的唯一ID和描述<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Task = mongoose.model(<span class="string">' Task'</span>);</span><br><span class="line">Task.find(&#123;<span class="string">' project'</span>: <span class="string">'Bikeshed'</span>&#125;, <span class="function"><span class="keyword">function</span>(<span class="params"> err, tasks</span>) </span>&#123; </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">const</span> i = <span class="number">0</span>; i &lt; tasks.length; i++) &#123; </span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">' ID:'</span> + tasks[ i]._ id);</span><br><span class="line">        <span class="built_in">console</span>.log( tasks[ i]. description);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<h2 id="5-更新文档"><a href="#5-更新文档" class="headerlink" title="5,更新文档"></a>5,更新文档</h2><p>尽管用模型的find方法可以定位一个文档,然后修改并保存它,但Mongoose还有一个update方法专门来做这个.<br>下面的代码用Mongoose更新了一个新的文档</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Task = mongoose. model(<span class="string">' Task'</span>);</span><br><span class="line">Task.update(</span><br><span class="line">    &#123;<span class="attr">_id</span>: <span class="string">'4e65b793d0cf5ca508000001'</span>&#125;, 　 　<span class="comment">// 用 内部 ID 更新</span></span><br><span class="line">    &#123;<span class="attr">description</span>: <span class="string">'Paint the bikeshed green.'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">multi</span>: <span class="literal">false</span>&#125;, <span class="comment">//只 更新 一个 文档</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span>(<span class="params"> err, rows_ updated</span>) </span>&#123; </span><br><span class="line">        <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">' Updated.'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<h2 id="6-删除文档"><a href="#6-删除文档" class="headerlink" title="6,删除文档"></a>6,删除文档</h2><p>在Mongoose中,一旦你取到了文档,要删除它很容易.你可以用文档的内部ID(或其他任何条件,如果你用find代替finById的话)获取和删除文档,代码就像下面弄这样<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Task = mongoose.model(<span class="string">' Task'</span>);</span><br><span class="line">Task.findById(<span class="string">' 4e65b3dce1592f7d08000001'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"> err, task</span>)</span>&#123;</span><br><span class="line">    task. remove();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul>
-<li><a href="https://robomongo.org/download" target="_blank" rel="noopener">robomongo下载</a></li>
-</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://github.com/isaacs/node-glob" target="_blank" rel="noopener">node-glob</a><br><a href="http://blog.csdn.net/tangxiaolang101/article/details/53931145" target="_blank" rel="noopener">node-glob使用记</a></p>
 
       
     </div>
@@ -511,7 +510,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mongoDB/" rel="tag"># mongoDB</a>
+            <a href="/tags/glob/" rel="tag"># glob</a>
           
         </div>
       
@@ -524,8 +523,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/12/2017-10-12-git/" rel="next" title="git">
-                <i class="fa fa-chevron-left"></i> git
+              <a href="/2018/01/01/2017年末面试总结/" rel="next" title="2017年末面试总结">
+                <i class="fa fa-chevron-left"></i> 2017年末面试总结
               </a>
             
           </div>
@@ -533,10 +532,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/21/数组减去另一数组-数组的每一项都是一个对象/" rel="prev" title="数组减去另一数组(数组的每一项都是一个对象)">
-                数组减去另一数组(数组的每一项都是一个对象) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -718,7 +713,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-连接的打开和关闭"><span class="nav-number">1.</span> <span class="nav-text">1,连接的打开和关闭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-注册schema"><span class="nav-number">2.</span> <span class="nav-text">2,注册schema</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-添加任务"><span class="nav-number">3.</span> <span class="nav-text">3,添加任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-搜索文档"><span class="nav-number">4.</span> <span class="nav-text">4,搜索文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-更新文档"><span class="nav-number">5.</span> <span class="nav-text">5,更新文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-删除文档"><span class="nav-number">6.</span> <span class="nav-text">6,删除文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#友情链接"><span class="nav-number">7.</span> <span class="nav-text">友情链接</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法和使用"><span class="nav-number">2.</span> <span class="nav-text">语法和使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例"><span class="nav-number">3.</span> <span class="nav-text">实例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-基于node的gulp时遇到glob匹配文件路径"><span class="nav-number">3.0.1.</span> <span class="nav-text">1.基于node的gulp时遇到glob匹配文件路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-gitignore中遇到glob匹配文件路径"><span class="nav-number">3.0.2.</span> <span class="nav-text">2..gitignore中遇到glob匹配文件路径</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>

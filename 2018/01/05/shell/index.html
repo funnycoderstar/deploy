@@ -85,7 +85,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="css," />
+  <meta name="keywords" content="node," />
 
 
 
@@ -101,17 +101,18 @@
 
 
 
-<meta name="keywords" content="css">
+<meta name="description" content="Node.js 命令行程序开发问题: 1.一些重复性的工作能否用脚本来实现? 2.实现自动化发布流程 一些重复性的工作可以考虑写一些脚本,写一个脚本有两个方案,一个是直接在npm scripts直接写命令(固定命令,不需要参数)二是用shelljs写一个脚本">
+<meta name="keywords" content="node">
 <meta property="og:type" content="article">
-<meta property="og:title" content="清除css默认样式的总结">
-<meta property="og:url" content="http://wangyaxing.top/2017/09/06/2017-09-06-css默认样式的清除/index.html">
+<meta property="og:title" content="使用脚本提升发布效率">
+<meta property="og:url" content="http://wangyaxing.top/2018/01/05/shell/index.html">
 <meta property="og:site_name" content="funnycoderstar">
+<meta property="og:description" content="Node.js 命令行程序开发问题: 1.一些重复性的工作能否用脚本来实现? 2.实现自动化发布流程 一些重复性的工作可以考虑写一些脚本,写一个脚本有两个方案,一个是直接在npm scripts直接写命令(固定命令,不需要参数)二是用shelljs写一个脚本">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://oo4xdz5i0.bkt.clouddn.com/css.jpg">
-<meta property="og:updated_time" content="2017-12-29T05:18:49.000Z">
+<meta property="og:updated_time" content="2018-01-05T02:52:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="清除css默认样式的总结">
-<meta name="twitter:image" content="http://oo4xdz5i0.bkt.clouddn.com/css.jpg">
+<meta name="twitter:title" content="使用脚本提升发布效率">
+<meta name="twitter:description" content="Node.js 命令行程序开发问题: 1.一些重复性的工作能否用脚本来实现? 2.实现自动化发布流程 一些重复性的工作可以考虑写一些脚本,写一个脚本有两个方案,一个是直接在npm scripts直接写命令(固定命令,不需要参数)二是用shelljs写一个脚本">
 
 
 
@@ -140,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="http://wangyaxing.top/2017/09/06/2017-09-06-css默认样式的清除/"/>
+  <link rel="canonical" href="http://wangyaxing.top/2018/01/05/shell/"/>
 
 
 
 
 
-  <title>清除css默认样式的总结 | funnycoderstar</title>
+  <title>使用脚本提升发布效率 | funnycoderstar</title>
   
 
 
@@ -322,12 +323,12 @@
   
   
 
-  <article class="post post-type-css" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wangyaxing.top/2017/09/06/2017-09-06-css默认样式的清除/">
+    <link itemprop="mainEntityOfPage" href="http://wangyaxing.top/2018/01/05/shell/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="funnycoderstar">
@@ -344,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">清除css默认样式的总结</h1>
+          <h1 class="post-title" itemprop="name headline">使用脚本提升发布效率</h1>
         
 
         <div class="post-meta">
@@ -356,8 +357,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-06T13:46:12+08:00">
-                2017-09-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-05T11:10:36+08:00">
+                2018-01-05
               </time>
             
 
@@ -379,8 +380,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
+                  <a href="/categories/node/" itemprop="url" rel="index">
+                    <span itemprop="name">node</span>
                   </a>
                 </span>
 
@@ -398,8 +399,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2017/09/06/2017-09-06-css默认样式的清除/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/09/06/2017-09-06-css默认样式的清除/" itemprop="commentsCount"></span>
+                <a href="/2018/01/05/shell/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/01/05/shell/" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -407,7 +408,7 @@
 
           
           
-             <span id="/2017/09/06/2017-09-06-css默认样式的清除/" class="leancloud_visitors" data-flag-title="清除css默认样式的总结">
+             <span id="/2018/01/05/shell/" class="leancloud_visitors" data-flag-title="使用脚本提升发布效率">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -433,7 +434,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  379字
+                  424字
                 </span>
               
 
@@ -470,33 +471,13 @@
       
 
       
-        <p><img src="http://oo4xdz5i0.bkt.clouddn.com/css.jpg" alt="title"><br><a id="more"></a></p>
-<p>我们写css的时候经常会遇到要清楚一些默认的样式,其实每次做项目中需要清除的样式就经常是那么几个,最常见的比如</p>
-<ul>
-<li>清除表单元素<code>input</code>,<code>select</code>,<code>`textarea</code>的默认样式,</li>
-<li>CSS3中隐藏滚动条但仍能继续滚动,</li>
-<li>多行文本溢出省略号显示等等,<blockquote>
-<p>所以就总结了一下,持续更新中…,也请大家多多贡献更多的常见的需要清除默认样式的方法😊</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="1-多行文本溢出省略号显示"><a href="#1-多行文本溢出省略号显示" class="headerlink" title="1,多行文本溢出省略号显示"></a>1,多行文本溢出省略号显示</h4><ul>
-<li>让文本只显示一行，然后溢出省略号显示</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">overflow: hidden;</span><br><span class="line">text-overflow: ellipsis;</span><br><span class="line">white-space: nowrap;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>让文本显示两行，然后溢出部分省略号显示<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">line-height: 1.3rem;</span><br><span class="line">max-height: 2.6rem;</span><br><span class="line">display: -webkit-box;</span><br><span class="line">-webkit-box-orient: vertical;</span><br><span class="line">-webkit-line-clamp: 2;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="2，CSS3中隐藏滚动条但仍能继续滚动"><a href="#2，CSS3中隐藏滚动条但仍能继续滚动" class="headerlink" title="2，CSS3中隐藏滚动条但仍能继续滚动"></a>2，CSS3中隐藏滚动条但仍能继续滚动</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    width: 0px;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="3-解决iPhone中overflow-scroll-滑动速度慢或者卡的问题"><a href="#3-解决iPhone中overflow-scroll-滑动速度慢或者卡的问题" class="headerlink" title="3, 解决iPhone中overflow:scroll;滑动速度慢或者卡的问题"></a>3, 解决iPhone中overflow:scroll;滑动速度慢或者卡的问题</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-webkit-overflow-scrolling : touch;</span><br></pre></td></tr></table></figure>
-<h4 id="4-消除input-textarea等的默认样式"><a href="#4-消除input-textarea等的默认样式" class="headerlink" title="4,消除input,textarea等的默认样式"></a>4,消除<code>input</code>,<code>textarea</code>等的默认样式</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">input, button, select, textarea &#123;</span><br><span class="line">    outline: none;</span><br><span class="line">    -webkit-appearance: none;</span><br><span class="line">    border-radius: <span class="number">0</span>;</span><br><span class="line">    border:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">textarea&#123;</span><br><span class="line">    resize:none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>outline: none;</code>去掉chrome浏览器自带的点击input框出现边框情况</li>
-<li><code>-webkit-appearance: button;</code>使元素标签看起来像个按钮样式,意思定义了按钮样式<br><code>-webkit-appearance: none;</code>去掉按钮样式</li>
-<li><code>border-radius: 0;</code> 去掉圆角<br><code>border:0;</code> 去掉border</li>
-<li><code>textarea{resize:none}</code>取消chrome下textarea可拖动放大：<h2 id="About"><a href="#About" class="headerlink" title="About"></a>About</h2><a href="https://hacknical.com/resume/S1VKezRp-?locale=zh" target="_blank" rel="noopener">aboutme</a><br><a href="https://github.com/funnycoderstar" target="_blank" rel="noopener">github</a><br><a href="http://wangyaxing.top/">blog</a></li>
-</ul>
+        <h2 id="Node-js-命令行程序开发"><a href="#Node-js-命令行程序开发" class="headerlink" title="Node.js 命令行程序开发"></a>Node.js 命令行程序开发</h2><p>问题: 1.一些重复性的工作能否用脚本来实现? 2.实现自动化发布流程</p>
+<p>一些重复性的工作可以考虑写一些脚本,写一个脚本有两个方案,一个是直接在<code>npm scripts</code>直接写命令(固定命令,不需要参数)二是用shelljs写一个脚本</p>
+<a id="more"></a>
+<p>场景: 当前博客是用hexo来搭建的,public目录下的文件是真正需要放在服务器上的代码,我现在的博客仓库管理方式,有两个仓库,一个<code>funnycoderstar</code>和一个<code>deploy</code>(注:针对该仓库写了一个定时任务,服务器定时拉取该仓库下的代码,即知道推送到该仓库下就以为了上线了),<code>funnycoderstar</code>是用来放置项目源码的仓库,<code>deploy</code>是用来发布到线上的代码,(即用来存储public目录下的文件),执行 <code>hexo clean &amp;&amp; hexo g</code>之后都需要将public目录下的文件移到<code>deploy</code>仓库下,每次都可以觉得太麻烦了,于是就考虑用shelljs写了一个脚本<br>git.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> shell = <span class="built_in">require</span>(<span class="string">'shelljs'</span>);</span><br><span class="line"><span class="keyword">const</span> yargs = <span class="built_in">require</span>(<span class="string">'yargs'</span>);</span><br><span class="line"><span class="built_in">require</span>(<span class="string">'shelljs/global'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(!shell.which(<span class="string">'git'</span>)) &#123;</span><br><span class="line">    shell.echo(<span class="string">'Sorry, this script requires git'</span>);</span><br><span class="line">    shell.exit(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> argv = yargs.argv._;</span><br><span class="line">cd(<span class="string">'../deploy'</span>);</span><br><span class="line">exec(<span class="string">'git add .'</span>);</span><br><span class="line">exec(<span class="string">'git commit -m'</span> +<span class="string">`feat:`</span>+ <span class="string">`<span class="subst">$&#123;argv[<span class="number">0</span>]&#125;</span>`</span>);</span><br><span class="line">exec(<span class="string">'git push'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>在<code>npm scripts</code>中写了如下脚本<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"publish"</span>: <span class="string">"hexo clean &amp;&amp; hexo g &amp;&amp; cp -r public/* ../deploy &amp;&amp; node ./git.js"</span>,</span><br></pre></td></tr></table></figure></p>
+<p>嘿嘿,这样我每次发布一篇博客的时候直接在命令行执行如下命令就可以了;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run publish 新增博客</span><br></pre></td></tr></table></figure></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" target="_blank" rel="noopener">npm scripts 使用指南</a><br><a href="http://www.ruanyifeng.com/blog/2015/05/command-line-with-node.html" target="_blank" rel="noopener">Node.js 命令行程序开发教程</a></p>
 
       
     </div>
@@ -516,7 +497,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/css/" rel="tag"># css</a>
+            <a href="/tags/node/" rel="tag"># node</a>
           
         </div>
       
@@ -529,8 +510,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/01/wxapp/" rel="next" title="总结微信小程序开发中遇到的坑">
-                <i class="fa fa-chevron-left"></i> 总结微信小程序开发中遇到的坑
+              <a href="/2018/01/05/glob/" rel="next" title="glob简介">
+                <i class="fa fa-chevron-left"></i> glob简介
               </a>
             
           </div>
@@ -538,10 +519,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/06/flex布局/" rel="prev" title="flex布局">
-                flex布局 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -723,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-多行文本溢出省略号显示"><span class="nav-number">1.</span> <span class="nav-text">1,多行文本溢出省略号显示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2，CSS3中隐藏滚动条但仍能继续滚动"><span class="nav-number">2.</span> <span class="nav-text">2，CSS3中隐藏滚动条但仍能继续滚动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-解决iPhone中overflow-scroll-滑动速度慢或者卡的问题"><span class="nav-number">3.</span> <span class="nav-text">3, 解决iPhone中overflow:scroll;滑动速度慢或者卡的问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-消除input-textarea等的默认样式"><span class="nav-number">4.</span> <span class="nav-text">4,消除input,textarea等的默认样式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#About"><span class="nav-number"></span> <span class="nav-text">About</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js-命令行程序开发"><span class="nav-number">1.</span> <span class="nav-text">Node.js 命令行程序开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">2.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>

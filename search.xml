@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[使用脚本提升发布效率]]></title>
+    <url>%2F2018%2F01%2F05%2Fshell%2F</url>
+    <content type="text"><![CDATA[Node.js 命令行程序开发问题: 1.一些重复性的工作能否用脚本来实现? 2.实现自动化发布流程 一些重复性的工作可以考虑写一些脚本,写一个脚本有两个方案,一个是直接在npm scripts直接写命令(固定命令,不需要参数)二是用shelljs写一个脚本 场景: 当前博客是用hexo来搭建的,public目录下的文件是真正需要放在服务器上的代码,我现在的博客仓库管理方式,有两个仓库,一个funnycoderstar和一个deploy(注:针对该仓库写了一个定时任务,服务器定时拉取该仓库下的代码,即知道推送到该仓库下就以为了上线了),funnycoderstar是用来放置项目源码的仓库,deploy是用来发布到线上的代码,(即用来存储public目录下的文件),执行 hexo clean &amp;&amp; hexo g之后都需要将public目录下的文件移到deploy仓库下,每次都可以觉得太麻烦了,于是就考虑用shelljs写了一个脚本git.js12345678910111213const shell = require('shelljs');const yargs = require('yargs');require('shelljs/global');if(!shell.which('git')) &#123; shell.echo('Sorry, this script requires git'); shell.exit(1);&#125;const argv = yargs.argv._;cd('../deploy');exec('git add .');exec('git commit -m' +`feat:`+ `$&#123;argv[0]&#125;`);exec('git push'); 在npm scripts中写了如下脚本1"publish": "hexo clean &amp;&amp; hexo g &amp;&amp; cp -r public/* ../deploy &amp;&amp; node ./git.js", 嘿嘿,这样我每次发布一篇博客的时候直接在命令行执行如下命令就可以了;1npm run publish 新增博客 参考npm scripts 使用指南Node.js 命令行程序开发教程]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[glob简介]]></title>
     <url>%2F2018%2F01%2F05%2Fglob%2F</url>
     <content type="text"><![CDATA[前言glob是shell使用的路径通配符,类似于正则表达式,但是与正则表达式不完全相同,在linux操作中如文件匹配等等已经使用了glob通配符; 语法和使用 *:匹配一个路径部分中0或多个字符, 注意不匹配以.开始的路径,比如.a **: 匹配0个或多个子文件夹 ?:匹配一个字符 […]: 匹配以系列字符,如[abc]匹配字符a,b,c,在[^…]和[!…]表示匹配不在列表中的字符,如[^abc]匹配出了a,b,c以外的字符. {a,b}: 匹配a或者b, a和b也是通配符,可以由其他通配符组成 !: 排除文件,如!a.js表示排除文件a.js glob非常强大的用途在于路径匹配，大部分的平台和开发语言都会在配置中使用glob路径匹配，其普遍性几乎使其成为一种标准。 实例1.基于node的gulp时遇到glob匹配文件路径获取js目录下的所有js文件.(不包括以’.’开头的文件)1234//*:匹配路径中某部分:0个或多个字符glob("js/*.js",function (er, files) &#123; console.log(files)&#125;) 2..gitignore中遇到glob匹配文件路径1234567891011# 此为注释 – 将被 Git 忽略 # 忽略所有 .a 结尾的文件 *.a # 但 lib.a 除外 !lib.a # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO /TODO # 忽略 build/ 目录下的所有文件 build/ # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt doc/*.txt .gitigore的格式规范 所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略。 可以使用标准的 glob 模式匹配 匹配模式最后跟反斜杠（/）说明要忽略的是目录。 要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。 参考node-globnode-glob使用记]]></content>

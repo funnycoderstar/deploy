@@ -4,30 +4,40 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2018/03/13/2018-03-13-%E4%B8%BA%E4%BB%80%E4%B9%88vue%E4%B8%ADdata%E5%BF%85%E9%A1%BB%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2018-03-16T04:38:45.000Z</lastmod>
+    <loc>http://wangyaxing.top/2018/03/18/2018-03-18-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8v-for%E6%97%B6%E5%BF%85%E9%A1%BB%E6%B7%BB%E5%8A%A0%E5%94%AF%E4%B8%80%E7%9A%84key/</loc>
+    <lastmod>2018-03-18T07:32:08.000Z</lastmod>
     <data>
         <display>
-        <title>'为什么vue中data必须是一个函数'</title>
-        <pubTime>2018-03-13T10:24:33.000Z</pubTime>
+        <title>为什么使用v-for时必须添加唯一的key?</title>
+        <pubTime>2018-03-18T07:30:54.000Z</pubTime>
         
+        <tag>vue</tag>
+         
          
            
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
         </display>
     </data>
     </url>
 
     
   <url>
-    <loc>http://wangyaxing.top/2018/01/17/2018-01-07-webpack%E4%B8%ADhtml-webapck-plugin%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2018-03-16T04:38:45.000Z</lastmod>
+    <loc>http://wangyaxing.top/2018/03/13/2018-03-13-%E4%B8%BA%E4%BB%80%E4%B9%88vue%E4%B8%ADdata%E5%BF%85%E9%A1%BB%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2018-03-18T07:31:24.000Z</lastmod>
     <data>
         <display>
-        <title>webpack中html-webpack-plugin的使用</title>
-        <pubTime>2018-01-17T12:04:35.000Z</pubTime>
+        <title>为什么vue中data必须是一个函数</title>
+        <pubTime>2018-03-13T10:24:33.000Z</pubTime>
         
+        <tag>vue</tag>
+         
          
            
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
         </display>
     </data>
     </url>
@@ -782,6 +792,169 @@
 
     
   <url>
+    <loc>http://wangyaxing.top/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端拿高薪必看面试题</title>
+        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+             
+              <breadCrumb title="interview" url="http://wangyaxing.top/categories/interview/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/06/01/2017-06-01-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%B0%BE%E8%B0%83%E7%94%A8/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>函数式编程之尾调用</title>
+        <pubTime>2017-06-01T05:32:38.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>react-redux</title>
+        <pubTime>2017-05-24T05:34:42.000Z</pubTime>
+        
+        <tag>redux</tag>
+         
+         
+           
+             
+              <breadCrumb title="react" url="http://wangyaxing.top/categories/react/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/06/23/2017-06-23-vue-scroll/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>vue中scroll的用法</title>
+        <pubTime>2017-06-23T05:36:13.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/07/03/2017-07-03-for-in-vs-for-of/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>for in vs for of</title>
+        <pubTime>2017-07-03T03:27:09.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/08/12/2017-08-11-%E5%B0%8F%E8%AE%B0/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>小记-iweb峰会</title>
+        <pubTime>2017-08-12T09:31:43.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://wangyaxing.top/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/12/04/2017-12-04-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>javascript项目开发规范实例</title>
+        <pubTime>2017-12-04T09:57:31.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/10/09/2017-10-09-%E5%9B%BD%E5%BA%86%E8%8A%82/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>2017年国庆节-杭州&&上海</title>
+        <pubTime>2017-10-09T15:00:43.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://wangyaxing.top/categories/life/"/>
+          
+             
+              <breadCrumb title="旅游" url="http://wangyaxing.top/categories/life/%E6%97%85%E6%B8%B8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wangyaxing.top/2017/09/27/2017-09-27-css%E5%AE%9E%E7%8E%B0toolTip/</loc>
     <lastmod>2017-12-22T03:02:29.000Z</lastmod>
     <data>
@@ -822,69 +995,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/06/23/2017-06-23-vue-scroll/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>vue中scroll的用法</title>
-        <pubTime>2017-06-23T05:36:13.000Z</pubTime>
-        
-        <tag>vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>前端拿高薪必看面试题</title>
-        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-             
-              <breadCrumb title="interview" url="http://wangyaxing.top/categories/interview/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/10/09/2017-10-09-%E5%9B%BD%E5%BA%86%E8%8A%82/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>2017年国庆节-杭州&&上海</title>
-        <pubTime>2017-10-09T15:00:43.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://wangyaxing.top/categories/life/"/>
-          
-             
-              <breadCrumb title="旅游" url="http://wangyaxing.top/categories/life/%E6%97%85%E6%B8%B8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.top/2017/10/12/2017-10-12-git/</loc>
     <lastmod>2017-12-22T03:02:29.000Z</lastmod>
     <data>
@@ -898,106 +1008,6 @@
            
              
               <breadCrumb title="git" url="http://wangyaxing.top/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/12/04/2017-12-04-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>javascript项目开发规范实例</title>
-        <pubTime>2017-12-04T09:57:31.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/06/01/2017-06-01-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%B0%BE%E8%B0%83%E7%94%A8/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>函数式编程之尾调用</title>
-        <pubTime>2017-06-01T05:32:38.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/08/12/2017-08-11-%E5%B0%8F%E8%AE%B0/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>小记-iweb峰会</title>
-        <pubTime>2017-08-12T09:31:43.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://wangyaxing.top/categories/life/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/07/03/2017-07-03-for-in-vs-for-of/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>for in vs for of</title>
-        <pubTime>2017-07-03T03:27:09.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>react-redux</title>
-        <pubTime>2017-05-24T05:34:42.000Z</pubTime>
-        
-        <tag>redux</tag>
-         
-         
-           
-             
-              <breadCrumb title="react" url="http://wangyaxing.top/categories/react/"/>
           
         </display>
     </data>

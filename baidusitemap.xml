@@ -4,6 +4,84 @@
 
     
   <url>
+    <loc>http://wangyaxing.top/2018/04/15/2018-04-15-vue%E4%B8%AD%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93(%E4%B8%80)/</loc>
+    <lastmod>2018-04-16T06:25:36.000Z</lastmod>
+    <data>
+        <display>
+        <title>vue中需要注意的问题总结(上)</title>
+        <pubTime>2018-04-15T07:30:54.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/08/29/2017-08-29-vue%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</loc>
+    <lastmod>2018-04-15T14:56:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>vue组件通信</title>
+        <pubTime>2017-08-29T10:48:41.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/08/27/2017-08-27-js%E7%9A%84%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/</loc>
+    <lastmod>2018-04-15T09:14:17.000Z</lastmod>
+    <data>
+        <display>
+        <title>js的函数节流</title>
+        <pubTime>2017-08-27T02:52:25.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/12/04/2017-12-04-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</loc>
+    <lastmod>2018-04-15T04:00:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>javascript项目开发规范实例</title>
+        <pubTime>2017-12-04T09:57:31.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wangyaxing.top/2018/03/18/2018-03-18-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8v-for%E6%97%B6%E5%BF%85%E9%A1%BB%E6%B7%BB%E5%8A%A0%E5%94%AF%E4%B8%80%E7%9A%84key/</loc>
     <lastmod>2018-03-18T07:32:08.000Z</lastmod>
     <data>
@@ -242,26 +320,6 @@
            
              
               <breadCrumb title="WebRTC" url="http://wangyaxing.top/categories/WebRTC/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/08/29/2017-08-29-vue%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</loc>
-    <lastmod>2018-02-11T07:49:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>vue组件通信</title>
-        <pubTime>2017-08-29T10:48:41.000Z</pubTime>
-        
-        <tag>vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue" url="http://wangyaxing.top/categories/vue/"/>
           
         </display>
     </data>
@@ -534,26 +592,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/08/27/2017-08-27-js%E7%9A%84%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/</loc>
-    <lastmod>2018-02-11T07:44:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>js的函数节流</title>
-        <pubTime>2017-08-27T02:52:25.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.top/2017/08/27/2017-08-27-js%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</loc>
     <lastmod>2018-02-11T07:44:26.000Z</lastmod>
     <data>
@@ -792,66 +830,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>前端拿高薪必看面试题</title>
-        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-             
-              <breadCrumb title="interview" url="http://wangyaxing.top/categories/interview/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/06/01/2017-06-01-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%B0%BE%E8%B0%83%E7%94%A8/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>函数式编程之尾调用</title>
-        <pubTime>2017-06-01T05:32:38.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
-    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>react-redux</title>
-        <pubTime>2017-05-24T05:34:42.000Z</pubTime>
-        
-        <tag>redux</tag>
-         
-         
-           
-             
-              <breadCrumb title="react" url="http://wangyaxing.top/categories/react/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.top/2017/06/23/2017-06-23-vue-scroll/</loc>
     <lastmod>2017-12-22T03:02:29.000Z</lastmod>
     <data>
@@ -912,19 +890,39 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/12/04/2017-12-04-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</loc>
+    <loc>http://wangyaxing.top/2017/09/27/2017-09-27-css%E5%AE%9E%E7%8E%B0toolTip/</loc>
     <lastmod>2017-12-22T03:02:29.000Z</lastmod>
     <data>
         <display>
-        <title>javascript项目开发规范实例</title>
-        <pubTime>2017-12-04T09:57:31.000Z</pubTime>
+        <title>css实现toolTip</title>
+        <pubTime>2017-09-27T02:58:59.000Z</pubTime>
         
-        <tag>javascript</tag>
+        <tag>css</tag>
          
          
            
              
-              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
+              <breadCrumb title="css" url="http://wangyaxing.top/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/10/12/2017-10-12-git/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>git</title>
+        <pubTime>2017-10-12T09:40:36.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="http://wangyaxing.top/categories/git/"/>
           
         </display>
     </data>
@@ -955,19 +953,39 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/09/27/2017-09-27-css%E5%AE%9E%E7%8E%B0toolTip/</loc>
+    <loc>http://wangyaxing.top/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2017-12-22T03:02:29.000Z</lastmod>
     <data>
         <display>
-        <title>css实现toolTip</title>
-        <pubTime>2017-09-27T02:58:59.000Z</pubTime>
+        <title>前端拿高薪必看面试题</title>
+        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
         
-        <tag>css</tag>
+        <tag>interview</tag>
          
          
            
              
-              <breadCrumb title="css" url="http://wangyaxing.top/categories/css/"/>
+              <breadCrumb title="interview" url="http://wangyaxing.top/categories/interview/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.top/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</loc>
+    <lastmod>2017-12-22T03:02:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>关于斐波那契数列</title>
+        <pubTime>2017-04-09T05:46:12.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法" url="http://wangyaxing.top/categories/%E7%AE%97%E6%B3%95/"/>
           
         </display>
     </data>
@@ -995,19 +1013,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/10/12/2017-10-12-git/</loc>
+    <loc>http://wangyaxing.top/2017/05/24/2017-05-24-react-redux/</loc>
     <lastmod>2017-12-22T03:02:29.000Z</lastmod>
     <data>
         <display>
-        <title>git</title>
-        <pubTime>2017-10-12T09:40:36.000Z</pubTime>
+        <title>react-redux</title>
+        <pubTime>2017-05-24T05:34:42.000Z</pubTime>
         
-        <tag>git</tag>
+        <tag>redux</tag>
          
          
            
              
-              <breadCrumb title="git" url="http://wangyaxing.top/categories/git/"/>
+              <breadCrumb title="react" url="http://wangyaxing.top/categories/react/"/>
           
         </display>
     </data>
@@ -1015,19 +1033,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.top/2017/04/09/2017-04-09-%E5%85%B3%E4%BA%8E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</loc>
+    <loc>http://wangyaxing.top/2017/06/01/2017-06-01-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%B0%BE%E8%B0%83%E7%94%A8/</loc>
     <lastmod>2017-12-22T03:02:29.000Z</lastmod>
     <data>
         <display>
-        <title>关于斐波那契数列</title>
-        <pubTime>2017-04-09T05:46:12.000Z</pubTime>
+        <title>函数式编程之尾调用</title>
+        <pubTime>2017-06-01T05:32:38.000Z</pubTime>
         
-        <tag>算法</tag>
+        <tag>javascript</tag>
          
          
            
              
-              <breadCrumb title="算法" url="http://wangyaxing.top/categories/%E7%AE%97%E6%B3%95/"/>
+              <breadCrumb title="javascript" url="http://wangyaxing.top/categories/javascript/"/>
           
         </display>
     </data>

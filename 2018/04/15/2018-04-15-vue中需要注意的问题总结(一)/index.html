@@ -114,7 +114,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3297464-107dff63973203d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3297464-7e1366c72e18c5bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3297464-910cec4293e6e2b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-04-18T04:54:44.000Z">
+<meta property="og:updated_time" content="2018-04-18T05:14:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue中需要注意的问题总结(上)">
 <meta name="twitter:description" content="前言使用vue的时候经常会遇到一些问题,其实仔细阅读查阅官方文档,就会发现文档中已提到一些格外需要注意的点; 为了深入的理解官方文档中对这些问题的解释,查阅了一些资料,再加上自己的理解,整理了一些常见的问题;如果哪方面解释的不太合理希望各路大神指出; 文章篇幅较长,但是很实用; 目录 组件里面, data必须是一个函数 vue中$set的使用场景 vue生命周期详解 vue组件通信 vue组件之">
@@ -440,7 +440,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  3,371字
+                  3,474字
                 </span>
               
 
@@ -456,7 +456,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  14分钟
+                  15分钟
                 </span>
               
             </div>
@@ -495,12 +495,13 @@
 <p>当一个组件被定义，data 必须声明为返回一个初始数据对象的函数，因为组件可能被用来创建多个实例。如果 data 仍然是一个纯粹的对象，则所有的实例将共享引用同一个数据对象！通过提供 data 函数，每次创建一个新实例后，我们能够调用 data 函数，从而返回初始数据的一个全新副本数据对象。</p>
 <h2 id="2-vue中-set的使用场景"><a href="#2-vue中-set的使用场景" class="headerlink" title="2.vue中$set的使用场景"></a>2.vue中$set的使用场景</h2><h3 id="场景1"><a href="#场景1" class="headerlink" title="场景1:"></a>场景1:</h3><p>通过数组的下标去修改数组的值,数据已经被修改了,但是不触发updated函数,视图不更新,<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    data () &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            items: [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;,</span><br><span class="line">    updated () &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'数据更新'</span>, <span class="keyword">this</span>.items[<span class="number">0</span>]);</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        changeItem1 () &#123;</span><br><span class="line">            <span class="keyword">this</span>.items[<span class="number">0</span>] = <span class="string">'x'</span>;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="number">111</span>, <span class="keyword">this</span>.items[<span class="number">0</span>]);</span><br><span class="line">        &#125;,</span><br><span class="line">        changeItem2 () &#123;</span><br><span class="line">            <span class="keyword">this</span>.$set(<span class="keyword">this</span>.items, <span class="number">0</span>, <span class="string">'x'</span>);</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="number">222</span>, <span class="keyword">this</span>.items[<span class="number">0</span>]);</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <p>执行changeItem1, 控制台打印 111 ‘x’, 没有触发updated,视图不更新<br>执行changeItem1, 控制台打印 222 ‘x’,  数据更新 ‘x’; 触发updated,视图更新</p>
-<h3 id="场景2-vue中检测不到对象属性的添加和删除"><a href="#场景2-vue中检测不到对象属性的添加和删除" class="headerlink" title="场景2: vue中检测不到对象属性的添加和删除"></a>场景2: vue中检测不到对象属性的添加和删除</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data() &#123;</span><br><span class="line">     userProfile: &#123;</span><br><span class="line">        name: &apos;小明&apos;,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>想要给userProfile加一个age属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">addProperty () &#123;</span><br><span class="line">     this.userProfile.age = &apos;12&apos;;</span><br><span class="line">     console.log(555, this.userProfile);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="场景2-vue中检测不到对象属性的添加和删除"><a href="#场景2-vue中检测不到对象属性的添加和删除" class="headerlink" title="场景2: vue中检测不到对象属性的添加和删除"></a>场景2: vue中检测不到对象属性的添加和删除</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data() &#123;</span><br><span class="line">     userProfile: &#123;</span><br><span class="line">        name: <span class="string">'小明'</span>,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>想要给userProfile加一个age属性<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">addProperty () &#123;</span><br><span class="line">     <span class="keyword">this</span>.userProfile.age = <span class="string">'12'</span>;</span><br><span class="line">     <span class="built_in">console</span>.log(<span class="number">555</span>, <span class="keyword">this</span>.userProfile);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>执行addProperty函数时,打印如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">555 &#123; name: &apos;小明&apos;, age: &apos;12&apos;&#125;</span><br></pre></td></tr></table></figure>
-<p>但是没有触发updated, 视图未更新<br>改成下面这种<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">addProperty () &#123;</span><br><span class="line">      this.$set(this.userProfile, &apos;age&apos;, &apos;12&apos;);</span><br><span class="line">      console.log(666, this.userProfile);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">555</span> &#123; <span class="attr">name</span>: <span class="string">'小明'</span>, <span class="attr">age</span>: <span class="string">'12'</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>但是没有触发updated, 视图未更新<br>改成下面这种<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">addProperty () &#123;</span><br><span class="line">      <span class="keyword">this</span>.$set(<span class="keyword">this</span>.userProfile, <span class="string">'age'</span>, <span class="string">'12'</span>);</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="number">666</span>, <span class="keyword">this</span>.userProfile);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
 <p>再次执行, 数据发生变化,  触发updated, 视图更新;</p>
+<p>有时你想向已有对象上添加一些属性，例如使用 Object.assign() 或 _.extend() 方法来添加属性。但是，添加到对象上的新属性不会触发更新。在这种情况下可以创建一个新的对象，让它包含原对象的属性和新的属性：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 代替 `Object.assign(this.someObject, &#123; a: 1, b: 2 &#125;)`</span></span><br><span class="line"><span class="keyword">this</span>.someObject = <span class="built_in">Object</span>.assign(&#123;&#125;, <span class="keyword">this</span>.someObject, &#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;)</span><br></pre></td></tr></table></figure></p>
 <p>这是vue中很典型的一个问题,使用的时候一定要注意!</p>
 <h4 id="简单的解释一下原理"><a href="#简单的解释一下原理" class="headerlink" title="简单的解释一下原理:"></a>简单的解释一下原理:</h4><p>vue在创建实例的时候把data深度遍历所有属性,并使用 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty" target="_blank" rel="noopener">Object.defineProperty</a> 把这些属性全部转为 getter/setter。让 Vue 追踪依赖，在属性被访问和修改时通知变化。所以属性必须在 data 对象上存在才能让 Vue 转换它，这样才能让它是响应的。<br>当你在对象上新加了一个属性 newProperty,当前新加的这个属性并没有加入vue检测数据更新的机制(因为是在初始化之后添加的),vue.$set是能让vue知道你添加了属性, 它会给你做处理</p>
 <h2 id="3-vue生命周期详解"><a href="#3-vue生命周期详解" class="headerlink" title="3.vue生命周期详解"></a>3.vue生命周期详解</h2><h4 id="1-vue的生命周期"><a href="#1-vue的生命周期" class="headerlink" title="1. vue的生命周期"></a>1. vue的生命周期</h4><ul>
@@ -602,6 +603,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/04/20/2018-04-20-简单实现一个Virtual-DOM/" rel="prev" title="简单实现一个Virtual DOM">
+                简单实现一个Virtual DOM <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -679,7 +684,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">52</span>
+                <span class="site-state-item-count">53</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

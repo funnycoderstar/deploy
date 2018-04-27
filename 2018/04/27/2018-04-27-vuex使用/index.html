@@ -85,7 +85,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javascript," />
+  <meta name="keywords" content="vue," />
 
 
 
@@ -101,17 +101,21 @@
 
 
 
-<meta name="keywords" content="javascript">
+<meta name="description" content="vuex中几个核心概念: state, getters, mutations, actions, module">
+<meta name="keywords" content="vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="for in vs for of">
-<meta property="og:url" content="http://wangyaxing.top/2017/07/03/2017-07-03-for-in-vs-for-of/index.html">
+<meta property="og:title" content="vuex使用">
+<meta property="og:url" content="http://wangyaxing.top/2018/04/27/2018-04-27-vuex使用/index.html">
 <meta property="og:site_name" content="funnycoderstar">
+<meta property="og:description" content="vuex中几个核心概念: state, getters, mutations, actions, module">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1652442167,4081781189&fm=173&s=67CAF30748133CC46E9D988C0300F083&w=630&h=379&img.JPEG">
-<meta property="og:updated_time" content="2017-12-22T03:02:29.000Z">
+<meta property="og:image" content="http://cdn.wangyaxing.top/vuex1.jpeg">
+<meta property="og:image" content="http://cdn.wangyaxing.top/vuex2.jpeg">
+<meta property="og:updated_time" content="2018-04-27T11:47:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="for in vs for of">
-<meta name="twitter:image" content="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1652442167,4081781189&fm=173&s=67CAF30748133CC46E9D988C0300F083&w=630&h=379&img.JPEG">
+<meta name="twitter:title" content="vuex使用">
+<meta name="twitter:description" content="vuex中几个核心概念: state, getters, mutations, actions, module">
+<meta name="twitter:image" content="http://cdn.wangyaxing.top/vuex1.jpeg">
 
 
 
@@ -140,13 +144,13 @@
 
 
 
-  <link rel="canonical" href="http://wangyaxing.top/2017/07/03/2017-07-03-for-in-vs-for-of/"/>
+  <link rel="canonical" href="http://wangyaxing.top/2018/04/27/2018-04-27-vuex使用/"/>
 
 
 
 
 
-  <title>for in vs for of | funnycoderstar</title>
+  <title>vuex使用 | funnycoderstar</title>
   
 
 
@@ -322,12 +326,12 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wangyaxing.top/2017/07/03/2017-07-03-for-in-vs-for-of/">
+    <link itemprop="mainEntityOfPage" href="http://wangyaxing.top/2018/04/27/2018-04-27-vuex使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="funnycoderstar">
@@ -344,7 +348,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">for in vs for of</h1>
+          <h1 class="post-title" itemprop="name headline">vuex使用</h1>
         
 
         <div class="post-meta">
@@ -356,8 +360,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-03T11:27:09+08:00">
-                2017-07-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-27T12:03:18+08:00">
+                2018-04-27
               </time>
             
 
@@ -379,8 +383,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javascript/" itemprop="url" rel="index">
-                    <span itemprop="name">javascript</span>
+                  <a href="/categories/vue/" itemprop="url" rel="index">
+                    <span itemprop="name">vue</span>
                   </a>
                 </span>
 
@@ -398,8 +402,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2017/07/03/2017-07-03-for-in-vs-for-of/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/07/03/2017-07-03-for-in-vs-for-of/" itemprop="commentsCount"></span>
+                <a href="/2018/04/27/2018-04-27-vuex使用/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/04/27/2018-04-27-vuex使用/" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -407,7 +411,7 @@
 
           
           
-             <span id="/2017/07/03/2017-07-03-for-in-vs-for-of/" class="leancloud_visitors" data-flag-title="for in vs for of">
+             <span id="/2018/04/27/2018-04-27-vuex使用/" class="leancloud_visitors" data-flag-title="vuex使用">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -433,7 +437,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  262字
+                  1,515字
                 </span>
               
 
@@ -449,7 +453,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  6分钟
                 </span>
               
             </div>
@@ -470,17 +474,37 @@
       
 
       
-        <p><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1652442167,4081781189&amp;fm=173&amp;s=67CAF30748133CC46E9D988C0300F083&amp;w=630&amp;h=379&amp;img.JPEG" alt="title"><br><a id="more"></a></p>
-<h3 id="for-in-和-for-of-的区别"><a href="#for-in-和-for-of-的区别" class="headerlink" title="for in 和 for of 的区别"></a>for in 和 for of 的区别</h3><ul>
-<li><p>for in 更适合遍历对象，不要使用for in 遍历数组</p>
-</li>
-<li><p>for in 遍历的是数组的索引(即键名)，而for of 遍历的是数组元素值</p>
-</li>
+        <blockquote>
+<p>vuex中几个核心概念: state, getters, mutations, actions, module</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>可以把Vuex看成是一个前端的”数据库”(store), 修改”数据库”中一个值,则所有使用到该值得地方都会得到相应的更新</p>
+<h1 id="vuex用法"><a href="#vuex用法" class="headerlink" title="vuex用法"></a>vuex用法</h1><h2 id="getters"><a href="#getters" class="headerlink" title="getters"></a>getters</h2><p>可以认为是store的计算属性;与计算属性一样,getter的返回值会根据它的依赖缓存起来,且只有当它的依赖值发生变化才会被重新计算</p>
+<h3 id="mapGetters"><a href="#mapGetters" class="headerlink" title="mapGetters"></a>mapGetters</h3><p>辅助函数仅仅是将 store 中的 getter 映射到局部计算属性：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; mapGetters &#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  computed: &#123;</span><br><span class="line">  <span class="comment">// 使用对象展开运算符将 getter 混入 computed 对象中</span></span><br><span class="line">    ...mapGetters([</span><br><span class="line">      <span class="string">'doneTodosCount'</span>,</span><br><span class="line">      <span class="string">'anotherGetter'</span>,</span><br><span class="line">      <span class="comment">// ...</span></span><br><span class="line">    ])</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="mutations-只能是同步操作"><a href="#mutations-只能是同步操作" class="headerlink" title="mutations 只能是同步操作"></a>mutations 只能是同步操作</h2><p>更改vuex的store中的状态的唯一方法就是提交 mutations<br>在 mutation 中混合异步调用会导致你的程序很难调试。例如，当你能调用了两个包含异步回调的 mutation 来改变状态，你怎么知道什么时候回调和哪个先回调呢？</p>
+<p>mutation必须是同步函数<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mutations: &#123;</span><br><span class="line">  someMutation (state) &#123;</span><br><span class="line">    api.callAsyncMethod(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      state.count++</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>现在想象，我们正在 debug 一个 app 并且观察 devtool 中的 mutation 日志。每一条 mutation 被记录，devtools 都需要捕捉到前一状态和后一状态的快照。然而，在上面的例子中 mutation 中的异步函数中的回调让这不可能完成：因为当 mutation 触发的时候，回调函数还没有被调用，devtools 不知道什么时候回调函数实际上被调用——实质上任何在回调函数中进行的状态的改变都是不可追踪的。</p>
+<h3 id="在组件中提交mutations"><a href="#在组件中提交mutations" class="headerlink" title="在组件中提交mutations"></a>在组件中提交mutations</h3><p>你可以在组件中使用 this.$store.commit(‘xxx’) 提交 mutation，或者使用 <code>mapMutations</code> 辅助函数将组件中的 methods 映射为 store.commit 调用（需要在根节点注入 store）。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; mapMutations &#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  methods: &#123;</span><br><span class="line">    ...mapMutations([</span><br><span class="line">      <span class="string">'increment'</span>, <span class="comment">// 将 `this.increment()` 映射为 `this.$store.commit('increment')`</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">// `mapMutations` 也支持载荷：</span></span><br><span class="line">      <span class="string">'incrementBy'</span> <span class="comment">// 将 `this.incrementBy(amount)` 映射为 `this.$store.commit('incrementBy', amount)`</span></span><br><span class="line">    ]),</span><br><span class="line">    ...mapMutations(&#123;</span><br><span class="line">      add: <span class="string">'increment'</span> <span class="comment">// 将 `this.add()` 映射为 `this.$store.commit('increment')`</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="actions-可以是异步操作"><a href="#actions-可以是异步操作" class="headerlink" title="actions 可以是异步操作"></a>actions 可以是异步操作</h2><ul>
+<li>action提交的是mutation,而不是直接更改状态</li>
+<li>action 可以包含任何异步操作</li>
 </ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.prototype.methods = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> myObject = &#123;</span><br><span class="line">    a: <span class="number">1</span>,</span><br><span class="line">    b: <span class="number">2</span>,</span><br><span class="line">    c: <span class="number">3</span>,</span><br><span class="line">&#125;;</span><br><span class="line">使用<span class="keyword">for</span> <span class="keyword">in</span> 遍历对象的键名</span><br><span class="line"> <span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> myObject) &#123;</span><br><span class="line">   <span class="built_in">console</span>.log(key);</span><br><span class="line"> &#125;</span><br><span class="line"> a</span><br><span class="line"> b</span><br><span class="line"> c</span><br><span class="line"> methods</span><br><span class="line"><span class="keyword">for</span> <span class="keyword">in</span> 可以遍历到myObject的原型方法methods，如果不想遍历原型方法和属性的话.可以用hasOwnPropery方法可以判断某属性是否是该对象的实例属性</span><br><span class="line"> <span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> myObject) &#123;</span><br><span class="line">     <span class="keyword">if</span>(myObject.hasOwnProperty(key))&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(key);</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> a</span><br><span class="line"> b</span><br><span class="line"> c</span><br><span class="line"></span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(myObject));  [ <span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span> ]</span><br><span class="line"><span class="built_in">Object</span>.keys(myObject).forEach(<span class="function"><span class="keyword">function</span>(<span class="params">key, index</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(key, myObject[key]);</span><br><span class="line">&#125;)</span><br><span class="line"> a <span class="number">1</span></span><br><span class="line"> b <span class="number">2</span></span><br><span class="line"> c <span class="number">3</span></span><br><span class="line"> 同样可以通过ES5的<span class="built_in">Object</span>.keys(myObject)获取对象的实例属性组成的数组，不包括原型方法和属性。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>for of 用来遍历数组的值</li>
-</ul>
+<h3 id="分发-action"><a href="#分发-action" class="headerlink" title="分发 action"></a>分发 action</h3><h3 id="在组件中分发Action"><a href="#在组件中分发Action" class="headerlink" title="在组件中分发Action"></a>在组件中分发Action</h3><p>你在组件中使用 this.$store.dispatch(‘xxx’) 分发 action，或者使用 <code>mapActions</code> 辅助函数将组件的 methods 映射为 store.dispatch 调用（需要先在根节点注入 store）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; mapActions &#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  methods: &#123;</span><br><span class="line">    ...mapActions([</span><br><span class="line">      <span class="string">'increment'</span>, <span class="comment">// 将 `this.increment()` 映射为 `this.$store.dispatch('increment')`</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">// `mapActions` 也支持载荷：</span></span><br><span class="line">      <span class="string">'incrementBy'</span> <span class="comment">// 将 `this.incrementBy(amount)` 映射为 `this.$store.dispatch('incrementBy', amount)`</span></span><br><span class="line">    ]),</span><br><span class="line">    ...mapActions(&#123;</span><br><span class="line">      add: <span class="string">'increment'</span> <span class="comment">// 将 `this.add()` 映射为 `this.$store.dispatch('increment')`</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="组合-Action"><a href="#组合-Action" class="headerlink" title="组合 Action"></a>组合 Action</h3><p>Action 通常是异步的，那么如何知道 action 什么时候结束呢？更重要的是，我们如何才能组合多个 action，以处理更加复杂的异步流程？</p>
+<p>首先，你需要明白 store.dispatch 可以处理被触发的 action 的处理函数返回的 Promise，并且 store.dispatch 仍旧返回 Promise：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 假设 getData() 和 getOtherData() 返回的是 Promise</span></span><br><span class="line"></span><br><span class="line">actions: &#123;</span><br><span class="line">  <span class="keyword">async</span> actionA (&#123; commit &#125;) &#123;</span><br><span class="line">    commit(<span class="string">'gotData'</span>, <span class="keyword">await</span> getData())</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="keyword">async</span> actionB (&#123; dispatch, commit &#125;) &#123;</span><br><span class="line">    <span class="keyword">await</span> dispatch(<span class="string">'actionA'</span>) <span class="comment">// 等待 actionA 完成</span></span><br><span class="line">    commit(<span class="string">'gotOtherData'</span>, <span class="keyword">await</span> getOtherData())</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="module"><a href="#module" class="headerlink" title="module"></a>module</h2><p>由于使用单一状态树,应用的所有状态会集中到一个比较大的对象;当应用变得非常复杂时,store 对象就有可能变得相当臃肿。</p>
+<p>为了解决以上问题，Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块——从上至下进行同样方式的分割：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> moduleA = &#123;</span><br><span class="line">  state: &#123; ... &#125;,</span><br><span class="line">  mutations: &#123; ... &#125;,</span><br><span class="line">  actions: &#123; ... &#125;,</span><br><span class="line">  getters: &#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> moduleB = &#123;</span><br><span class="line">  state: &#123; ... &#125;,</span><br><span class="line">  mutations: &#123; ... &#125;,</span><br><span class="line">  actions: &#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  modules: &#123;</span><br><span class="line">    a: moduleA,</span><br><span class="line">    b: moduleB</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">store.state.a <span class="comment">// -&gt; moduleA 的状态</span></span><br><span class="line">store.state.b <span class="comment">// -&gt; moduleB 的状态</span></span><br></pre></td></tr></table></figure>
+<p>如果你希望使用全局 <code>state</code> 和 <code>getter</code>，<code>rootState</code> 和 <code>rootGetter</code> 会作为第三和第四参数传入 getter，也会通过 context 对象的属性传入 action。</p>
+<h3 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h3><p>默认情况下，模块内部的 action、mutation 和 getter 是注册在全局命名空间的——这样使得多个模块能够对同一 mutation 或 action 作出响应。</p>
+<p>如果希望你的模块具有更高的封装度和复用性，你可以通过添加 namespaced: true 的方式使其成为命名空间模块。当模块被注册后，它的所有 getter、action 及 mutation 都会自动根据模块注册的路径调整命名。例如：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  modules: &#123;</span><br><span class="line">    account: &#123;</span><br><span class="line">      namespaced: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 模块内容（module assets）</span></span><br><span class="line">      state: &#123; ... &#125;, <span class="comment">// 模块内的状态已经是嵌套的了，使用 `namespaced` 属性不会对其产生影响</span></span><br><span class="line">      getters: &#123;</span><br><span class="line">        isAdmin () &#123; ... &#125; <span class="comment">// -&gt; getters['account/isAdmin']</span></span><br><span class="line">      &#125;,</span><br><span class="line">      actions: &#123;</span><br><span class="line">        login () &#123; ... &#125; <span class="comment">// -&gt; dispatch('account/login')</span></span><br><span class="line">      &#125;,</span><br><span class="line">      mutations: &#123;</span><br><span class="line">        login () &#123; ... &#125; <span class="comment">// -&gt; commit('account/login')</span></span><br><span class="line">      &#125;,</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 嵌套模块</span></span><br><span class="line">      modules: &#123;</span><br><span class="line">        <span class="comment">// 继承父模块的命名空间</span></span><br><span class="line">        myPage: &#123;</span><br><span class="line">          state: &#123; ... &#125;,</span><br><span class="line">          getters: &#123;</span><br><span class="line">            profile () &#123; ... &#125; <span class="comment">// -&gt; getters['account/profile']</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 进一步嵌套命名空间</span></span><br><span class="line">        posts: &#123;</span><br><span class="line">          namespaced: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">          state: &#123; ... &#125;,</span><br><span class="line">          getters: &#123;</span><br><span class="line">            popular () &#123; ... &#125; <span class="comment">// -&gt; getters['account/posts/popular']</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>如果你希望使用全局 state 和 getter，rootState 和 rootGetter 会作为第三和第四参数传入 getter，也会通过 context 对象的属性传入 action。<br>若需要在全局命名空间内分发 action 或提交 mutation，将 { root: true } 作为第三参数传给 dispatch 或 commit 即可。</p>
+<h1 id="需要注意的点"><a href="#需要注意的点" class="headerlink" title="需要注意的点"></a>需要注意的点</h1><h2 id="默认情况下-模块内的getter-mutation-action是注册在全局空间的-state只注册在局部命名空间的"><a href="#默认情况下-模块内的getter-mutation-action是注册在全局空间的-state只注册在局部命名空间的" class="headerlink" title="默认情况下,模块内的getter, mutation,action是注册在全局空间的,state只注册在局部命名空间的;"></a>默认情况下,模块内的getter, mutation,action是注册在全局空间的,state只注册在局部命名空间的;</h2><p>要想使模块内的getter, mutation,action注册在模块命名空间,必须在模块内加上 namespaced: true</p>
+<p><img src="http://cdn.wangyaxing.top/vuex1.jpeg" alt="未使用命名空间"><br><img src="http://cdn.wangyaxing.top/vuex2.jpeg" alt="使用命名空间"><br>使用命名空间在调用action时必须使用<br>  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.$store.dispatch(<span class="string">'hero1/getHeroInfo'</span>);</span><br><span class="line"></span><br><span class="line">computed: &#123;</span><br><span class="line">      doneTodosCount () &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="keyword">this</span>.$store.getters[<span class="string">'hero1/doneTodos'</span>][<span class="number">0</span>].item;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
+<p>  <a href="https://stackoverflow.com/questions/41833424/how-to-access-vuex-module-getters-and-mutations" target="_blank" rel="noopener">参考链接</a></p>
+<h2 id="页面刷新时-store中的数据会清空"><a href="#页面刷新时-store中的数据会清空" class="headerlink" title="页面刷新时,store中的数据会清空"></a>页面刷新时,store中的数据会清空</h2><p>解决方案<br><a href="https://stackoverflow.com/questions/43027499/vuex-state-on-page-refresh" target="_blank" rel="noopener">https://stackoverflow.com/questions/43027499/vuex-state-on-page-refresh</a></p>
 
       
     </div>
@@ -500,7 +524,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javascript/" rel="tag"># javascript</a>
+            <a href="/tags/vue/" rel="tag"># vue</a>
           
         </div>
       
@@ -513,8 +537,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/23/2017-06-23-vue-scroll/" rel="next" title="vue中scroll的用法">
-                <i class="fa fa-chevron-left"></i> vue中scroll的用法
+              <a href="/2018/04/20/2018-04-20-简单实现一个Virtual-DOM/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
@@ -522,10 +546,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/20/2017-08-20-揭开vue神秘面纱/" rel="prev" title="揭开vue神秘面纱">
-                揭开vue神秘面纱 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -707,7 +727,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#for-in-和-for-of-的区别"><span class="nav-number">1.</span> <span class="nav-text">for in 和 for of 的区别</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vuex用法"><span class="nav-number">2.</span> <span class="nav-text">vuex用法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#getters"><span class="nav-number">2.1.</span> <span class="nav-text">getters</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mapGetters"><span class="nav-number">2.1.1.</span> <span class="nav-text">mapGetters</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mutations-只能是同步操作"><span class="nav-number">2.2.</span> <span class="nav-text">mutations 只能是同步操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在组件中提交mutations"><span class="nav-number">2.2.1.</span> <span class="nav-text">在组件中提交mutations</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#actions-可以是异步操作"><span class="nav-number">2.3.</span> <span class="nav-text">actions 可以是异步操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分发-action"><span class="nav-number">2.3.1.</span> <span class="nav-text">分发 action</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在组件中分发Action"><span class="nav-number">2.3.2.</span> <span class="nav-text">在组件中分发Action</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组合-Action"><span class="nav-number">2.3.3.</span> <span class="nav-text">组合 Action</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#module"><span class="nav-number">2.4.</span> <span class="nav-text">module</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#命名空间"><span class="nav-number">2.4.1.</span> <span class="nav-text">命名空间</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#需要注意的点"><span class="nav-number">3.</span> <span class="nav-text">需要注意的点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#默认情况下-模块内的getter-mutation-action是注册在全局空间的-state只注册在局部命名空间的"><span class="nav-number">3.1.</span> <span class="nav-text">默认情况下,模块内的getter, mutation,action是注册在全局空间的,state只注册在局部命名空间的;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面刷新时-store中的数据会清空"><span class="nav-number">3.2.</span> <span class="nav-text">页面刷新时,store中的数据会清空</span></a></li></ol></li></ol></div>
             
 
           </div>

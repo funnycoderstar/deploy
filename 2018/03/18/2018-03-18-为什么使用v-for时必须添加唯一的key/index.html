@@ -108,7 +108,11 @@
 <meta property="og:site_name" content="funnycoderstar">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1541368-d9be1b3b39abc037?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-03-18T07:32:08.000Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3297464-0848720c71af2123.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3297464-ee627869a6714336.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3297464-d912523aac5fd108.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3297464-650689b4bd4b9eb6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-04-27T11:55:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="为什么使用v-for时必须添加唯一的key?">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1541368-d9be1b3b39abc037?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -433,7 +437,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  873字
+                  1,214字
                 </span>
               
 
@@ -449,7 +453,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  4分钟
+                  5分钟
                 </span>
               
             </div>
@@ -487,7 +491,18 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">之前的数据                                       之后的数据</span><br><span class="line"></span><br><span class="line">key: <span class="number">1</span>  id: <span class="number">1</span> index: <span class="number">0</span> name: test1     key: <span class="number">1</span>  id: <span class="number">1</span> index: <span class="number">0</span>  name: test1</span><br><span class="line">key: <span class="number">2</span>  id: <span class="number">2</span> index: <span class="number">1</span> name: test2     key: <span class="number">4</span>  id: <span class="number">4</span> index: <span class="number">1</span>  name: 我是插队的那条数据</span><br><span class="line">key: <span class="number">3</span>  id: <span class="number">3</span> index: <span class="number">2</span> name: test3     key: <span class="number">2</span>  id: <span class="number">2</span> index: <span class="number">2</span>  name: test2</span><br><span class="line">                                       key: <span class="number">3</span>  id: <span class="number">3</span> index: <span class="number">3</span>  name: test3</span><br></pre></td></tr></table></figure>
 <p>现在对比发现只有一条数据变化了,就是<code>id</code>为4的那条数据,因此只要新渲染这一条数据就可以了,其他都是就复用之前的;</p>
 <p>同理在react中使用map渲染列表时,也是必须加key,且推荐做法也是使用<code>id</code>,也是这个原因;</p>
-<p>其实,真正的原因并不是vue和react怎么怎么,而是因为Virtual DOM 使用Diff算法实现的原因,推荐一篇文章<a href="https://github.com/livoras/blog/issues/13" target="_blank" rel="noopener">深度剖析：如何实现一个 Virtual DOM 算法</a></p>
+<p>其实,真正的原因并不是vue和react怎么怎么,而是因为Virtual DOM 使用Diff算法实现的原因:</p>
+<h2 id="原理简析"><a href="#原理简析" class="headerlink" title="原理简析"></a>原理简析</h2><blockquote>
+<p>vue和react的虚拟DOM的Diff算法大致相同，其核心是基于两个简单的假设：</p>
+</blockquote>
+<ol>
+<li>两个相同的组件产生类似的DOM结构，不同的组件产生不同的DOM结构。</li>
+<li>同一层级的一组节点，他们可以通过唯一的id进行区分。基于以上这两点假设，使得虚拟DOM的Diff算法的复杂度从O(n^3)降到了O(n)。</li>
+</ol>
+<p>引用<a href="https://calendar.perfplanet.com/2013/diff/" title="Permanent Link to React’s diff algorithm" target="_blank" rel="noopener">React’s diff algorithm</a>中的例子:</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3297464-0848720c71af2123.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="diff1.jpg"><br>当某一层有很多相同的节点时，也就是列表节点时，Diff算法的更新过程默认情况下也是遵循以上原则。<br>比如一下这个情况：<br><img src="https://upload-images.jianshu.io/upload_images/3297464-ee627869a6714336.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="diff2.jpg"><br>我们希望可以在B和C之间加一个F，Diff算法默认执行起来是这样的：<br><img src="https://upload-images.jianshu.io/upload_images/3297464-d912523aac5fd108.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="diff3.jpg"><br>即把C更新成F，D更新成C，E更新成D，最后再插入E，是不是很没有效率？</p>
+<p>所以我们需要使用key来给每个节点做一个唯一标识，Diff算法就可以正确的识别此节点，找到正确的位置区插入新的节点。<br><img src="https://upload-images.jianshu.io/upload_images/3297464-650689b4bd4b9eb6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="diff4.jpg"></p>
+<p>所以一句话，key的作用主要是为了高效的更新虚拟DOM。另外vue中在使用相同标签名元素的过渡切换时，也会使用到key属性，其目的也是为了让vue可以区分它们，否则vue只会替换其内部属性而不会触发过渡效果。</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
 <li><a href="https://cn.vuejs.org/v2/guide/list.html#%E6%95%B0%E7%BB%84%E6%9B%B4%E6%96%B0%E6%A3%80%E6%B5%8B" target="_blank" rel="noopener">vue官方文档</a></li>
 <li><a href="https://reactjs.org/docs/lists-and-keys.html" target="_blank" rel="noopener">react官方文档</a></li>
@@ -719,7 +734,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#v-for中的key"><span class="nav-number">1.</span> <span class="nav-text">v-for中的key</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-在最后一条数据后再加一条数据"><span class="nav-number">1.1.</span> <span class="nav-text">1.在最后一条数据后再加一条数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-在中间插入一条数据"><span class="nav-number">1.2.</span> <span class="nav-text">2.在中间插入一条数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">2.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#v-for中的key"><span class="nav-number">1.</span> <span class="nav-text">v-for中的key</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-在最后一条数据后再加一条数据"><span class="nav-number">1.1.</span> <span class="nav-text">1.在最后一条数据后再加一条数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-在中间插入一条数据"><span class="nav-number">1.2.</span> <span class="nav-text">2.在中间插入一条数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原理简析"><span class="nav-number">2.</span> <span class="nav-text">原理简析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>

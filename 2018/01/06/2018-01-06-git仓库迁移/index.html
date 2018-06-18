@@ -111,7 +111,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://static.open-open.com/lib/uploadImg/20141015/20141015084602_745.png">
 <meta property="og:image" content="http://static.oschina.net/uploads/space/2014/0807/173051_96yi_574576.jpg">
-<meta property="og:updated_time" content="2018-02-11T07:42:43.000Z">
+<meta property="og:updated_time" content="2018-03-13T10:17:37.821Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git仓库迁移">
 <meta name="twitter:description" content="需求背景:需要将原来放置gitlab的仓库迁移到集团gitlab,需要将所有分支和tag都迁移过去">
@@ -437,7 +437,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  881字
+                  877字
                 </span>
               
 
@@ -477,14 +477,14 @@
         <p><img src="http://static.open-open.com/lib/uploadImg/20141015/20141015084602_745.png" alt="title"></p>
 <h2 id="需求背景"><a href="#需求背景" class="headerlink" title="需求背景:"></a>需求背景:</h2><p>需要将原来放置gitlab的仓库迁移到集团gitlab,需要将所有分支和tag都迁移过去</p>
 <a id="more"></a>
-<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><p>1.将代码从原有仓库中拉下来<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone remote_git_address(remote_git_address为新服务器gitLab上新建的同名项目地址)</span><br></pre></td></tr></table></figure></p>
-<p>2.设置把本地gitlab地址替换成为集团gitlab地址<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin remote_git_address（remote_git_address为新服务器gitLab上新建的同名项目地址）</span><br></pre></td></tr></table></figure></p>
-<p>3.本地仓库推送到远程<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git push origin --all 推送主干和分支</span><br><span class="line"></span><br><span class="line">git push --tags 推送标签</span><br></pre></td></tr></table></figure></p>
-<h2 id="相关知识"><a href="#相关知识" class="headerlink" title="相关知识"></a>相关知识</h2><h4 id="git-checkout-用法"><a href="#git-checkout-用法" class="headerlink" title="git checkout 用法"></a><code>git checkout</code> 用法</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout --orphan latest_branch</span><br></pre></td></tr></table></figure>
+<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><p>1.将代码从原有仓库中拉下来<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone remote_git_address(remote_git_address为新服务器gitLab上新建的同名项目地址)</div></pre></td></tr></table></figure></p>
+<p>2.设置把本地gitlab地址替换成为集团gitlab地址<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote set-url origin remote_git_address（remote_git_address为新服务器gitLab上新建的同名项目地址）</div></pre></td></tr></table></figure></p>
+<p>3.本地仓库推送到远程<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git push origin --all 推送主干和分支</div><div class="line"></div><div class="line">git push --tags 推送标签</div></pre></td></tr></table></figure></p>
+<h2 id="相关知识"><a href="#相关知识" class="headerlink" title="相关知识"></a>相关知识</h2><h4 id="git-checkout-用法"><a href="#git-checkout-用法" class="headerlink" title="git checkout 用法"></a><code>git checkout</code> 用法</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout --orphan latest_branch</div></pre></td></tr></table></figure>
 <p>假如你的某个分支上，积累了无数次的提交，你也懒得去打理，打印出的log也让你无力吐槽，那么这个命令将是你的神器，它会基于当前所在分支新建一个赤裸裸的分支，没有任何的提交历史，但是当前分支的内容一一俱全<br>新建的分支，严格意义上说，还不是一个分支，因为HEAD指向的引用中没有commit值，只有在进行一次提交后，它才算得上真正的分支。</p>
 <h4 id="git-remote用法"><a href="#git-remote用法" class="headerlink" title="git remote用法"></a><code>git remote</code>用法</h4><p>git remote -v 查看现有远程仓库的地址url</p>
-<h5 id="修改及添加远程地址"><a href="#修改及添加远程地址" class="headerlink" title="修改及添加远程地址"></a>修改及添加远程地址</h5><p>1.修改命令<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin &lt;URL&gt; 更换远程仓库地址,把&lt;URL&gt;更换为新的url地址</span><br></pre></td></tr></table></figure></p>
-<p>2.先删后加<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br><span class="line">git remote add origin remote_git_address（remote_git_address为新服务器gitLab上新建的同名项目地址）</span><br></pre></td></tr></table></figure></p>
+<h5 id="修改及添加远程地址"><a href="#修改及添加远程地址" class="headerlink" title="修改及添加远程地址"></a>修改及添加远程地址</h5><p>1.修改命令<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote set-url origin &lt;URL&gt; 更换远程仓库地址,把&lt;URL&gt;更换为新的url地址</div></pre></td></tr></table></figure></p>
+<p>2.先删后加<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote rm origin</div><div class="line">git remote add origin remote_git_address（remote_git_address为新服务器gitLab上新建的同名项目地址）</div></pre></td></tr></table></figure></p>
 <p>3.直接修改配置文件</p>
 <p>你可能想让你的代码拥有两个甚至更多远程仓库,<br>你可以再添加一个远程库: git remote add origin2; 这个方法很低效,因为你要git push 两次才能完成push到两个库</p>
 <p>其实还有一个方法,git的一个远程库可以对应多个地址,即我能让远程库origin拥有多个url地址,方法如下:<br>首先，我们从零开始，<br>假设你现在想要增加3个远程库地址，分别为:</p>
@@ -501,8 +501,8 @@
 <p>注意:</p>
 <p>使用 <code>git push origin master</code>时,你可以push到origin的的多个url地址,<br>但是使用git pull 时,只能拉去origin里的一个url地址(即fetch-url,如上图),这个fetch-url默认为添加的到origin的第一个地址;<br>如果你想更改，只需要更改config文件里，那三个url的顺序即可，fetch-url会直接对应排行第一的那个utl连接。</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="http://blog.csdn.net/lcyaiym/article/details/77678467" target="_blank" rel="noopener">gitlab project项目迁移</a></li>
-<li><a href="http://blog.csdn.net/s0228g0228/article/details/45368155" target="_blank" rel="noopener">Git远程仓库 git remote</a></li>
+<li><a href="http://blog.csdn.net/lcyaiym/article/details/77678467" target="_blank" rel="external">gitlab project项目迁移</a></li>
+<li><a href="http://blog.csdn.net/s0228g0228/article/details/45368155" target="_blank" rel="external">Git远程仓库 git remote</a></li>
 </ul>
 
       
@@ -627,7 +627,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">53</span>
+                <span class="site-state-item-count">54</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

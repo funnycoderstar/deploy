@@ -112,7 +112,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3297464-b97ab1ba31b426eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://oo4xdz5i0.bkt.clouddn.com/rocketChatSucess.png">
 <meta property="og:image" content="http://oo4xdz5i0.bkt.clouddn.com/rocketChat.png">
-<meta property="og:updated_time" content="2018-02-11T07:45:02.000Z">
+<meta property="og:updated_time" content="2018-03-13T10:17:37.805Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac下运行Rocket.chat">
 <meta name="twitter:image" content="http://oo4xdz5i0.bkt.clouddn.com/rocketLogo.png-blogImg">
@@ -448,7 +448,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  515字
+                  499字
                 </span>
               
 
@@ -487,40 +487,40 @@
       
         <p><img src="http://oo4xdz5i0.bkt.clouddn.com/rocketLogo.png-blogImg" alt="title"><br><a id="more"></a></p>
 <h3 id="1-简介"><a href="#1-简介" class="headerlink" title="1,简介"></a>1,简介</h3><ul>
-<li><a href="https://github.com/RocketChat/Rocket.Chat" target="_blank" rel="noopener">github</a></li>
+<li><a href="https://github.com/RocketChat/Rocket.Chat" target="_blank" rel="external">github</a></li>
 <li>Rocket.chat是特性最丰富的Slack开源替代品之一</li>
 <li>主要功能：群组聊天，直接通信，私聊群，桌面通知，媒体嵌入，文件上传，语音/视频聊天，截图等等</li>
 <li>Rocket.chat原生支持windows,Mac OSX, Linux, ios和Android平台</li>
 </ul>
 <h3 id="2，准备工作"><a href="#2，准备工作" class="headerlink" title="2，准备工作"></a>2，准备工作</h3><p>由于Rocket.chat使用的是Meteor框架，而Meteor框架是对Node.js的封装，源码中又使用到了CoffeeScript.js,使用数据库是MongDB，所以在Rocker.chat上做二次开发，需要学习的技术有Meteor, Node.js, CoffeeScript.js,MongDB；</p>
 <h4 id="其他资料"><a href="#其他资料" class="headerlink" title="其他资料"></a>其他资料</h4><ul>
-<li><a href="http://coffee-script.org/" target="_blank" rel="noopener">CoffeeScipt中文网</a></li>
-<li><a href="http://zh.discovermeteor.com" target="_blank" rel="noopener">Meteor中文网</a></li>
+<li><a href="http://coffee-script.org/" target="_blank" rel="external">CoffeeScipt中文网</a></li>
+<li><a href="http://zh.discovermeteor.com" target="_blank" rel="external">Meteor中文网</a></li>
 </ul>
 <p>Rocket.chat要运行，必须安装Node.js,NPM,Meteor(包含了Mongdb)<br>node和npm的安装大家肯定特别熟悉，下面说一下meteor的安装过程</p>
-<h4 id="3-安装meteor"><a href="#3-安装meteor" class="headerlink" title="3,安装meteor"></a>3,安装meteor</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://install.meteor.com/ | sh</span><br></pre></td></tr></table></figure>
-<p>创建一个小工程的指令，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">meteor create meteorApp</span><br><span class="line"><span class="built_in">cd</span> meteorApp</span><br><span class="line">meteor</span><br></pre></td></tr></table></figure></p>
-<p>在浏览器中输入：<a href="http://localhost:3000/" target="_blank" rel="noopener">http://localhost:3000/</a></p>
-<h4 id="4-下载和运行Rocket-chat"><a href="#4-下载和运行Rocket-chat" class="headerlink" title="4,下载和运行Rocket.chat"></a>4,下载和运行Rocket.chat</h4><p>下载Rocet.chat最好使用git 的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git clone https://github.com/RocketChat/Rocket.Chat.git</span><br></pre></td></tr></table></figure></p>
-<p>等工程源码下载完毕后，进入对应的文件夹，然后运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd Rocket.Chat</span><br><span class="line">npm start</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-安装meteor"><a href="#3-安装meteor" class="headerlink" title="3,安装meteor"></a>3,安装meteor</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl https://install.meteor.com/ | sh</div></pre></td></tr></table></figure>
+<p>创建一个小工程的指令，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">meteor create meteorApp</div><div class="line"><span class="built_in">cd</span> meteorApp</div><div class="line">meteor</div></pre></td></tr></table></figure></p>
+<p>在浏览器中输入：<a href="http://localhost:3000/" target="_blank" rel="external">http://localhost:3000/</a></p>
+<h4 id="4-下载和运行Rocket-chat"><a href="#4-下载和运行Rocket-chat" class="headerlink" title="4,下载和运行Rocket.chat"></a>4,下载和运行Rocket.chat</h4><p>下载Rocet.chat最好使用git 的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git clone https://github.com/RocketChat/Rocket.Chat.git</div></pre></td></tr></table></figure></p>
+<p>等工程源码下载完毕后，进入对应的文件夹，然后运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd Rocket.Chat</div><div class="line">npm start</div></pre></td></tr></table></figure></p>
 <blockquote>
 <p>在执行npm start的过程中，需要注意一下问题，否则可能会启动不了</p>
 <ul>
-<li>1,运行会特别慢,建议加上修改源为淘宝源，具体方法如下<a href="http://blog.csdn.net/bugall/article/details/45765979" target="_blank" rel="noopener">参考</a>：</li>
+<li>1,运行会特别慢,建议加上修改源为淘宝源，具体方法如下<a href="http://blog.csdn.net/bugall/article/details/45765979" target="_blank" rel="external">参考</a>：</li>
 </ul>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm config set registry https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
 <ul>
 <li>2,运行过程需要<code>翻墙</code>，因为国外的npm包在国内下载可能就被墙了</li>
 </ul>
 <blockquote>
-<p>我在安装的过程中出现报错：<br> <img src="http://oo4xdz5i0.bkt.clouddn.com/phantomjs-error.png" alt=""><br> 找了phantomjs<a href="https://npm.taobao.org/mirrors/phantomjs" target="_blank" rel="noopener">镜像</a>单独安装了一下速度很快，就成功了,😊,然后把phantomjs添加到环境变量(方法如下)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1,cd phantomjs</span><br><span class="line">2,cd bin</span><br><span class="line">3,pwd     //注: 需要输出的复制地址</span><br><span class="line">4,cd ~    // 回到根目录</span><br><span class="line">5,vim .zshrc</span><br><span class="line">6,添加到path</span><br><span class="line">7,source .zshrc // 保存修改</span><br></pre></td></tr></table></figure></p>
+<p>我在安装的过程中出现报错：<br> <img src="http://oo4xdz5i0.bkt.clouddn.com/phantomjs-error.png" alt=""><br> 找了phantomjs<a href="https://npm.taobao.org/mirrors/phantomjs" target="_blank" rel="external">镜像</a>单独安装了一下速度很快，就成功了,😊,然后把phantomjs添加到环境变量(方法如下)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">1,cd phantomjs</div><div class="line">2,cd bin</div><div class="line">3,pwd     //注: 需要输出的复制地址</div><div class="line">4,cd ~    // 回到根目录</div><div class="line">5,vim .zshrc</div><div class="line">6,添加到path</div><div class="line">7,source .zshrc // 保存修改</div></pre></td></tr></table></figure></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3297464-b97ab1ba31b426eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="phantomjst添加到Path.png"></p>
 <p>运行成功命令行如下<br><img src="http://oo4xdz5i0.bkt.clouddn.com/rocketChatSucess.png" alt=""></p>
 <p>运行成功浏览器中如下<br> <img src="http://oo4xdz5i0.bkt.clouddn.com/rocketChat.png" alt=""></p>
 </blockquote>
-<p><a href="http://blog.csdn.net/u011619283/article/details/52971473" target="_blank" rel="noopener">参考</a></p>
-<p>如果运行中出现其他的问题欢迎与我交流<br><a href="http://wangyaxing.deercv.com/" target="_blank" rel="noopener">aboutme</a><br><a href="https://github.com/funnycoderstar" target="_blank" rel="noopener">github</a><br><a href="http://wangyaxing.top/2017/09/01/wxapp/#more">blog</a></p>
+<p><a href="http://blog.csdn.net/u011619283/article/details/52971473" target="_blank" rel="external">参考</a></p>
+<p>如果运行中出现其他的问题欢迎与我交流<br><a href="http://wangyaxing.deercv.com/" target="_blank" rel="external">aboutme</a><br><a href="https://github.com/funnycoderstar" target="_blank" rel="external">github</a><br><a href="http://wangyaxing.top/2017/09/01/wxapp/#more">blog</a></p>
 
       
     </div>
@@ -646,7 +646,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">53</span>
+                <span class="site-state-item-count">54</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

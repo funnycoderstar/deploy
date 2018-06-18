@@ -110,7 +110,7 @@
 <meta property="og:description" content="Node.js 命令行程序开发问题: 1.一些重复性的工作能否用脚本来实现? 2.实现自动化发布流程 一些重复性的工作可以考虑写一些脚本,写一个脚本有两个方案,一个是直接在npm scripts直接写命令(固定命令,不需要参数)二是用shelljs写一个脚本">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1518340049320&di=6ae86448732258b117fb5a7a2d70b3f6&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F88d701b2b78445f2c4be2f16b1025edca196b59b.jpg">
-<meta property="og:updated_time" content="2018-02-11T07:46:39.000Z">
+<meta property="og:updated_time" content="2018-03-13T10:17:37.820Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用脚本提升发布效率">
 <meta name="twitter:description" content="Node.js 命令行程序开发问题: 1.一些重复性的工作能否用脚本来实现? 2.实现自动化发布流程 一些重复性的工作可以考虑写一些脚本,写一个脚本有两个方案,一个是直接在npm scripts直接写命令(固定命令,不需要参数)二是用shelljs写一个脚本">
@@ -436,7 +436,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  424字
+                  412字
                 </span>
               
 
@@ -477,10 +477,10 @@
 <h2 id="Node-js-命令行程序开发"><a href="#Node-js-命令行程序开发" class="headerlink" title="Node.js 命令行程序开发"></a>Node.js 命令行程序开发</h2><p>问题: 1.一些重复性的工作能否用脚本来实现? 2.实现自动化发布流程</p>
 <p>一些重复性的工作可以考虑写一些脚本,写一个脚本有两个方案,一个是直接在<code>npm scripts</code>直接写命令(固定命令,不需要参数)二是用shelljs写一个脚本</p>
 <a id="more"></a>
-<p>场景: 当前博客是用hexo来搭建的,public目录下的文件是真正需要放在服务器上的代码,我现在的博客仓库管理方式,有两个仓库,一个<code>funnycoderstar</code>和一个<code>deploy</code>(注:针对该仓库写了一个定时任务,服务器定时拉取该仓库下的代码,即知道推送到该仓库下就以为了上线了),<code>funnycoderstar</code>是用来放置项目源码的仓库,<code>deploy</code>是用来发布到线上的代码,(即用来存储public目录下的文件),执行 <code>hexo clean &amp;&amp; hexo g</code>之后都需要将public目录下的文件移到<code>deploy</code>仓库下,每次都可以觉得太麻烦了,于是就考虑用shelljs写了一个脚本<br>git.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> shell = <span class="built_in">require</span>(<span class="string">'shelljs'</span>);</span><br><span class="line"><span class="keyword">const</span> yargs = <span class="built_in">require</span>(<span class="string">'yargs'</span>);</span><br><span class="line"><span class="built_in">require</span>(<span class="string">'shelljs/global'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(!shell.which(<span class="string">'git'</span>)) &#123;</span><br><span class="line">    shell.echo(<span class="string">'Sorry, this script requires git'</span>);</span><br><span class="line">    shell.exit(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> argv = yargs.argv._;</span><br><span class="line">cd(<span class="string">'../deploy'</span>);</span><br><span class="line">exec(<span class="string">'git add .'</span>);</span><br><span class="line">exec(<span class="string">'git commit -m'</span> +<span class="string">`feat:`</span>+ <span class="string">`<span class="subst">$&#123;argv[<span class="number">0</span>]&#125;</span>`</span>);</span><br><span class="line">exec(<span class="string">'git push'</span>);</span><br></pre></td></tr></table></figure></p>
-<p>在<code>npm scripts</code>中写了如下脚本<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"publish"</span>: <span class="string">"hexo clean &amp;&amp; hexo g &amp;&amp; cp -r public/* ../deploy &amp;&amp; node ./git.js"</span>,</span><br></pre></td></tr></table></figure></p>
-<p>嘿嘿,这样我每次发布一篇博客的时候直接在命令行执行如下命令就可以了;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run publish 新增博客</span><br></pre></td></tr></table></figure></p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" target="_blank" rel="noopener">npm scripts 使用指南</a><br><a href="http://www.ruanyifeng.com/blog/2015/05/command-line-with-node.html" target="_blank" rel="noopener">Node.js 命令行程序开发教程</a></p>
+<p>场景: 当前博客是用hexo来搭建的,public目录下的文件是真正需要放在服务器上的代码,我现在的博客仓库管理方式,有两个仓库,一个<code>funnycoderstar</code>和一个<code>deploy</code>(注:针对该仓库写了一个定时任务,服务器定时拉取该仓库下的代码,即知道推送到该仓库下就以为了上线了),<code>funnycoderstar</code>是用来放置项目源码的仓库,<code>deploy</code>是用来发布到线上的代码,(即用来存储public目录下的文件),执行 <code>hexo clean &amp;&amp; hexo g</code>之后都需要将public目录下的文件移到<code>deploy</code>仓库下,每次都可以觉得太麻烦了,于是就考虑用shelljs写了一个脚本<br>git.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> shell = <span class="built_in">require</span>(<span class="string">'shelljs'</span>);</div><div class="line"><span class="keyword">const</span> yargs = <span class="built_in">require</span>(<span class="string">'yargs'</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'shelljs/global'</span>);</div><div class="line"></div><div class="line"><span class="keyword">if</span>(!shell.which(<span class="string">'git'</span>)) &#123;</div><div class="line">    shell.echo(<span class="string">'Sorry, this script requires git'</span>);</div><div class="line">    shell.exit(<span class="number">1</span>);</div><div class="line">&#125;</div><div class="line"><span class="keyword">const</span> argv = yargs.argv._;</div><div class="line">cd(<span class="string">'../deploy'</span>);</div><div class="line">exec(<span class="string">'git add .'</span>);</div><div class="line">exec(<span class="string">'git commit -m'</span> +<span class="string">`feat:`</span>+ <span class="string">`<span class="subst">$&#123;argv[<span class="number">0</span>]&#125;</span>`</span>);</div><div class="line">exec(<span class="string">'git push'</span>);</div></pre></td></tr></table></figure></p>
+<p>在<code>npm scripts</code>中写了如下脚本<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">"publish"</span>: <span class="string">"hexo clean &amp;&amp; hexo g &amp;&amp; cp -r public/* ../deploy &amp;&amp; node ./git.js"</span>,</div></pre></td></tr></table></figure></p>
+<p>嘿嘿,这样我每次发布一篇博客的时候直接在命令行执行如下命令就可以了;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run publish 新增博客</div></pre></td></tr></table></figure></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" target="_blank" rel="external">npm scripts 使用指南</a><br><a href="http://www.ruanyifeng.com/blog/2015/05/command-line-with-node.html" target="_blank" rel="external">Node.js 命令行程序开发教程</a></p>
 
       
     </div>
@@ -604,7 +604,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">53</span>
+                <span class="site-state-item-count">54</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

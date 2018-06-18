@@ -108,7 +108,7 @@
 <meta property="og:site_name" content="funnycoderstar">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514467983152&di=7f18195395ae333a47a666a961858759&imgtype=0&src=http%3A%2F%2Fwww.yaohzone.com%2Fupload%2F2016_11%2F1478274881940%40yaohzone.png">
-<meta property="og:updated_time" content="2018-02-11T07:50:17.000Z">
+<meta property="og:updated_time" content="2018-03-13T10:17:37.811Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在npm上发布包">
 <meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514467983152&di=7f18195395ae333a47a666a961858759&imgtype=0&src=http%3A%2F%2Fwww.yaohzone.com%2Fupload%2F2016_11%2F1478274881940%40yaohzone.png">
@@ -433,7 +433,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  426字
+                  398字
                 </span>
               
 
@@ -472,24 +472,24 @@
       
         <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1514467983152&amp;di=7f18195395ae333a47a666a961858759&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.yaohzone.com%2Fupload%2F2016_11%2F1478274881940%40yaohzone.png" alt="npm"></p>
 <a id="more"></a>
-<h1 id="在npm上发布自己的包"><a href="#在npm上发布自己的包" class="headerlink" title="在npm上发布自己的包"></a>在npm上发布自己的包</h1><h2 id="发布包"><a href="#发布包" class="headerlink" title="发布包"></a>发布包</h2><p>1.创建你要发布的包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mkdir test-wyx</span><br><span class="line">cd test-wyx</span><br><span class="line">npm init</span><br><span class="line">touch readme.md</span><br><span class="line">touch index.js</span><br><span class="line">mkdir lib</span><br><span class="line">cd lib</span><br><span class="line">touch test.js</span><br></pre></td></tr></table></figure></p>
-<p>/lib/test.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = &#123;</span><br><span class="line">    fun : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log( <span class="string">'这是我的第一个npm包'</span> );</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">module</span>.exports = a; <span class="comment">// 把a暴漏出去</span></span><br></pre></td></tr></table></figure></p>
-<p>index.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = <span class="built_in">require</span>( <span class="string">'./lib/test.js'</span> );</span><br><span class="line"><span class="built_in">module</span>.exports = a; <span class="comment">//把a暴漏出去</span></span><br></pre></td></tr></table></figure></p>
-<p>现在的目录结构<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-test-wyx</span><br><span class="line">    -lib</span><br><span class="line">        -test.js</span><br><span class="line">    -index.js</span><br><span class="line">    -package.json</span><br><span class="line">    -readme.md</span><br></pre></td></tr></table></figure></p>
-<p>2.创建npm账号,两种方式<br>第一种: 打开<a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm</a>注册<br>第二种: 命令行注册<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm adduser</span><br></pre></td></tr></table></figure></p>
-<p>依次输入用户名，密码，邮箱就注册成功了。注册成功会自动登录，所以现在已经在本地登录成功。<br>如果你已经有npm账号可通过如下命名登录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm login</span><br></pre></td></tr></table></figure></p>
+<h1 id="在npm上发布自己的包"><a href="#在npm上发布自己的包" class="headerlink" title="在npm上发布自己的包"></a>在npm上发布自己的包</h1><h2 id="发布包"><a href="#发布包" class="headerlink" title="发布包"></a>发布包</h2><p>1.创建你要发布的包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">mkdir test-wyx</div><div class="line">cd test-wyx</div><div class="line">npm init</div><div class="line">touch readme.md</div><div class="line">touch index.js</div><div class="line">mkdir lib</div><div class="line">cd lib</div><div class="line">touch test.js</div></pre></td></tr></table></figure></p>
+<p>/lib/test.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> a = &#123;</div><div class="line">    fun : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log( <span class="string">'这是我的第一个npm包'</span> );</div><div class="line">    &#125;;</div><div class="line">&#125;</div><div class="line"><span class="built_in">module</span>.exports = a; <span class="comment">// 把a暴漏出去</span></div></pre></td></tr></table></figure></p>
+<p>index.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> a = <span class="built_in">require</span>( <span class="string">'./lib/test.js'</span> );</div><div class="line"><span class="built_in">module</span>.exports = a; <span class="comment">//把a暴漏出去</span></div></pre></td></tr></table></figure></p>
+<p>现在的目录结构<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">-test-wyx</div><div class="line">    -lib</div><div class="line">        -test.js</div><div class="line">    -index.js</div><div class="line">    -package.json</div><div class="line">    -readme.md</div></pre></td></tr></table></figure></p>
+<p>2.创建npm账号,两种方式<br>第一种: 打开<a href="https://www.npmjs.com/" target="_blank" rel="external">npm</a>注册<br>第二种: 命令行注册<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm adduser</div></pre></td></tr></table></figure></p>
+<p>依次输入用户名，密码，邮箱就注册成功了。注册成功会自动登录，所以现在已经在本地登录成功。<br>如果你已经有npm账号可通过如下命名登录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm login</div></pre></td></tr></table></figure></p>
 <p>输入用户名账号和密码即可登录</p>
 <p>3.发布包</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm publish</span><br></pre></td></tr></table></figure>
-<p>4.这时你就可以在<a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm</a>官网 ,通过在搜索框中输入test-wyx来查询到你刚才发布的包了。<br>5.更新包，你修改过包里的js文件时，同时还得修改package.json里version的版本号后才可重新发布。</p>
-<h2 id="应用包"><a href="#应用包" class="headerlink" title="应用包"></a>应用包</h2><p>1.新建一个文件夹<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir test</span><br><span class="line">cd test</span><br></pre></td></tr></table></figure></p>
-<p>2.安装这个包<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install test-wyx</span><br></pre></td></tr></table></figure></p>
-<p>3.然后，在test文件夹下新建index.js文件，输入如下代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> test = <span class="built_in">require</span>( <span class="string">'test-wyx'</span> );</span><br><span class="line">test.fun();</span><br></pre></td></tr></table></figure></p>
-<p>4.在test文件夹,右键选择git bash here,输入如下命令<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node index.js</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm publish</div></pre></td></tr></table></figure>
+<p>4.这时你就可以在<a href="https://www.npmjs.com/" target="_blank" rel="external">npm</a>官网 ,通过在搜索框中输入test-wyx来查询到你刚才发布的包了。<br>5.更新包，你修改过包里的js文件时，同时还得修改package.json里version的版本号后才可重新发布。</p>
+<h2 id="应用包"><a href="#应用包" class="headerlink" title="应用包"></a>应用包</h2><p>1.新建一个文件夹<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir test</div><div class="line">cd test</div></pre></td></tr></table></figure></p>
+<p>2.安装这个包<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install test-wyx</div></pre></td></tr></table></figure></p>
+<p>3.然后，在test文件夹下新建index.js文件，输入如下代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> test = <span class="built_in">require</span>( <span class="string">'test-wyx'</span> );</div><div class="line">test.fun();</div></pre></td></tr></table></figure></p>
+<p>4.在test文件夹,右键选择git bash here,输入如下命令<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node index.js</div></pre></td></tr></table></figure></p>
 <p>就可以输出这是我的第一个npm包</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://www.cnblogs.com/penghuwan/p/6973702.html#_label3_0" target="_blank" rel="noopener">【npm】利用npm安装/删除/发布/更新/撤销发布包</a></li>
-<li><a href="https://segmentfault.com/a/1190000010224751" target="_blank" rel="noopener">在npm发布自己的包</a></li>
+<li><a href="https://www.cnblogs.com/penghuwan/p/6973702.html#_label3_0" target="_blank" rel="external">【npm】利用npm安装/删除/发布/更新/撤销发布包</a></li>
+<li><a href="https://segmentfault.com/a/1190000010224751" target="_blank" rel="external">在npm发布自己的包</a></li>
 </ul>
 
       
@@ -614,7 +614,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">53</span>
+                <span class="site-state-item-count">54</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

@@ -397,17 +397,6 @@
 
           
             
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2017/08/23/2017-08-23-vue中检测不到对象的变化/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/08/23/2017-08-23-vue中检测不到对象的变化/" itemprop="commentsCount"></span>
-                </a>
-              
-            
           
 
           
@@ -478,7 +467,7 @@
         <p><img src="http://upload-images.jianshu.io/upload_images/1541368-d9be1b3b39abc037?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="title"><br>使用vue过程中,遇到了一些问题,这里先总结以下两个:<br><a id="more"></a></p>
 <h1 id="问题一"><a href="#问题一" class="headerlink" title="问题一:"></a>问题一:</h1><p>vue组件之间传递数据,在子组件中我想改变一个从父组件中传过来的值</p>
 <blockquote>
-<p>这是父组件<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;template&gt;</div><div class="line">  &lt;div&gt;</div><div class="line">      &lt;Child :message=<span class="string">"message"</span>&gt;&lt;/Child&gt;</div><div class="line">  &lt;<span class="regexp">/div&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>template&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line"><span class="keyword">import</span> Child <span class="keyword">from</span> <span class="string">'./child.vue'</span>;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">    data() &#123;</div><div class="line">        <span class="keyword">return</span> &#123;</div><div class="line">            message: <span class="string">'这是传给子组件的信息'</span>,</div><div class="line">        &#125;;</div><div class="line">    &#125;,</div><div class="line">    components: &#123;</div><div class="line">        Child,</div><div class="line">    &#125;,</div><div class="line">&#125;;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure></p>
+<p>这是父组件<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;template&gt;</div><div class="line">  &lt;div&gt;</div><div class="line">      &lt;Child :message=<span class="string">"message"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">Child</span>&gt;</span></span></div><div class="line">  &lt;<span class="regexp">/div&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>template&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line"><span class="keyword">import</span> Child <span class="keyword">from</span> <span class="string">'./child.vue'</span>;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">    data() &#123;</div><div class="line">        <span class="keyword">return</span> &#123;</div><div class="line">            message: <span class="string">'这是传给子组件的信息'</span>,</div><div class="line">        &#125;;</div><div class="line">    &#125;,</div><div class="line">    components: &#123;</div><div class="line">        Child,</div><div class="line">    &#125;,</div><div class="line">&#125;;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure></p>
 <p>这是子组件<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">&lt;template&gt;</div><div class="line">  &lt;div @click=<span class="string">"handleChange"</span>&gt;</div><div class="line">      &#123;&#123;message&#125;&#125;</div><div class="line">  &lt;<span class="regexp">/div&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>template&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">        props: &#123;</div><div class="line">            message: &#123;</div><div class="line">                type: <span class="built_in">String</span>,</div><div class="line">                <span class="keyword">default</span>: <span class="string">'这是默认信息'</span>,</div><div class="line">            &#125;,</div><div class="line">        &#125;,</div><div class="line">        methods: &#123;</div><div class="line">            handleChange() &#123;</div><div class="line">                <span class="keyword">this</span>.message = <span class="string">'我是子组件修改后的信息'</span>;</div><div class="line">            &#125;,</div><div class="line">        &#125;,</div><div class="line">    &#125;;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure></p>
 </blockquote>
 <p>如果你这样写就会报一下错误<br><img src="http://oo4xdz5i0.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-08-24%20%E4%B8%8B%E5%8D%883.12.16.png" alt="title"><br>但是在子组件中，我们不要去修改 prop。如果你必须要修改到这些数据，你可以使用以下方法：</p>
@@ -660,7 +649,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">54</span>
+                <span class="site-state-item-count">55</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -938,21 +927,6 @@
 
 
 
-
-  
-    <script type="text/javascript">
-    (function(){
-      var appid = 'cyt9TRBXm';
-      var conf = 'c7fb69deb176c85d5176ad20f0e14cd8';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
-        window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    })();
-    </script>
-    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
-  
 
 
 
@@ -1283,7 +1257,7 @@
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("XEAsMaPnlBfGfopmSHzj6EcI-gzGzoHsz", "A2MqOco1uFfXyab8t5roljuC");</script>
+  <script>AV.initialize("61yLsrSzzitnvev3bTpEvgFS-gzGzoHsz", "yKRoXs0jH2PahaljJab2fgci");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
@@ -1397,21 +1371,6 @@
   
 
   
-  
-    <script type="text/javascript">
-    (function(){
-      var appid = 'cyt9TRBXm';
-      var conf = 'c7fb69deb176c85d5176ad20f0e14cd8';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
-        window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    })();
-    </script>
-    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
-  
-
 
 
   

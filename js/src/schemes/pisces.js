@@ -1,17 +1,1 @@
-$(document).ready(function () {
-  var $headerInner = $('.header-inner');
-  var $sidebar = $('#sidebar');
-  var getSidebarTop = function(){
-    return $headerInner.height() + CONFIG.sidebar.offset;
-  };
-  var setSidebarMarginTop = function(sidebarTop){
-    return $sidebar.css({ 'margin-top': sidebarTop });
-  };
-  var mql = window.matchMedia('(min-width: 991px)');
-  setSidebarMarginTop(getSidebarTop()).show();
-  mql.addListener(function(e){
-    if(e.matches){
-      setSidebarMarginTop(getSidebarTop());
-    }
-  });
-});
+"use strict";$(document).ready(function(){var n=$(".header-inner"),e=$("#sidebar"),t=function(){return n.height()+CONFIG.sidebar.offset},i=function(n){return e.css({"margin-top":n})},r=window.matchMedia("(min-width: 991px)");i(t()).show(),r.addListener(function(n){n.matches&&i(t())})});

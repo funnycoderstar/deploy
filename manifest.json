@@ -1,1 +1,1 @@
-{"name":"funnycoderstar","short_name":"star","theme_color":"rgba(203,7,83,0.86)","background_color":"#FAFAFA","display":"standalone","Scope":"/","start_url":"/","icons":[{"src":"https://cdn.suisuijiang.com/ImageMessage/5adad39555703565e79040fa_1535893328317.png","sizes":"192x192","type":"image/png"}]}
+{"name":"funnycoderstar","short_name":"star","theme_color":"rgba(203,7,83,0.86)","background_color":"#FAFAFA","display":"standalone","Scope":"/","start_url":"/","icons":[{"src":"./images/icons/icon-128x128.png","sizes":"128x128","type":"image/png"}]}

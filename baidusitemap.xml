@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://wangyaxing.cn/2018/04/27/2018-04-27-vuex%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2018-09-02T16:07:03.810Z</lastmod>
@@ -124,19 +125,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
+    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     <data>
         <display>
-        <title>博客域名更改说明</title>
-        <pubTime>2018-06-18T14:29:59.000Z</pubTime>
+        <title>git仓库迁移</title>
+        <pubTime>2018-01-06T09:40:36.000Z</pubTime>
         
-        <tag>life</tag>
+        <tag>git</tag>
          
          
            
              
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
+              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
           
         </display>
     </data>
@@ -164,19 +165,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
+    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     <data>
         <display>
-        <title>git仓库迁移</title>
-        <pubTime>2018-01-06T09:40:36.000Z</pubTime>
+        <title>博客域名更改说明</title>
+        <pubTime>2018-06-18T14:29:59.000Z</pubTime>
         
-        <tag>git</tag>
+        <tag>life</tag>
          
          
            
              
-              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
           
         </display>
     </data>
@@ -812,6 +813,26 @@
 
     
   <url>
+    <loc>http://wangyaxing.cn/2017/08/23/2017-08-23-vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8F%98%E5%8C%96/</loc>
+    <lastmod>2018-09-02T09:00:37.187Z</lastmod>
+    <data>
+        <display>
+        <title>嘿,使用vue,你注意到了这些了么?</title>
+        <pubTime>2017-08-23T02:46:53.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wangyaxing.cn/2017/05/20/2017-05-20-vue%E5%85%A8%E5%AE%B6%E6%A1%B6-crawler-koa2-%E5%AE%9E%E7%8E%B0%E9%98%B4%E9%98%B3%E5%B8%88%E5%B0%8F%E5%8A%A9%E6%89%8B/</loc>
     <lastmod>2018-09-02T09:00:37.187Z</lastmod>
     <data>
@@ -845,26 +866,6 @@
            
              
               <breadCrumb title="interview" url="http://wangyaxing.cn/categories/interview/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/08/23/2017-08-23-vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8F%98%E5%8C%96/</loc>
-    <lastmod>2018-09-02T09:00:37.187Z</lastmod>
-    <data>
-        <display>
-        <title>嘿,使用vue,你注意到了这些了么?</title>
-        <pubTime>2017-08-23T02:46:53.000Z</pubTime>
-        
-        <tag>vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
           
         </display>
     </data>
@@ -915,7 +916,6 @@
     
     
     
-    
   <url>
     <loc>http://wangyaxing.cn/2018/06/19/2018-06-19-JavaScript%E7%BC%96%E7%A0%81%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2018-07-29T10:14:11.435Z</lastmod>
@@ -957,19 +957,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-shell/</loc>
+    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-glob/</loc>
     <lastmod>2018-07-29T10:14:11.433Z</lastmod>
     <data>
         <display>
-        <title>使用脚本提升发布效率</title>
-        <pubTime>2018-01-05T03:10:36.000Z</pubTime>
+        <title>glob简介</title>
+        <pubTime>2018-01-05T02:10:36.000Z</pubTime>
         
-        <tag>node</tag>
+        <tag>glob</tag>
          
          
            
              
-              <breadCrumb title="node" url="http://wangyaxing.cn/categories/node/"/>
+              <breadCrumb title="glob" url="http://wangyaxing.cn/categories/glob/"/>
           
         </display>
     </data>
@@ -997,19 +997,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-glob/</loc>
+    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-shell/</loc>
     <lastmod>2018-07-29T10:14:11.433Z</lastmod>
     <data>
         <display>
-        <title>glob简介</title>
-        <pubTime>2018-01-05T02:10:36.000Z</pubTime>
+        <title>使用脚本提升发布效率</title>
+        <pubTime>2018-01-05T03:10:36.000Z</pubTime>
         
-        <tag>glob</tag>
+        <tag>node</tag>
          
          
            
              
-              <breadCrumb title="glob" url="http://wangyaxing.cn/categories/glob/"/>
+              <breadCrumb title="node" url="http://wangyaxing.cn/categories/node/"/>
           
         </display>
     </data>

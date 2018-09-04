@@ -813,6 +813,26 @@
 
     
   <url>
+    <loc>http://wangyaxing.cn/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2018-09-02T09:00:37.187Z</lastmod>
+    <data>
+        <display>
+        <title>前端拿高薪必看面试题</title>
+        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+             
+              <breadCrumb title="interview" url="http://wangyaxing.cn/categories/interview/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wangyaxing.cn/2017/05/20/2017-05-20-vue%E5%85%A8%E5%AE%B6%E6%A1%B6-crawler-koa2-%E5%AE%9E%E7%8E%B0%E9%98%B4%E9%98%B3%E5%B8%88%E5%B0%8F%E5%8A%A9%E6%89%8B/</loc>
     <lastmod>2018-09-02T09:00:37.187Z</lastmod>
     <data>
@@ -846,26 +866,6 @@
            
              
               <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2018-09-02T09:00:37.187Z</lastmod>
-    <data>
-        <display>
-        <title>前端拿高薪必看面试题</title>
-        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-             
-              <breadCrumb title="interview" url="http://wangyaxing.cn/categories/interview/"/>
           
         </display>
     </data>
@@ -957,26 +957,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-shell/</loc>
-    <lastmod>2018-07-29T10:14:11.433Z</lastmod>
-    <data>
-        <display>
-        <title>使用脚本提升发布效率</title>
-        <pubTime>2018-01-05T03:10:36.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-         
-           
-             
-              <breadCrumb title="node" url="http://wangyaxing.cn/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-glob/</loc>
     <lastmod>2018-07-29T10:14:11.433Z</lastmod>
     <data>
@@ -990,6 +970,26 @@
            
              
               <breadCrumb title="glob" url="http://wangyaxing.cn/categories/glob/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-shell/</loc>
+    <lastmod>2018-07-29T10:14:11.433Z</lastmod>
+    <data>
+        <display>
+        <title>使用脚本提升发布效率</title>
+        <pubTime>2018-01-05T03:10:36.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="http://wangyaxing.cn/categories/node/"/>
           
         </display>
     </data>

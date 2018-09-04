@@ -145,26 +145,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
-    <lastmod>2018-09-02T15:05:35.153Z</lastmod>
-    <data>
-        <display>
-        <title>博客域名更改说明</title>
-        <pubTime>2018-06-18T14:29:59.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     <data>
@@ -178,6 +158,26 @@
            
              
               <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
+    <lastmod>2018-09-02T15:05:35.153Z</lastmod>
+    <data>
+        <display>
+        <title>博客域名更改说明</title>
+        <pubTime>2018-06-18T14:29:59.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
           
         </display>
     </data>

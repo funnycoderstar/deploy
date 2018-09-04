@@ -3,10 +3,9 @@
 
 
     
-    
   <url>
     <loc>http://wangyaxing.cn/2018/04/27/2018-04-27-vuex%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2018-09-02T16:07:03.810Z</lastmod>
+    <lastmod>2018-09-04T15:35:00.400Z</lastmod>
     <data>
         <display>
         <title>vuex使用</title>
@@ -25,8 +24,379 @@
 
     
   <url>
+    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-flex%E5%B8%83%E5%B1%80/</loc>
+    <lastmod>2018-09-04T15:35:00.400Z</lastmod>
+    <data>
+        <display>
+        <title>flex布局</title>
+        <pubTime>2017-09-06T08:06:52.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="http://wangyaxing.cn/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/21/2017-11-21-%E8%AF%B7%E7%9C%8B%E6%88%91%E6%BC%82%E4%BA%AE%E7%9A%84%E5%9D%9A%E6%8C%81/</loc>
+    <lastmod>2018-09-04T15:35:00.385Z</lastmod>
+    <data>
+        <display>
+        <title>请看我漂亮的坚持</title>
+        <pubTime>2017-11-21T13:15:44.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/10/21/2017-10-21-%E6%95%B0%E7%BB%84%E5%87%8F%E5%8E%BB%E5%8F%A6%E4%B8%80%E6%95%B0%E7%BB%84-%E6%95%B0%E7%BB%84%E7%9A%84%E6%AF%8F%E4%B8%80%E9%A1%B9%E9%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1/</loc>
+    <lastmod>2018-09-04T15:35:00.385Z</lastmod>
+    <data>
+        <display>
+        <title>数组减去另一数组(数组的每一项都是一个对象)</title>
+        <pubTime>2017-10-21T07:11:18.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://wangyaxing.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/22/2017-11-22-html%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E7%AC%A6%E5%8F%B7/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>html代码实现一些符号</title>
+        <pubTime>2017-11-22T13:48:47.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/27/2017-11-27-javascript%E4%B8%AD%E5%9F%BA%E7%A1%80%E4%BD%86%E6%98%AF%E5%BE%88%E5%AE%B9%E6%98%93%E5%BF%BD%E7%95%A5%E7%9A%84%E7%82%B9/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>javascript中基础但是很容易忽略的点(一)</title>
+        <pubTime>2017-11-27T08:11:44.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://wangyaxing.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/10/09/2017-10-09-%E5%9B%BD%E5%BA%86%E8%8A%82/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>2017年国庆节-杭州&&上海</title>
+        <pubTime>2017-10-09T15:00:43.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
+          
+             
+              <breadCrumb title="旅游" url="http://wangyaxing.cn/categories/life/%E6%97%85%E6%B8%B8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/02/2017-11-02-git%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>深入理解git系列</title>
+        <pubTime>2017-11-02T09:40:36.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/09/17/2017-09-17-Mac%E4%B8%8B%E8%BF%90%E8%A1%8CRocket-chat/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>Mac下运行Rocket.chat</title>
+        <pubTime>2017-09-17T05:18:03.000Z</pubTime>
+        
+        <tag>meteor</tag>
+         
+        <tag>Rocket.chat</tag>
+         
+         
+           
+             
+              <breadCrumb title="meteor" url="http://wangyaxing.cn/categories/meteor/"/>
+          
+             
+              <breadCrumb title="Rocket.chat" url="http://wangyaxing.cn/categories/meteor/Rocket-chat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>git</title>
+        <pubTime>2017-10-12T09:40:36.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/10/14/2017-10-14-mongoDB/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>mongoDB</title>
+        <pubTime>2017-10-14T07:28:46.000Z</pubTime>
+        
+        <tag>mongoDB</tag>
+         
+         
+           
+             
+              <breadCrumb title="mongoDB" url="http://wangyaxing.cn/categories/mongoDB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-vue%E7%BB%84%E4%BB%B6%E4%B9%8Bkeep-alive/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>用vue,你知道 keep-alive 么</title>
+        <pubTime>2017-09-06T09:26:46.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/09/08/2017-09-08-%E8%A2%AB%E9%AA%97%E8%AE%B0/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>心塞！又一次被自己蠢哭</title>
+        <pubTime>2017-09-07T17:11:18.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+        <tag>感悟</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
+          
+             
+              <breadCrumb title="感悟" url="http://wangyaxing.cn/categories/life/%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-css%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%B8%85%E9%99%A4/</loc>
+    <lastmod>2018-09-04T15:34:25.702Z</lastmod>
+    <data>
+        <display>
+        <title>清除css默认样式的总结</title>
+        <pubTime>2017-09-06T05:46:12.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="http://wangyaxing.cn/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/08/29/2017-08-29-vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2018-09-04T15:34:19.569Z</lastmod>
+    <data>
+        <display>
+        <title>vue生命周期详解</title>
+        <pubTime>2017-08-29T10:48:59.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/08/23/2017-08-23-vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8F%98%E5%8C%96/</loc>
+    <lastmod>2018-09-04T15:34:03.790Z</lastmod>
+    <data>
+        <display>
+        <title>嘿,使用vue,你注意到了这些了么?</title>
+        <pubTime>2017-08-23T02:46:53.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/09/27/2017-09-27-css%E5%AE%9E%E7%8E%B0toolTip/</loc>
+    <lastmod>2018-09-04T15:34:03.789Z</lastmod>
+    <data>
+        <display>
+        <title>css实现toolTip</title>
+        <pubTime>2017-09-27T02:58:59.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="http://wangyaxing.cn/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/14/2017-11-14-%E5%88%9D%E6%8E%A2React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
+    <lastmod>2018-09-04T15:34:03.789Z</lastmod>
+    <data>
+        <display>
+        <title>初探React生命周期</title>
+        <pubTime>2017-11-14T05:14:27.000Z</pubTime>
+        
+        <tag>react</tag>
+         
+         
+           
+             
+              <breadCrumb title="react" url="http://wangyaxing.cn/categories/react/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/12/10/2017-12-10-react%E4%B8%AD%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2018-09-04T15:31:02.080Z</lastmod>
+    <data>
+        <display>
+        <title>react中组件通信的几种方式</title>
+        <pubTime>2017-12-10T04:19:28.000Z</pubTime>
+        
+        <tag>react</tag>
+         
+         
+           
+             
+              <breadCrumb title="react" url="http://wangyaxing.cn/categories/react/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wangyaxing.cn/2018/01/01/2018-01-01-2017%E5%B9%B4%E6%9C%AB%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2018-09-02T16:06:51.188Z</lastmod>
+    <lastmod>2018-09-04T15:27:01.913Z</lastmod>
     <data>
         <display>
         <title>2017年末面试总结</title>
@@ -46,7 +416,7 @@
     
   <url>
     <loc>http://wangyaxing.cn/2017/12/29/2017-12-29-2017%E5%B9%B4%E5%B0%8F%E7%BB%93/</loc>
-    <lastmod>2018-09-02T16:06:46.790Z</lastmod>
+    <lastmod>2018-09-04T15:26:47.776Z</lastmod>
     <data>
         <display>
         <title>2017年小结</title>
@@ -66,7 +436,7 @@
     
   <url>
     <loc>http://wangyaxing.cn/2017/12/28/2017-12-28-eslint%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2018-09-02T16:06:46.782Z</lastmod>
+    <lastmod>2018-09-04T15:26:11.486Z</lastmod>
     <data>
         <display>
         <title>eslint配置</title>
@@ -86,7 +456,7 @@
     
   <url>
     <loc>http://wangyaxing.cn/2017/12/18/2017-12-18-react%E5%92%8Cvue%E5%AF%B9%E6%AF%94/</loc>
-    <lastmod>2018-09-02T15:56:52.757Z</lastmod>
+    <lastmod>2018-09-04T15:25:44.073Z</lastmod>
     <data>
         <display>
         <title>react和vue对比</title>
@@ -103,6 +473,7 @@
     </data>
     </url>
 
+    
     
   <url>
     <loc>http://wangyaxing.cn/2018/04/23/2018-04-20-%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAVirtual-DOM/</loc>
@@ -145,26 +516,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
-    <lastmod>2018-09-02T15:05:35.153Z</lastmod>
-    <data>
-        <display>
-        <title>git仓库迁移</title>
-        <pubTime>2018-01-06T09:40:36.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2018/01/17/2018-01-17-vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     <data>
@@ -185,56 +536,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/11/27/2017-11-27-javascript%E4%B8%AD%E5%9F%BA%E7%A1%80%E4%BD%86%E6%98%AF%E5%BE%88%E5%AE%B9%E6%98%93%E5%BF%BD%E7%95%A5%E7%9A%84%E7%82%B9/</loc>
-    <lastmod>2018-09-02T15:04:17.334Z</lastmod>
+    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
+    <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     <data>
         <display>
-        <title>javascript中基础但是很容易忽略的点(一)</title>
-        <pubTime>2017-11-27T08:11:44.000Z</pubTime>
+        <title>git仓库迁移</title>
+        <pubTime>2018-01-06T09:40:36.000Z</pubTime>
         
-        <tag>javascript</tag>
+        <tag>git</tag>
          
          
            
              
-              <breadCrumb title="javascript" url="http://wangyaxing.cn/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/11/22/2017-11-22-html%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E7%AC%A6%E5%8F%B7/</loc>
-    <lastmod>2018-09-02T15:04:17.333Z</lastmod>
-    <data>
-        <display>
-        <title>html代码实现一些符号</title>
-        <pubTime>2017-11-22T13:48:47.000Z</pubTime>
-        
-        <tag>html</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/11/14/2017-11-14-%E5%88%9D%E6%8E%A2React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
-    <lastmod>2018-09-02T15:04:01.221Z</lastmod>
-    <data>
-        <display>
-        <title>初探React生命周期</title>
-        <pubTime>2017-11-14T05:14:27.000Z</pubTime>
-        
-        <tag>react</tag>
-         
-         
-           
-             
-              <breadCrumb title="react" url="http://wangyaxing.cn/categories/react/"/>
+              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
           
         </display>
     </data>
@@ -262,134 +576,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/11/02/2017-11-02-git%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2018-09-02T15:03:48.185Z</lastmod>
-    <data>
-        <display>
-        <title>深入理解git系列</title>
-        <pubTime>2017-11-02T09:40:36.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/10/21/2017-10-21-%E6%95%B0%E7%BB%84%E5%87%8F%E5%8E%BB%E5%8F%A6%E4%B8%80%E6%95%B0%E7%BB%84-%E6%95%B0%E7%BB%84%E7%9A%84%E6%AF%8F%E4%B8%80%E9%A1%B9%E9%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1/</loc>
-    <lastmod>2018-09-02T15:03:43.517Z</lastmod>
-    <data>
-        <display>
-        <title>数组减去另一数组(数组的每一项都是一个对象)</title>
-        <pubTime>2017-10-21T07:11:18.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://wangyaxing.cn/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/10/14/2017-10-14-mongoDB/</loc>
-    <lastmod>2018-09-02T15:03:39.115Z</lastmod>
-    <data>
-        <display>
-        <title>mongoDB</title>
-        <pubTime>2017-10-14T07:28:46.000Z</pubTime>
-        
-        <tag>mongoDB</tag>
-         
-         
-           
-             
-              <breadCrumb title="mongoDB" url="http://wangyaxing.cn/categories/mongoDB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
-    <lastmod>2018-09-02T15:03:33.777Z</lastmod>
-    <data>
-        <display>
-        <title>git</title>
-        <pubTime>2017-10-12T09:40:36.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/10/09/2017-10-09-%E5%9B%BD%E5%BA%86%E8%8A%82/</loc>
-    <lastmod>2018-09-02T15:03:25.541Z</lastmod>
-    <data>
-        <display>
-        <title>2017年国庆节-杭州&&上海</title>
-        <pubTime>2017-10-09T15:00:43.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
-          
-             
-              <breadCrumb title="旅游" url="http://wangyaxing.cn/categories/life/%E6%97%85%E6%B8%B8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/17/2017-09-17-Mac%E4%B8%8B%E8%BF%90%E8%A1%8CRocket-chat/</loc>
-    <lastmod>2018-09-02T15:03:15.661Z</lastmod>
-    <data>
-        <display>
-        <title>Mac下运行Rocket.chat</title>
-        <pubTime>2017-09-17T05:18:03.000Z</pubTime>
-        
-        <tag>meteor</tag>
-         
-        <tag>Rocket.chat</tag>
-         
-         
-           
-             
-              <breadCrumb title="meteor" url="http://wangyaxing.cn/categories/meteor/"/>
-          
-             
-              <breadCrumb title="Rocket.chat" url="http://wangyaxing.cn/categories/meteor/Rocket-chat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2017/09/10/2017-09-10-%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1history-vs-hash/</loc>
     <lastmod>2018-09-02T15:03:09.589Z</lastmod>
     <data>
@@ -410,91 +596,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/09/08/2017-09-08-%E8%A2%AB%E9%AA%97%E8%AE%B0/</loc>
-    <lastmod>2018-09-02T15:03:03.812Z</lastmod>
-    <data>
-        <display>
-        <title>心塞！又一次被自己蠢哭</title>
-        <pubTime>2017-09-07T17:11:18.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-        <tag>感悟</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
-          
-             
-              <breadCrumb title="感悟" url="http://wangyaxing.cn/categories/life/%E6%84%9F%E6%82%9F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-vue%E7%BB%84%E4%BB%B6%E4%B9%8Bkeep-alive/</loc>
-    <lastmod>2018-09-02T15:02:46.395Z</lastmod>
-    <data>
-        <display>
-        <title>用vue,你知道 keep-alive 么</title>
-        <pubTime>2017-09-06T09:26:46.000Z</pubTime>
-        
-        <tag>vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-flex%E5%B8%83%E5%B1%80/</loc>
-    <lastmod>2018-09-02T15:02:41.279Z</lastmod>
-    <data>
-        <display>
-        <title>flex布局</title>
-        <pubTime>2017-09-06T08:06:52.000Z</pubTime>
-        
-        <tag>css</tag>
-         
-         
-           
-             
-              <breadCrumb title="css" url="http://wangyaxing.cn/categories/css/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-css%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%B8%85%E9%99%A4/</loc>
-    <lastmod>2018-09-02T15:02:36.033Z</lastmod>
-    <data>
-        <display>
-        <title>清除css默认样式的总结</title>
-        <pubTime>2017-09-06T05:46:12.000Z</pubTime>
-        
-        <tag>css</tag>
-         
-         
-           
-             
-              <breadCrumb title="css" url="http://wangyaxing.cn/categories/css/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2017/09/01/2017-09-01-wxapp/</loc>
     <lastmod>2018-09-02T15:02:28.094Z</lastmod>
     <data>
@@ -508,26 +609,6 @@
            
              
               <breadCrumb title="微信小程序" url="http://wangyaxing.cn/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/08/29/2017-08-29-vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2018-09-02T15:02:08.955Z</lastmod>
-    <data>
-        <display>
-        <title>vue生命周期详解</title>
-        <pubTime>2017-08-29T10:48:59.000Z</pubTime>
-        
-        <tag>vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
           
         </display>
     </data>
@@ -608,46 +689,6 @@
            
              
               <breadCrumb title="算法" url="http://wangyaxing.cn/categories/%E7%AE%97%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/11/21/2017-11-21-%E8%AF%B7%E7%9C%8B%E6%88%91%E6%BC%82%E4%BA%AE%E7%9A%84%E5%9D%9A%E6%8C%81/</loc>
-    <lastmod>2018-09-02T15:00:29.218Z</lastmod>
-    <data>
-        <display>
-        <title>请看我漂亮的坚持</title>
-        <pubTime>2017-11-21T13:15:44.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/12/10/2017-12-10-react%E4%B8%AD%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2018-09-02T15:00:19.789Z</lastmod>
-    <data>
-        <display>
-        <title>react中组件通信的几种方式</title>
-        <pubTime>2017-12-10T04:19:28.000Z</pubTime>
-        
-        <tag>react</tag>
-         
-         
-           
-             
-              <breadCrumb title="react" url="http://wangyaxing.cn/categories/react/"/>
           
         </display>
     </data>
@@ -813,19 +854,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/08/23/2017-08-23-vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8F%98%E5%8C%96/</loc>
+    <loc>http://wangyaxing.cn/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2018-09-02T09:00:37.187Z</lastmod>
     <data>
         <display>
-        <title>嘿,使用vue,你注意到了这些了么?</title>
-        <pubTime>2017-08-23T02:46:53.000Z</pubTime>
+        <title>前端拿高薪必看面试题</title>
+        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
         
-        <tag>vue</tag>
+        <tag>interview</tag>
          
          
            
              
-              <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
+              <breadCrumb title="interview" url="http://wangyaxing.cn/categories/interview/"/>
           
         </display>
     </data>
@@ -853,26 +894,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2018-09-02T09:00:37.187Z</lastmod>
-    <data>
-        <display>
-        <title>前端拿高薪必看面试题</title>
-        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-             
-              <breadCrumb title="interview" url="http://wangyaxing.cn/categories/interview/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2017/08/20/2017-08-20-%E6%8F%AD%E5%BC%80vue%E7%A5%9E%E7%A7%98%E9%9D%A2%E7%BA%B1/</loc>
     <lastmod>2018-09-02T09:00:37.186Z</lastmod>
     <data>
@@ -891,27 +912,6 @@
     </data>
     </url>
 
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/27/2017-09-27-css%E5%AE%9E%E7%8E%B0toolTip/</loc>
-    <lastmod>2018-08-02T15:11:13.402Z</lastmod>
-    <data>
-        <display>
-        <title>css实现toolTip</title>
-        <pubTime>2017-09-27T02:58:59.000Z</pubTime>
-        
-        <tag>css</tag>
-         
-         
-           
-             
-              <breadCrumb title="css" url="http://wangyaxing.cn/categories/css/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
     
     

@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://wangyaxing.cn/2018/09/05/2018-09-05-%E5%8D%9A%E5%AE%A2%E6%94%AF%E6%8C%81PWA/</loc>
+    <loc>http://wangyaxing.cn/2018/09/01/2018-09-01-hexo%E5%8A%A0%08%E5%85%A5gitment%E8%AF%84%E8%AE%BA%08%08%E5%8A%9F%E8%83%BD/</loc>
     
-    <lastmod>2018-09-05T15:33:10.563Z</lastmod>
+    <lastmod>2018-09-05T15:47:51.163Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-flex%E5%B8%83%E5%B1%80/</loc>
+    <loc>http://wangyaxing.cn/2018/09/05/2018-09-05-%E5%8D%9A%E5%AE%A2%E6%94%AF%E6%8C%81PWA/</loc>
     
-    <lastmod>2018-09-04T15:35:00.400Z</lastmod>
+    <lastmod>2018-09-05T15:33:10.563Z</lastmod>
     
   </url>
   
@@ -23,9 +23,9 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/11/21/2017-11-21-%E8%AF%B7%E7%9C%8B%E6%88%91%E6%BC%82%E4%BA%AE%E7%9A%84%E5%9D%9A%E6%8C%81/</loc>
+    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-flex%E5%B8%83%E5%B1%80/</loc>
     
-    <lastmod>2018-09-04T15:35:00.385Z</lastmod>
+    <lastmod>2018-09-04T15:35:00.400Z</lastmod>
     
   </url>
   
@@ -37,28 +37,14 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/09/17/2017-09-17-Mac%E4%B8%8B%E8%BF%90%E8%A1%8CRocket-chat/</loc>
+    <loc>http://wangyaxing.cn/2017/11/21/2017-11-21-%E8%AF%B7%E7%9C%8B%E6%88%91%E6%BC%82%E4%BA%AE%E7%9A%84%E5%9D%9A%E6%8C%81/</loc>
     
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/08/2017-09-08-%E8%A2%AB%E9%AA%97%E8%AE%B0/</loc>
-    
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <lastmod>2018-09-04T15:35:00.385Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://wangyaxing.cn/2017/10/14/2017-10-14-mongoDB/</loc>
-    
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.cn/2017/11/27/2017-11-27-javascript%E4%B8%AD%E5%9F%BA%E7%A1%80%E4%BD%86%E6%98%AF%E5%BE%88%E5%AE%B9%E6%98%93%E5%BF%BD%E7%95%A5%E7%9A%84%E7%82%B9/</loc>
     
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
     
@@ -86,6 +72,13 @@
   </url>
   
   <url>
+    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
+    
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-vue%E7%BB%84%E4%BB%B6%E4%B9%8Bkeep-alive/</loc>
     
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
@@ -93,7 +86,21 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
+    <loc>http://wangyaxing.cn/2017/09/08/2017-09-08-%E8%A2%AB%E9%AA%97%E8%AE%B0/</loc>
+    
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/27/2017-11-27-javascript%E4%B8%AD%E5%9F%BA%E7%A1%80%E4%BD%86%E6%98%AF%E5%BE%88%E5%AE%B9%E6%98%93%E5%BF%BD%E7%95%A5%E7%9A%84%E7%82%B9/</loc>
+    
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/2017/09/17/2017-09-17-Mac%E4%B8%8B%E8%BF%90%E8%A1%8CRocket-chat/</loc>
     
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
     
@@ -198,14 +205,14 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2018/01/17/2018-01-17-vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
     
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
+    <loc>http://wangyaxing.cn/2018/01/17/2018-01-17-vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
     
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     
@@ -317,14 +324,14 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/05/20/2017-05-20-vue%E5%85%A8%E5%AE%B6%E6%A1%B6-crawler-koa2-%E5%AE%9E%E7%8E%B0%E9%98%B4%E9%98%B3%E5%B8%88%E5%B0%8F%E5%8A%A9%E6%89%8B/</loc>
+    <loc>http://wangyaxing.cn/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
     
     <lastmod>2018-09-02T09:00:37.187Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
+    <loc>http://wangyaxing.cn/2017/05/20/2017-05-20-vue%E5%85%A8%E5%AE%B6%E6%A1%B6-crawler-koa2-%E5%AE%9E%E7%8E%B0%E9%98%B4%E9%98%B3%E5%B8%88%E5%B0%8F%E5%8A%A9%E6%89%8B/</loc>
     
     <lastmod>2018-09-02T09:00:37.187Z</lastmod>
     
@@ -338,7 +345,7 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/essay/index.html</loc>
+    <loc>http://wangyaxing.cn/categories/index.html</loc>
     
     <lastmod>2018-07-29T10:14:11.436Z</lastmod>
     
@@ -352,7 +359,7 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/categories/index.html</loc>
+    <loc>http://wangyaxing.cn/essay/index.html</loc>
     
     <lastmod>2018-07-29T10:14:11.436Z</lastmod>
     
@@ -380,14 +387,14 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/12/27/2017-12-27-%E5%9C%A8npm%E4%B8%8A%E5%8F%91%E5%B8%83%E5%8C%85/</loc>
+    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-glob/</loc>
     
     <lastmod>2018-07-29T10:14:11.433Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-glob/</loc>
+    <loc>http://wangyaxing.cn/2017/12/27/2017-12-27-%E5%9C%A8npm%E4%B8%8A%E5%8F%91%E5%B8%83%E5%8C%85/</loc>
     
     <lastmod>2018-07-29T10:14:11.433Z</lastmod>
     

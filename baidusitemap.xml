@@ -84,17 +84,45 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/11/22/2017-11-22-html%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E7%AC%A6%E5%8F%B7/</loc>
+    <loc>http://wangyaxing.cn/2017/09/17/2017-09-17-Mac%E4%B8%8B%E8%BF%90%E8%A1%8CRocket-chat/</loc>
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
     <data>
         <display>
-        <title>html代码实现一些符号</title>
-        <pubTime>2017-11-22T13:48:47.000Z</pubTime>
+        <title>Mac下运行Rocket.chat</title>
+        <pubTime>2017-09-17T05:18:03.000Z</pubTime>
         
-        <tag>html</tag>
+        <tag>meteor</tag>
+         
+        <tag>Rocket.chat</tag>
          
          
            
+             
+              <breadCrumb title="meteor" url="http://wangyaxing.cn/categories/meteor/"/>
+          
+             
+              <breadCrumb title="Rocket.chat" url="http://wangyaxing.cn/categories/meteor/Rocket-chat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/10/14/2017-10-14-mongoDB/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>mongoDB</title>
+        <pubTime>2017-10-14T07:28:46.000Z</pubTime>
+        
+        <tag>mongoDB</tag>
+         
+         
+           
+             
+              <breadCrumb title="mongoDB" url="http://wangyaxing.cn/categories/mongoDB/"/>
+          
         </display>
     </data>
     </url>
@@ -114,6 +142,88 @@
            
              
               <breadCrumb title="javascript" url="http://wangyaxing.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/22/2017-11-22-html%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E7%AC%A6%E5%8F%B7/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>html代码实现一些符号</title>
+        <pubTime>2017-11-22T13:48:47.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>git</title>
+        <pubTime>2017-10-12T09:40:36.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/02/2017-11-02-git%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>深入理解git系列</title>
+        <pubTime>2017-11-02T09:40:36.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/09/08/2017-09-08-%E8%A2%AB%E9%AA%97%E8%AE%B0/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>心塞！又一次被自己蠢哭</title>
+        <pubTime>2017-09-07T17:11:18.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+        <tag>感悟</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
+          
+             
+              <breadCrumb title="感悟" url="http://wangyaxing.cn/categories/life/%E6%84%9F%E6%82%9F/"/>
           
         </display>
     </data>
@@ -144,91 +254,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/11/02/2017-11-02-git%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    <data>
-        <display>
-        <title>深入理解git系列</title>
-        <pubTime>2017-11-02T09:40:36.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/17/2017-09-17-Mac%E4%B8%8B%E8%BF%90%E8%A1%8CRocket-chat/</loc>
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    <data>
-        <display>
-        <title>Mac下运行Rocket.chat</title>
-        <pubTime>2017-09-17T05:18:03.000Z</pubTime>
-        
-        <tag>meteor</tag>
-         
-        <tag>Rocket.chat</tag>
-         
-         
-           
-             
-              <breadCrumb title="meteor" url="http://wangyaxing.cn/categories/meteor/"/>
-          
-             
-              <breadCrumb title="Rocket.chat" url="http://wangyaxing.cn/categories/meteor/Rocket-chat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    <data>
-        <display>
-        <title>git</title>
-        <pubTime>2017-10-12T09:40:36.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/10/14/2017-10-14-mongoDB/</loc>
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    <data>
-        <display>
-        <title>mongoDB</title>
-        <pubTime>2017-10-14T07:28:46.000Z</pubTime>
-        
-        <tag>mongoDB</tag>
-         
-         
-           
-             
-              <breadCrumb title="mongoDB" url="http://wangyaxing.cn/categories/mongoDB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-vue%E7%BB%84%E4%BB%B6%E4%B9%8Bkeep-alive/</loc>
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
     <data>
@@ -242,31 +267,6 @@
            
              
               <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/08/2017-09-08-%E8%A2%AB%E9%AA%97%E8%AE%B0/</loc>
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    <data>
-        <display>
-        <title>心塞！又一次被自己蠢哭</title>
-        <pubTime>2017-09-07T17:11:18.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-        <tag>感悟</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
-          
-             
-              <breadCrumb title="感悟" url="http://wangyaxing.cn/categories/life/%E6%84%9F%E6%82%9F/"/>
           
         </display>
     </data>
@@ -496,19 +496,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
+    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     <data>
         <display>
-        <title>博客域名更改说明</title>
-        <pubTime>2018-06-18T14:29:59.000Z</pubTime>
+        <title>git仓库迁移</title>
+        <pubTime>2018-01-06T09:40:36.000Z</pubTime>
         
-        <tag>life</tag>
+        <tag>git</tag>
          
          
            
              
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
+              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
           
         </display>
     </data>
@@ -536,19 +536,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
+    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     <data>
         <display>
-        <title>git仓库迁移</title>
-        <pubTime>2018-01-06T09:40:36.000Z</pubTime>
+        <title>博客域名更改说明</title>
+        <pubTime>2018-06-18T14:29:59.000Z</pubTime>
         
-        <tag>git</tag>
+        <tag>life</tag>
          
          
            
              
-              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
           
         </display>
     </data>

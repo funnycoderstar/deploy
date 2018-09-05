@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wangyaxing.cn/2017/11/14/2017-11-14-%E5%88%9D%E6%8E%A2React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
+    
+    <lastmod>2018-09-05T15:54:53.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
+    
+    <lastmod>2018-09-05T15:54:53.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/about/index.html</loc>
+    
+    <lastmod>2018-09-05T15:51:38.506Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/2017/12/28/2017-12-28-eslint%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2018-09-05T15:51:38.505Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangyaxing.cn/2018/09/01/2018-09-01-hexo%E5%8A%A0%08%E5%85%A5gitment%E8%AF%84%E8%AE%BA%08%08%E5%8A%9F%E8%83%BD/</loc>
     
     <lastmod>2018-09-05T15:47:51.163Z</lastmod>
@@ -16,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2018/04/27/2018-04-27-vuex%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2018-09-04T15:35:00.400Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-flex%E5%B8%83%E5%B1%80/</loc>
     
     <lastmod>2018-09-04T15:35:00.400Z</lastmod>
@@ -30,9 +51,9 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/10/21/2017-10-21-%E6%95%B0%E7%BB%84%E5%87%8F%E5%8E%BB%E5%8F%A6%E4%B8%80%E6%95%B0%E7%BB%84-%E6%95%B0%E7%BB%84%E7%9A%84%E6%AF%8F%E4%B8%80%E9%A1%B9%E9%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1/</loc>
+    <loc>http://wangyaxing.cn/2018/04/27/2018-04-27-vuex%E4%BD%BF%E7%94%A8/</loc>
     
-    <lastmod>2018-09-04T15:35:00.385Z</lastmod>
+    <lastmod>2018-09-04T15:35:00.400Z</lastmod>
     
   </url>
   
@@ -44,42 +65,14 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/10/14/2017-10-14-mongoDB/</loc>
+    <loc>http://wangyaxing.cn/2017/10/21/2017-10-21-%E6%95%B0%E7%BB%84%E5%87%8F%E5%8E%BB%E5%8F%A6%E4%B8%80%E6%95%B0%E7%BB%84-%E6%95%B0%E7%BB%84%E7%9A%84%E6%AF%8F%E4%B8%80%E9%A1%B9%E9%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1/</loc>
     
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <lastmod>2018-09-04T15:35:00.385Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://wangyaxing.cn/2017/10/09/2017-10-09-%E5%9B%BD%E5%BA%86%E8%8A%82/</loc>
-    
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.cn/2017/11/22/2017-11-22-html%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E7%AC%A6%E5%8F%B7/</loc>
-    
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.cn/2017/11/02/2017-11-02-git%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
-    
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-vue%E7%BB%84%E4%BB%B6%E4%B9%8Bkeep-alive/</loc>
     
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
     
@@ -93,7 +86,35 @@
   </url>
   
   <url>
+    <loc>http://wangyaxing.cn/2017/11/02/2017-11-02-git%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangyaxing.cn/2017/11/27/2017-11-27-javascript%E4%B8%AD%E5%9F%BA%E7%A1%80%E4%BD%86%E6%98%AF%E5%BE%88%E5%AE%B9%E6%98%93%E5%BF%BD%E7%95%A5%E7%9A%84%E7%82%B9/</loc>
+    
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/22/2017-11-22-html%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E7%AC%A6%E5%8F%B7/</loc>
+    
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-vue%E7%BB%84%E4%BB%B6%E4%B9%8Bkeep-alive/</loc>
+    
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/2017/10/14/2017-10-14-mongoDB/</loc>
     
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
     
@@ -142,13 +163,6 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/11/14/2017-11-14-%E5%88%9D%E6%8E%A2React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
-    
-    <lastmod>2018-09-04T15:34:03.789Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wangyaxing.cn/2017/12/10/2017-12-10-react%E4%B8%AD%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</loc>
     
     <lastmod>2018-09-04T15:31:02.080Z</lastmod>
@@ -170,13 +184,6 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/2017/12/28/2017-12-28-eslint%E9%85%8D%E7%BD%AE/</loc>
-    
-    <lastmod>2018-09-04T15:26:11.486Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wangyaxing.cn/2017/12/18/2017-12-18-react%E5%92%8Cvue%E5%AF%B9%E6%AF%94/</loc>
     
     <lastmod>2018-09-04T15:25:44.073Z</lastmod>
@@ -184,23 +191,9 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/about/index.html</loc>
-    
-    <lastmod>2018-09-04T15:24:34.268Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wangyaxing.cn/2018/04/23/2018-04-20-%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAVirtual-DOM/</loc>
     
     <lastmod>2018-09-02T15:05:35.176Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
-    
-    <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     
   </url>
   
@@ -213,6 +206,13 @@
   
   <url>
     <loc>http://wangyaxing.cn/2018/01/17/2018-01-17-vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%88%B0%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    
+    <lastmod>2018-09-02T15:05:35.153Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
     
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     
@@ -345,13 +345,6 @@
   </url>
   
   <url>
-    <loc>http://wangyaxing.cn/categories/index.html</loc>
-    
-    <lastmod>2018-07-29T10:14:11.436Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wangyaxing.cn/tags/index.html</loc>
     
     <lastmod>2018-07-29T10:14:11.436Z</lastmod>
@@ -360,6 +353,13 @@
   
   <url>
     <loc>http://wangyaxing.cn/essay/index.html</loc>
+    
+    <lastmod>2018-07-29T10:14:11.436Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangyaxing.cn/categories/index.html</loc>
     
     <lastmod>2018-07-29T10:14:11.436Z</lastmod>
     
@@ -380,6 +380,13 @@
   </url>
   
   <url>
+    <loc>http://wangyaxing.cn/2017/12/27/2017-12-27-%E5%9C%A8npm%E4%B8%8A%E5%8F%91%E5%B8%83%E5%8C%85/</loc>
+    
+    <lastmod>2018-07-29T10:14:11.433Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-shell/</loc>
     
     <lastmod>2018-07-29T10:14:11.433Z</lastmod>
@@ -388,13 +395,6 @@
   
   <url>
     <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-glob/</loc>
-    
-    <lastmod>2018-07-29T10:14:11.433Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangyaxing.cn/2017/12/27/2017-12-27-%E5%9C%A8npm%E4%B8%8A%E5%8F%91%E5%B8%83%E5%8C%85/</loc>
     
     <lastmod>2018-07-29T10:14:11.433Z</lastmod>
     

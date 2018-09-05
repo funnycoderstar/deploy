@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://wangyaxing.cn/2018/09/05/2018-09-05-%E5%8D%9A%E5%AE%A2%E6%94%AF%E6%8C%81PWA/</loc>
+    <lastmod>2018-09-05T15:33:10.563Z</lastmod>
+    <data>
+        <display>
+        <title>hexo博客简单支持PWA</title>
+        <pubTime>2018-09-05T15:00:00.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://wangyaxing.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wangyaxing.cn/2017/09/06/2017-09-06-flex%E5%B8%83%E5%B1%80/</loc>
     <lastmod>2018-09-04T15:35:00.400Z</lastmod>
     <data>
@@ -84,19 +104,24 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/11/27/2017-11-27-javascript%E4%B8%AD%E5%9F%BA%E7%A1%80%E4%BD%86%E6%98%AF%E5%BE%88%E5%AE%B9%E6%98%93%E5%BF%BD%E7%95%A5%E7%9A%84%E7%82%B9/</loc>
+    <loc>http://wangyaxing.cn/2017/09/17/2017-09-17-Mac%E4%B8%8B%E8%BF%90%E8%A1%8CRocket-chat/</loc>
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
     <data>
         <display>
-        <title>javascript中基础但是很容易忽略的点(一)</title>
-        <pubTime>2017-11-27T08:11:44.000Z</pubTime>
+        <title>Mac下运行Rocket.chat</title>
+        <pubTime>2017-09-17T05:18:03.000Z</pubTime>
         
-        <tag>javascript</tag>
+        <tag>meteor</tag>
+         
+        <tag>Rocket.chat</tag>
          
          
            
              
-              <breadCrumb title="javascript" url="http://wangyaxing.cn/categories/javascript/"/>
+              <breadCrumb title="meteor" url="http://wangyaxing.cn/categories/meteor/"/>
+          
+             
+              <breadCrumb title="Rocket.chat" url="http://wangyaxing.cn/categories/meteor/Rocket-chat/"/>
           
         </display>
     </data>
@@ -104,19 +129,24 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
+    <loc>http://wangyaxing.cn/2017/09/08/2017-09-08-%E8%A2%AB%E9%AA%97%E8%AE%B0/</loc>
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
     <data>
         <display>
-        <title>git</title>
-        <pubTime>2017-10-12T09:40:36.000Z</pubTime>
+        <title>心塞！又一次被自己蠢哭</title>
+        <pubTime>2017-09-07T17:11:18.000Z</pubTime>
         
-        <tag>git</tag>
+        <tag>life</tag>
+         
+        <tag>感悟</tag>
          
          
            
              
-              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
+          
+             
+              <breadCrumb title="感悟" url="http://wangyaxing.cn/categories/life/%E6%84%9F%E6%82%9F/"/>
           
         </display>
     </data>
@@ -137,6 +167,49 @@
            
              
               <breadCrumb title="mongoDB" url="http://wangyaxing.cn/categories/mongoDB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/27/2017-11-27-javascript%E4%B8%AD%E5%9F%BA%E7%A1%80%E4%BD%86%E6%98%AF%E5%BE%88%E5%AE%B9%E6%98%93%E5%BF%BD%E7%95%A5%E7%9A%84%E7%82%B9/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>javascript中基础但是很容易忽略的点(一)</title>
+        <pubTime>2017-11-27T08:11:44.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://wangyaxing.cn/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/10/09/2017-10-09-%E5%9B%BD%E5%BA%86%E8%8A%82/</loc>
+    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
+    <data>
+        <display>
+        <title>2017年国庆节-杭州&&上海</title>
+        <pubTime>2017-10-09T15:00:43.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
+          
+             
+              <breadCrumb title="旅游" url="http://wangyaxing.cn/categories/life/%E6%97%85%E6%B8%B8/"/>
           
         </display>
     </data>
@@ -201,72 +274,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/10/09/2017-10-09-%E5%9B%BD%E5%BA%86%E8%8A%82/</loc>
+    <loc>http://wangyaxing.cn/2017/10/12/2017-10-12-git/</loc>
     <lastmod>2018-09-04T15:35:00.370Z</lastmod>
     <data>
         <display>
-        <title>2017年国庆节-杭州&&上海</title>
-        <pubTime>2017-10-09T15:00:43.000Z</pubTime>
+        <title>git</title>
+        <pubTime>2017-10-12T09:40:36.000Z</pubTime>
         
-        <tag>life</tag>
+        <tag>git</tag>
          
          
            
              
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
-          
-             
-              <breadCrumb title="旅游" url="http://wangyaxing.cn/categories/life/%E6%97%85%E6%B8%B8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/17/2017-09-17-Mac%E4%B8%8B%E8%BF%90%E8%A1%8CRocket-chat/</loc>
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    <data>
-        <display>
-        <title>Mac下运行Rocket.chat</title>
-        <pubTime>2017-09-17T05:18:03.000Z</pubTime>
-        
-        <tag>meteor</tag>
-         
-        <tag>Rocket.chat</tag>
-         
-         
-           
-             
-              <breadCrumb title="meteor" url="http://wangyaxing.cn/categories/meteor/"/>
-          
-             
-              <breadCrumb title="Rocket.chat" url="http://wangyaxing.cn/categories/meteor/Rocket-chat/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangyaxing.cn/2017/09/08/2017-09-08-%E8%A2%AB%E9%AA%97%E8%AE%B0/</loc>
-    <lastmod>2018-09-04T15:35:00.370Z</lastmod>
-    <data>
-        <display>
-        <title>心塞！又一次被自己蠢哭</title>
-        <pubTime>2017-09-07T17:11:18.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-        <tag>感悟</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
-          
-             
-              <breadCrumb title="感悟" url="http://wangyaxing.cn/categories/life/%E6%84%9F%E6%82%9F/"/>
+              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
           
         </display>
     </data>
@@ -335,26 +355,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/11/14/2017-11-14-%E5%88%9D%E6%8E%A2React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
-    <lastmod>2018-09-04T15:34:03.789Z</lastmod>
-    <data>
-        <display>
-        <title>初探React生命周期</title>
-        <pubTime>2017-11-14T05:14:27.000Z</pubTime>
-        
-        <tag>react</tag>
-         
-         
-           
-             
-              <breadCrumb title="react" url="http://wangyaxing.cn/categories/react/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2017/09/27/2017-09-27-css%E5%AE%9E%E7%8E%B0toolTip/</loc>
     <lastmod>2018-09-04T15:34:03.789Z</lastmod>
     <data>
@@ -368,6 +368,26 @@
            
              
               <breadCrumb title="css" url="http://wangyaxing.cn/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/11/14/2017-11-14-%E5%88%9D%E6%8E%A2React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
+    <lastmod>2018-09-04T15:34:03.789Z</lastmod>
+    <data>
+        <display>
+        <title>初探React生命周期</title>
+        <pubTime>2017-11-14T05:14:27.000Z</pubTime>
+        
+        <tag>react</tag>
+         
+         
+           
+             
+              <breadCrumb title="react" url="http://wangyaxing.cn/categories/react/"/>
           
         </display>
     </data>
@@ -496,19 +516,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
+    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     <data>
         <display>
-        <title>git仓库迁移</title>
-        <pubTime>2018-01-06T09:40:36.000Z</pubTime>
+        <title>博客域名更改说明</title>
+        <pubTime>2018-06-18T14:29:59.000Z</pubTime>
         
-        <tag>git</tag>
+        <tag>life</tag>
          
          
            
              
-              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
+              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
           
         </display>
     </data>
@@ -536,19 +556,19 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/06/18/2018-06-18-%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E8%AF%B4%E6%98%8E/</loc>
+    <loc>http://wangyaxing.cn/2018/01/06/2018-01-06-git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB/</loc>
     <lastmod>2018-09-02T15:05:35.153Z</lastmod>
     <data>
         <display>
-        <title>博客域名更改说明</title>
-        <pubTime>2018-06-18T14:29:59.000Z</pubTime>
+        <title>git仓库迁移</title>
+        <pubTime>2018-01-06T09:40:36.000Z</pubTime>
         
-        <tag>life</tag>
+        <tag>git</tag>
          
          
            
              
-              <breadCrumb title="life" url="http://wangyaxing.cn/categories/life/"/>
+              <breadCrumb title="git" url="http://wangyaxing.cn/categories/git/"/>
           
         </display>
     </data>
@@ -854,26 +874,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2018-09-02T09:00:37.187Z</lastmod>
-    <data>
-        <display>
-        <title>前端拿高薪必看面试题</title>
-        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-             
-              <breadCrumb title="interview" url="http://wangyaxing.cn/categories/interview/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2017/05/20/2017-05-20-vue%E5%85%A8%E5%AE%B6%E6%A1%B6-crawler-koa2-%E5%AE%9E%E7%8E%B0%E9%98%B4%E9%98%B3%E5%B8%88%E5%B0%8F%E5%8A%A9%E6%89%8B/</loc>
     <lastmod>2018-09-02T09:00:37.187Z</lastmod>
     <data>
@@ -887,6 +887,26 @@
            
              
               <breadCrumb title="vue" url="http://wangyaxing.cn/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2017/05/02/2017-05-02-js%E7%BB%8F%E5%85%B8%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2018-09-02T09:00:37.187Z</lastmod>
+    <data>
+        <display>
+        <title>前端拿高薪必看面试题</title>
+        <pubTime>2017-05-02T09:40:20.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+             
+              <breadCrumb title="interview" url="http://wangyaxing.cn/categories/interview/"/>
           
         </display>
     </data>
@@ -977,26 +997,6 @@
 
     
   <url>
-    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-glob/</loc>
-    <lastmod>2018-07-29T10:14:11.433Z</lastmod>
-    <data>
-        <display>
-        <title>glob简介</title>
-        <pubTime>2018-01-05T02:10:36.000Z</pubTime>
-        
-        <tag>glob</tag>
-         
-         
-           
-             
-              <breadCrumb title="glob" url="http://wangyaxing.cn/categories/glob/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangyaxing.cn/2017/12/27/2017-12-27-%E5%9C%A8npm%E4%B8%8A%E5%8F%91%E5%B8%83%E5%8C%85/</loc>
     <lastmod>2018-07-29T10:14:11.433Z</lastmod>
     <data>
@@ -1010,6 +1010,26 @@
            
              
               <breadCrumb title="npm" url="http://wangyaxing.cn/categories/npm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangyaxing.cn/2018/01/05/2018-01-05-glob/</loc>
+    <lastmod>2018-07-29T10:14:11.433Z</lastmod>
+    <data>
+        <display>
+        <title>glob简介</title>
+        <pubTime>2018-01-05T02:10:36.000Z</pubTime>
+        
+        <tag>glob</tag>
+         
+         
+           
+             
+              <breadCrumb title="glob" url="http://wangyaxing.cn/categories/glob/"/>
           
         </display>
     </data>

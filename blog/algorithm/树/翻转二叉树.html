@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>翻转二叉树 | 前端学习总结</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="https://cdn.wangyaxing.cn/icon-128x128.png">
+    <meta name="description" content="前端学习总结">
+    <link rel="preload" href="/blog/assets/css/0.styles.b9ccaafe.css" as="style"><link rel="preload" href="/blog/assets/js/app.ed01b3c1.js" as="script"><link rel="preload" href="/blog/assets/js/2.2959d24f.js" as="script"><link rel="preload" href="/blog/assets/js/21.7ebcdffd.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.3f891856.js"><link rel="prefetch" href="/blog/assets/js/11.41c38a24.js"><link rel="prefetch" href="/blog/assets/js/12.e80b1b08.js"><link rel="prefetch" href="/blog/assets/js/13.ec723cb5.js"><link rel="prefetch" href="/blog/assets/js/14.f7987c77.js"><link rel="prefetch" href="/blog/assets/js/15.00494846.js"><link rel="prefetch" href="/blog/assets/js/16.0730544f.js"><link rel="prefetch" href="/blog/assets/js/17.4c049ae0.js"><link rel="prefetch" href="/blog/assets/js/18.0904da87.js"><link rel="prefetch" href="/blog/assets/js/19.77d7e637.js"><link rel="prefetch" href="/blog/assets/js/20.4caf77ae.js"><link rel="prefetch" href="/blog/assets/js/22.6851f486.js"><link rel="prefetch" href="/blog/assets/js/23.a950b111.js"><link rel="prefetch" href="/blog/assets/js/24.ffcc6e62.js"><link rel="prefetch" href="/blog/assets/js/25.4e2ed5b0.js"><link rel="prefetch" href="/blog/assets/js/26.30f863e9.js"><link rel="prefetch" href="/blog/assets/js/27.77a1b004.js"><link rel="prefetch" href="/blog/assets/js/28.91c71882.js"><link rel="prefetch" href="/blog/assets/js/29.36356ddd.js"><link rel="prefetch" href="/blog/assets/js/3.65c9b8a0.js"><link rel="prefetch" href="/blog/assets/js/30.60a40b14.js"><link rel="prefetch" href="/blog/assets/js/31.400bee22.js"><link rel="prefetch" href="/blog/assets/js/32.b1f7fa43.js"><link rel="prefetch" href="/blog/assets/js/33.2c78811f.js"><link rel="prefetch" href="/blog/assets/js/34.6bbecc02.js"><link rel="prefetch" href="/blog/assets/js/35.0c7aabf4.js"><link rel="prefetch" href="/blog/assets/js/36.5ce6fd67.js"><link rel="prefetch" href="/blog/assets/js/37.11611b8a.js"><link rel="prefetch" href="/blog/assets/js/38.bb9f8894.js"><link rel="prefetch" href="/blog/assets/js/39.ac418a8a.js"><link rel="prefetch" href="/blog/assets/js/4.4d64059e.js"><link rel="prefetch" href="/blog/assets/js/40.18ca3930.js"><link rel="prefetch" href="/blog/assets/js/41.0699a6f5.js"><link rel="prefetch" href="/blog/assets/js/42.21e1511d.js"><link rel="prefetch" href="/blog/assets/js/43.4b76e8e0.js"><link rel="prefetch" href="/blog/assets/js/44.a06c9d8c.js"><link rel="prefetch" href="/blog/assets/js/45.c823610a.js"><link rel="prefetch" href="/blog/assets/js/46.c589c005.js"><link rel="prefetch" href="/blog/assets/js/47.8b6d635d.js"><link rel="prefetch" href="/blog/assets/js/48.dbb388b0.js"><link rel="prefetch" href="/blog/assets/js/5.e51048e9.js"><link rel="prefetch" href="/blog/assets/js/6.0494b0e7.js"><link rel="prefetch" href="/blog/assets/js/7.13026b2d.js"><link rel="prefetch" href="/blog/assets/js/8.e66e2d48.js"><link rel="prefetch" href="/blog/assets/js/9.10ae75d6.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.b9ccaafe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">前端学习总结</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/algorithm/" class="nav-link router-link-active">
+  算法
+</a></div><div class="nav-item"><a href="/blog/jsCode/" class="nav-link">
+  手写代码
+</a></div><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/blog/100day/" class="nav-link">
+  100天
+</a></div><div class="nav-item"><a href="https://github.com/funnycoderstar/Front-end-summary" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/algorithm/" class="nav-link router-link-active">
+  算法
+</a></div><div class="nav-item"><a href="/blog/jsCode/" class="nav-link">
+  手写代码
+</a></div><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/blog/100day/" class="nav-link">
+  100天
+</a></div><div class="nav-item"><a href="https://github.com/funnycoderstar/Front-end-summary" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/algorithm/" class="sidebar-link">算法专题</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>树</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/algorithm/树/相同的树.html" class="sidebar-link">相同的树</a></li><li><a href="/blog/algorithm/树/对称二叉树.html" class="sidebar-link">对称二叉树</a></li><li><a href="/blog/algorithm/树/翻转二叉树.html" class="active sidebar-link">翻转二叉树</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/algorithm/树/翻转二叉树.html#翻转二叉树" class="sidebar-link">翻转二叉树</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/algorithm/树/翻转二叉树.html#题目描述" class="sidebar-link">题目描述</a></li><li class="sidebar-sub-header"><a href="/blog/algorithm/树/翻转二叉树.html#解题思路" class="sidebar-link">解题思路</a></li></ul></li></ul></li><li><a href="/blog/algorithm/树/验证二叉搜索树.html" class="sidebar-link">验证二叉搜索树</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>链表</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数组</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="翻转二叉树"><a href="#翻转二叉树" class="header-anchor">#</a> 翻转二叉树</h2> <h3 id="题目描述"><a href="#题目描述" class="header-anchor">#</a> 题目描述</h3> <p>翻转一棵二叉树。</p> <p>示例：</p> <div class="language-js extra-class"><pre class="language-js"><code>输入：
+
+     <span class="token number">4</span>
+   <span class="token operator">/</span>   \
+  <span class="token number">2</span>     <span class="token number">7</span>
+ <span class="token operator">/</span> \   <span class="token operator">/</span> \
+<span class="token number">1</span>   <span class="token number">3</span> <span class="token number">6</span>   <span class="token number">9</span>
+输出：
+
+     <span class="token number">4</span>
+   <span class="token operator">/</span>   \
+  <span class="token number">7</span>     <span class="token number">2</span>
+ <span class="token operator">/</span> \   <span class="token operator">/</span> \
+<span class="token number">9</span>   <span class="token number">6</span> <span class="token number">3</span>   <span class="token number">1</span>
+</code></pre></div><h3 id="解题思路"><a href="#解题思路" class="header-anchor">#</a> 解题思路</h3> <p>递归的交换左右子树。</p> <ol><li>当节点为 null 的时候直接返回</li> <li>如果当前结点不为null，那么先将其左右子树进行翻转，然后交换左右子树。</li> <li>返回值为完成了翻转后的当前结点。</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">invertTree</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">root</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当节点为 null 的时候直接返回</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>root <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 如果当前结点不为null，那么先将其左右子树进行翻转，然后交换左右子树</span>
+    <span class="token keyword">let</span> right <span class="token operator">=</span> <span class="token function">invertTree</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> left <span class="token operator">=</span> <span class="token function">invertTree</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    root<span class="token punctuation">.</span>left <span class="token operator">=</span> right<span class="token punctuation">;</span>
+    root<span class="token punctuation">.</span>right <span class="token operator">=</span> left<span class="token punctuation">;</span>
+    
+    <span class="token comment">// 返回值为完成了翻转后的当前结点</span>
+    <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>时间复杂度：O(n)，既然树中的每个节点都只被访问一次，那么时间复杂度就是 O(n)，其中 n 是树中节点的个数。在反转之前，不论怎样我们至少都得访问每个节点至少一次，因此这个问题无法做地比 O(n) 更好了。</li> <li>本方法使用了递归，在最坏情况下栈内需要存放 O(h) 个方法调用，其中 h 是树的高度。由于 h $\in$ O(n)，可得出空间复杂度为 O(n)。</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/5/2020, 8:58:18 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/algorithm/树/对称二叉树.html" class="prev">
+        对称二叉树
+      </a></span> <span class="next"><a href="/blog/algorithm/树/验证二叉搜索树.html">
+        验证二叉搜索树
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.ed01b3c1.js" defer></script><script src="/blog/assets/js/2.2959d24f.js" defer></script><script src="/blog/assets/js/21.7ebcdffd.js" defer></script>
+  </body>
+</html>

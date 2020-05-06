@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>倒数第K个节点 | 前端学习总结</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="https://cdn.wangyaxing.cn/icon-128x128.png">
+    <meta name="description" content="前端学习总结">
+    <link rel="preload" href="/blog/assets/css/0.styles.b9ccaafe.css" as="style"><link rel="preload" href="/blog/assets/js/app.e8e6c65a.js" as="script"><link rel="preload" href="/blog/assets/js/2.2959d24f.js" as="script"><link rel="preload" href="/blog/assets/js/29.599b472b.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.a58b4413.js"><link rel="prefetch" href="/blog/assets/js/11.ee322a3b.js"><link rel="prefetch" href="/blog/assets/js/12.9b8b67e1.js"><link rel="prefetch" href="/blog/assets/js/13.63f8928e.js"><link rel="prefetch" href="/blog/assets/js/14.a59be820.js"><link rel="prefetch" href="/blog/assets/js/15.32b84a0a.js"><link rel="prefetch" href="/blog/assets/js/16.0feda239.js"><link rel="prefetch" href="/blog/assets/js/17.a052dd7b.js"><link rel="prefetch" href="/blog/assets/js/18.6d18436a.js"><link rel="prefetch" href="/blog/assets/js/19.a653ae06.js"><link rel="prefetch" href="/blog/assets/js/20.b207e14d.js"><link rel="prefetch" href="/blog/assets/js/21.5c9145d2.js"><link rel="prefetch" href="/blog/assets/js/22.baac7895.js"><link rel="prefetch" href="/blog/assets/js/23.b1893076.js"><link rel="prefetch" href="/blog/assets/js/24.5a4e20ad.js"><link rel="prefetch" href="/blog/assets/js/25.f6cc56d5.js"><link rel="prefetch" href="/blog/assets/js/26.ad37a78b.js"><link rel="prefetch" href="/blog/assets/js/27.d4205a34.js"><link rel="prefetch" href="/blog/assets/js/28.73f775df.js"><link rel="prefetch" href="/blog/assets/js/3.edf9e812.js"><link rel="prefetch" href="/blog/assets/js/30.6c296956.js"><link rel="prefetch" href="/blog/assets/js/31.f1f08617.js"><link rel="prefetch" href="/blog/assets/js/32.bcb17783.js"><link rel="prefetch" href="/blog/assets/js/33.70101aeb.js"><link rel="prefetch" href="/blog/assets/js/34.c6d7e77c.js"><link rel="prefetch" href="/blog/assets/js/35.e87482cc.js"><link rel="prefetch" href="/blog/assets/js/36.63e40ad6.js"><link rel="prefetch" href="/blog/assets/js/37.1100a711.js"><link rel="prefetch" href="/blog/assets/js/38.5b5ea27e.js"><link rel="prefetch" href="/blog/assets/js/39.32dc2306.js"><link rel="prefetch" href="/blog/assets/js/4.4d64059e.js"><link rel="prefetch" href="/blog/assets/js/40.dad475b5.js"><link rel="prefetch" href="/blog/assets/js/41.edd0eb3d.js"><link rel="prefetch" href="/blog/assets/js/42.337cf5fd.js"><link rel="prefetch" href="/blog/assets/js/43.750ad079.js"><link rel="prefetch" href="/blog/assets/js/44.d1c60265.js"><link rel="prefetch" href="/blog/assets/js/45.b3d7d45c.js"><link rel="prefetch" href="/blog/assets/js/46.82e5cb46.js"><link rel="prefetch" href="/blog/assets/js/47.c1dd5d9a.js"><link rel="prefetch" href="/blog/assets/js/48.f7196cde.js"><link rel="prefetch" href="/blog/assets/js/49.e362bd76.js"><link rel="prefetch" href="/blog/assets/js/5.2204a962.js"><link rel="prefetch" href="/blog/assets/js/50.1e232030.js"><link rel="prefetch" href="/blog/assets/js/51.60c9697b.js"><link rel="prefetch" href="/blog/assets/js/52.7a9d9c53.js"><link rel="prefetch" href="/blog/assets/js/53.a002983b.js"><link rel="prefetch" href="/blog/assets/js/54.208182fe.js"><link rel="prefetch" href="/blog/assets/js/55.fe328a74.js"><link rel="prefetch" href="/blog/assets/js/56.0ffa4224.js"><link rel="prefetch" href="/blog/assets/js/6.9d3a2ad3.js"><link rel="prefetch" href="/blog/assets/js/7.a510ebfa.js"><link rel="prefetch" href="/blog/assets/js/8.5555b25a.js"><link rel="prefetch" href="/blog/assets/js/9.1a9a2655.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.b9ccaafe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">前端学习总结</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/algorithm/" class="nav-link router-link-active">
+  算法
+</a></div><div class="nav-item"><a href="/blog/jsCode/" class="nav-link">
+  手写代码
+</a></div><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/blog/100day/" class="nav-link">
+  100天
+</a></div><div class="nav-item"><a href="https://github.com/funnycoderstar/Front-end-summary" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/algorithm/" class="nav-link router-link-active">
+  算法
+</a></div><div class="nav-item"><a href="/blog/jsCode/" class="nav-link">
+  手写代码
+</a></div><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/blog/100day/" class="nav-link">
+  100天
+</a></div><div class="nav-item"><a href="https://github.com/funnycoderstar/Front-end-summary" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/algorithm/" class="sidebar-link">算法专题</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>树</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>链表</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/algorithm/链表/合并两个有序链表.html" class="sidebar-link">合并两个有序链表</a></li><li><a href="/blog/algorithm/链表/反转链表.html" class="sidebar-link">反转链表</a></li><li><a href="/blog/algorithm/链表/回文链表.html" class="sidebar-link">回文链表</a></li><li><a href="/blog/algorithm/链表/倒数第K个节点.html" class="active sidebar-link">倒数第K个节点</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/algorithm/链表/倒数第K个节点.html#倒数第k个节点" class="sidebar-link">倒数第K个节点</a></li></ul></li><li><a href="/blog/algorithm/链表/找出链表的中间节点.html" class="sidebar-link">找出链表的中间节点</a></li><li><a href="/blog/algorithm/链表/两个链表的第一个公共节点.html" class="sidebar-link">两个链表的第一个公共节点</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数组</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>动态规划</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="倒数第k个节点"><a href="#倒数第k个节点" class="header-anchor">#</a> 倒数第K个节点</h2> <ol><li>初始化: 使用双指针，i, j</li> <li>构建双指针距离: 先将i向后移动k次，此时 i，j的距离为k</li> <li>双指针共同移动: 同时移动i，j，直到i指向 null，此时j位置的val就是答案</li> <li>返回值</li></ol> <p><img src="https://pic.leetcode-cn.com/c11759b47df01442d2bacdc3a693531e1c5e905c741307f4bf61efffb08ce15d-aa.png" alt="img"></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">kthToLast</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> p <span class="token operator">=</span> head<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> k<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        p <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        p <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        head <span class="token operator">=</span> head<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> head<span class="token punctuation">.</span>val<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/6/2020, 11:51:11 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/algorithm/链表/回文链表.html" class="prev">
+        回文链表
+      </a></span> <span class="next"><a href="/blog/algorithm/链表/找出链表的中间节点.html">
+        找出链表的中间节点
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.e8e6c65a.js" defer></script><script src="/blog/assets/js/2.2959d24f.js" defer></script><script src="/blog/assets/js/29.599b472b.js" defer></script>
+  </body>
+</html>
